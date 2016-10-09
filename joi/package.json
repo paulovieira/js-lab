@@ -1,0 +1,7 @@
+{
+  "name": "clima2",
+  "version": "0.0.1",
+  "dependencies": {
+    "joi": "^6.6.1"
+  }
+}

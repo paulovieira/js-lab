@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "code": "^2.3.0",
+    "lab": "^10.5.1"
+  },
+  "scripts": {
+    "test": "lab"
+  }
+}

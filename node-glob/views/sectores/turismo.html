@@ -1,0 +1,92 @@
+{% extends "layouts/general-page.html"          %}
+{% from "sectores/macros/sector-heading.html" import sectorHeading %} 
+
+{% set sectorData = {
+    sectorName: "energia", 
+    title: 514,
+    introParagraph: 515,
+    restOfParagraph: 516
+    } 
+%}
+
+
+{% block title %}{{ ctx.texts[15][lang] }} - {{ ctx.texts[45][lang] }}{% endblock %} 
+
+
+{% block mainColumnContent %}
+
+<div class="row">
+
+    <div class="col-sm-12">
+        <ol class="breadcrumb">
+            <li><a href="/{{ lang }}">Home</a>
+            </li>
+            <li>{{ ctx.texts[23][lang] }}
+            </li>
+            <li class="active">{{ ctx.texts[45][lang] }}</li>
+        </ol>
+    </div>
+</div>
+
+{{ sectorHeading(ctx, sectorData) }}
+
+<hr>
+
+<div class="row">
+
+    <div class="col-sm-4">
+        <h3>Indicadores</h3>
+
+
+        <ul>
+            <li style="color: #696969; margin-bottom: 5px;">
+                <a href="/{{ lang }}/sectores/turismo/forest-growth">Forest growth</a>
+            </li>
+            <li style="color: #696969; margin-bottom: 5px;">Irrigation water requirement</li>
+            <li style="color: #696969; margin-bottom: 5px;">Soil moisture</li>
+        </ul>
+
+    </div>
+
+    <div class="col-sm-4">
+        <h3>Recursos</h3>
+
+        <dl>
+
+          <dt style="color: #696969;"><span style="font-size: 85%;" class="glyphicon glyphicon-chevron-right"></span> Forest growth</dt>
+          <dd style="margin-bottom: 10px;">Dolor odit debitis vel voluptatem, consectetur suscipit recusandae, culpa explicabo ipsam exercitationem.</dd>
+
+          <dt style="color: #696969;"><span style="font-size: 85%;" class="glyphicon glyphicon-chevron-right"></span> Irrigation water requirement</dt>
+          <dd  style="margin-bottom: 10px;">Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+
+          <dt style="color: #696969;"><span style="font-size: 85%;" class="glyphicon glyphicon-chevron-right"></span> Soil moisture</dt>
+          <dd  style="margin-bottom: 10px;">In ad quas molestiae veniam omnis nisi culpa aspernatur facere facilis dolores, expedita quaerat</dd>
+
+        </dl>
+  
+
+    </div>
+
+    <div class="col-sm-4">
+
+        <h3>Media</h3>
+
+        <dl class="dl-horizontal">
+
+          <dt style="color: #696969; text-align: left;"><span style="font-size: 85%;" class="glyphicon glyphicon-chevron-right"></span> Forest growth</dt>
+          <dd style="margin-bottom: 10px;">Dolor odit debitis vel voluptatem, consectetur suscipit recusandae, culpa explicabo ipsam exercitationem.</dd>
+
+
+          <dt style="color: #696969; text-align: left"><span style="font-size: 85%;" class="glyphicon glyphicon-chevron-right"></span> Soil moisture</dt>
+          <dd  style="margin-bottom: 10px;">In ad quas molestiae veniam omnis nisi culpa aspernatur facere facilis dolores, expedita quaerat</dd>
+
+        </dl>
+    </div>
+
+
+</div>
+
+
+{% endblock %} 
+
+

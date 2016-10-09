@@ -1,0 +1,27 @@
+
+{% extends "layouts/default.html"          %}
+{% from "macros/navigation.html" import navigation %}
+
+
+{% block title %}{{ ctx.texts[15][lang] }} - Page not found{% endblock %} 
+
+
+{% block navigation %}
+
+{{ navigation(ctx) }}
+
+{% endblock %}
+
+{% block content %}
+
+<div class="row">
+    <div class="col-sm-12 text-center">
+		<h1>Página não encontrada!</h1>
+    </div>
+</div>
+
+
+
+{% endblock %}
+
+  

@@ -1,0 +1,33 @@
+{% extends "layouts/general-page.html"          %}
+
+
+{% block title %}{{ ctx.texts[15][lang] }} - {{ ctx.texts[41][lang] }} - {{ ctx.texts[104][lang] }}{% endblock %} 
+
+
+{% block mainColumnContent %}
+
+<div class="row">
+
+    <div class="col-sm-12">
+        <ol class="breadcrumb">
+            <li><a href="/{{ lang }}">Home</a>
+            </li>
+            <li>{{ ctx.texts[23][lang] }}
+            </li>
+            <li><a href="/{{ lang }}/sectores/energia">{{ ctx.texts[41][lang] }}</a>
+            </li>
+            <li class="active">{{ ctx.texts[104][lang] }}</li>
+        </ol>
+    </div>
+</div>
+
+<div class="row">
+
+    <div class="col-sm-12">
+        <h1 class="text-center">{{ ctx.texts[511][lang] }} - {{ ctx.texts[104][lang] }}</h1>
+    </div>
+</div>
+
+{% endblock %} 
+
+

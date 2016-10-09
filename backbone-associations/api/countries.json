@@ -1,0 +1,32 @@
+[
+	{
+		"country_id": 13,
+		"country_name": "portugal",
+		"country_cities": [
+			{
+				"city_id": 1,
+				"city_name": "lisbon"
+			},
+			{
+				"city_id": 2,
+				"city_name": "porto"
+			}
+		]
+	},
+	{
+		"country_id": 15,
+		"country_name": "spain",
+		"country_cities": [
+			{
+				"city_id": 3,
+				"city_name": "madrid"
+			}
+		]
+	},
+	{
+		"country_id": 19,
+		"country_name": "france",
+		"country_cities": [
+		]
+	}
+]

@@ -1,0 +1,169 @@
+{#  NOTE: lang is a global variable #}
+{% extends "layouts/default.html"          %}
+{% from "macros/navigation.html" import navigation %}
+
+
+{% block title %}{{ ctx.texts[15][lang] }} - Ferramenta{% endblock %} 
+
+{% block css %}
+
+	<link href="/common/js/leaflet-0.7.3/leaflet.css" rel="stylesheet" />
+	<link href="/common/css/font-awesome-4.3.0" rel="stylesheet" />
+	<link href="/ferramenta/css/leaflet-sidebar.css" rel="stylesheet" />
+	<link href="/ferramenta/css/leaflet.contextmenu.css" rel="stylesheet" />
+  <link href="/ferramenta/css/ferramenta.css" rel="stylesheet" />
+
+{% endblock %}
+
+
+{% block navigation %}
+
+{{ navigation(ctx) }}
+
+{% endblock %}
+
+
+{% block content %}
+
+<div id="sidebar">
+
+<div class="row">
+  <div class="col-sm-12">
+    <h4>Temperaturas</h4>
+  </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-9 xdebug-red">
+        <form>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" id="js-temp-ref-layer"> Temperatura média (referência: 1970-1999)
+                </label>
+            </div>
+        </form>
+    </div>
+    <div class="col-sm-3 xdebug-blue">
+        <div style="margin: 10px 0px;">
+            <button class="btn btn-primary btn-xs" id="js-temp-ref-options"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+            </button>
+        </div>
+    </div>
+
+    <div class="col-sm-12">
+        <hr style="margin: 0">
+    </div>
+</div>
+
+{#
+<div class="row">
+
+    <div class="col-sm-9 xdebug-red">
+        <form>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" id="js-temp-a2-layer"> Temperatura média (cenário A2, 2070-2099)
+                </label>
+            </div>
+        </form>
+    </div>
+    <div class="col-sm-3 xdebug-blue">
+        <div style="margin: 10px 0px;">
+            <button class="btn btn-primary btn-xs" id="js-temp-a2-options"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+            </button>
+        </div>
+    </div>
+
+    <div class="col-sm-12">
+        <hr style="margin: 0">
+    </div>
+
+</div>
+<div class="row">
+
+    <div class="col-sm-9 xdebug-red">
+        <form>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" id="js-temp-a2-anomalia-layer"> Temperatura média - anomalia (cenário A2, 2070-2099)
+                </label>
+            </div>
+        </form>
+    </div>
+    <div class="col-sm-3 xdebug-blue">
+        <div style="margin: 10px 0px;">
+            <button class="btn btn-primary btn-xs" id="js-temp-a2-anomalia-options"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+            </button>
+        </div>
+    </div>
+</div>
+#}
+
+
+</div>
+
+
+<div class="row">
+    <div class="col-sm-12">
+        <div id="map">
+          
+        </div>
+    </div>
+</div>
+
+
+<div class="modal" id="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content" id="modal-content-region">
+
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="modal-sm" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content" id="modal-sm-content-region">
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+
+{% block scripts %}
+
+	<script src="/common/js/leaflet-0.7.3/leaflet-src.js"></script>
+	<script src="/ferramenta/js/leaflet-easy-button.js"></script> 
+	<script src="/ferramenta/js/leaflet-sidebar.js"></script> 
+	<script src="/ferramenta/js/leaflet-providers_1.0.13.js"></script> 
+	<script src="/ferramenta/js/leaflet.contextmenu-src.js"></script> 
+{#
+	<script src="/ferramenta/js/turf.min.js"></script> 
+	<script src="/ferramenta/js/chroma.min.js"></script> 
+#}
+{#	<script src="/common/js/leaflet-0.7.3/leaflet-heat.js"></script> #}
+
+{#
+	<script src="/common/js/heatmap.js"></script>
+	<script src="/common/js/heatmap-leaflet.js"></script>
+#}
+  <script src="/common/js/underscore-1.6.0.js"></script>
+  <script src="/common/js/json2.js"></script>
+  <script src="/common/js/backbone-1.1.2.js"></script>
+  <script src="/common/js/backbone.radio.js"></script>
+  <script src="/common/js/backbone.marionette-2.4.1.js"></script>
+{#  <script src="/common/js/backbone.stickit.js"></script> #}
+  <script src="/common/js/backbone.syphon.js"></script>
+  <script src="/common/js/backbone_override.js"></script>
+
+  <script src="/common/js/q-1.1.2.js"></script>
+  <script src="/common/js/nunjucks-slim.js"></script>
+
+  <script src="/ferramenta/templates.js"></script> 
+	<script src="/ferramenta/ferramenta.js"></script> 
+  <script src="/ferramenta/sidebar/sidebar.js"></script>
+  <script src="/ferramenta/period-control/period-control.js"></script>
+
+
+{% endblock %}

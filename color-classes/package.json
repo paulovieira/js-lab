@@ -1,0 +1,8 @@
+{
+  "name": "legend-chunks",
+  "version": "0.0.1",
+  "description": "Given a flat array and a integer k, returns an array of arrays with k chunks (to be used in legends of web maps)",
+  "dependencies": {
+    "underscore": "^1.8.3"
+  }
+}

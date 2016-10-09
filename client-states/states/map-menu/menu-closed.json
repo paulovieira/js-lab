@@ -1,0 +1,28 @@
+{
+    "description": "base leaflet map (has the tiles and the control for the menu)",
+    "tree": {
+        "state": "states/map-menu/base-map.json",
+        "children": [
+            {
+
+                /* 
+                    view with main layout for the menu (top container + container
+                    for the header (icon) + container for the contents;
+                    this is the view given to the Control.BackboneView
+                */
+                "template": "templates/map/menu-main-layout.html",
+                "insertIn": ".leaflet-top.leaflet-left",
+                "container": "<div style='height: 100%'>",
+                "children": [
+
+
+                ]                            
+            }
+        ]
+    },
+
+    // note: the scripts included in the base-map state will also be included in this
+    // script (before the ones below)
+    "scripts": [
+    ]
+}

@@ -1,0 +1,21 @@
+{% macro grupo(groupTitle, groupContent, groupRoute, groupImg, ctx) %}
+
+<div class="panel panel-primary">
+	<div class="panel-heading">
+		<h3 class="panel-title text-center">{{ groupTitle }}</h3>
+	</div>
+	<div class="panel-body">
+		<p>
+			{{ groupContent }}
+		</p>
+		<div class="text-center">
+			<a href="{{ global_lang }}/{{ groupRoute }}" class="btn btn-info" style="padding: 5px 30px; letter-spacing: 1px; word-spacing: 3px;" role="button">
+				{{ ctx.texts[1][lang] }}
+			</a>
+		</div>
+		<br>
+		<img src="{{ groupImg }}" class="img-responsive img-thumbnail center-block" alt="Responsive image">
+	</div>
+</div>
+
+{% endmacro %}

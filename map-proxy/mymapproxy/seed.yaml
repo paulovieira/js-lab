@@ -1,0 +1,56 @@
+seeds:
+  # COS_seed:
+  #   caches: [COS]
+
+  # AC_seed:
+  #   caches: [AC]
+
+  # HIDRO_seed:
+  #   caches: [HIDRO]
+
+  EDIFICADO_seed:
+    caches: [EDIFICADO]
+
+    # TODO: since the "COS" cache already has the grid "GLOBAL_WEBMERCATOR", do we have 
+    # to add it here as well?
+    #grids: [GLOBAL_WEBMERCATOR]
+
+    levels:
+      from: 12
+      to: 14
+
+    # TODO: since the "GLOBAL_WEBMERCATOR" grid already has a bbox, do we have to add the coverages? 
+    # or will the bbox from the grid be used if the coverage is not given?
+    # "By default, the whole coverage of the grids will be seeded" - so in principle we can omit the coverage
+    # "If you don’t specify a coverage for a task, then the BBOX of the grid will be used."
+    #coverages: [SMG, SMA, TER, FAI, PIC, SJO, GRA, FLO, COR]
+    coverages: [SMG, SMA, TER, FAI, PIC, SJO, FLO, COR]
+
+coverages:
+  SMG:
+    bbox: [-25.856712, 37.699594, -25.131539, 37.911326]
+    srs: 'EPSG:4326'
+  SMA:
+    bbox: [-25.186804, 36.92703, -25.011325, 37.02359]
+    srs: 'EPSG:4326'
+  TER:
+    bbox: [-27.379705, 38.628273, -27.040842, 38.804339]
+    srs: 'EPSG:4326'
+  FAI:
+    bbox: [-28.836189, 38.512106, -28.597282, 38.645547]
+    srs: 'EPSG:4326'
+  PIC:
+    bbox: [-28.549627, 38.379154, -28.028013, 38.565681]
+    srs: 'EPSG:4326'
+  SJO:
+    bbox: [-28.319693, 38.529226, -27.744289, 38.761866]
+    srs: 'EPSG:4326'
+  # GRA:
+  #   bbox: []
+  #   srs: 'EPSG:4326'
+  FLO:
+    bbox: [-31.270681, 39.369131, -31.121381, 39.52566]
+    srs: 'EPSG:4326'
+  COR:
+    bbox: [-31.129457, 39.669291, -31.08137, 39.727594]
+    srs: 'EPSG:4326'

@@ -1,0 +1,38 @@
+{
+    "description": "state 1 descriptionxxyz",
+    "tree": {
+        "template": "document-basic",
+        "children": [
+            {
+                "template": "templates/xyz/greeting.html",
+                "container": "<strong class='abc'>",
+                "insertIn": "body",
+                "children": [
+                    {
+                        "template": "templates/abc/name.html",
+                        "insertIn": "#container-a1",
+                        "children": [
+                            {
+                                "template": "templates/abc/name2.html",
+                                "insertIn": "#container-a1"
+                            }
+                        ]
+                    },
+                    {
+                        "template": "templates/abc/name-again.html",
+                        "insertIn": "#container-a2"
+                    }
+                ]
+            }
+
+        ]
+    },
+    "css": [
+        "/resources/bootstrap/3.3.5/css/bootstrap.css"
+    ],
+    "scripts": [
+        "/states/123/state1.js", 
+        "/resources/jquery/jquery-1.11.2.js", 
+        "/resources/bootstrap/3.3.5/js/bootstrap.js"
+    ]
+}

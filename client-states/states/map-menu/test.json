@@ -1,0 +1,18 @@
+{
+    "description": "testing inline mode",
+    "tree": {
+        "html": "<html><body></body></html>",
+        "children": [
+            {
+
+                "html": "<div>hello  {{ xyz }}!</div>",
+                "ctx": {"xyz": "abcd"},
+                "insertIn": "body",
+                "children": [
+
+                ]
+            }
+        ]
+    }
+
+}

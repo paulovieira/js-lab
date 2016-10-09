@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<title>CSS Layout - 100% height</title>
+	<link rel="stylesheet" type="text/css" href="index_files/layout1.css">
+</head>
+<body>
+
+	<div id="container">
+
+		<div id="header">
+			<h1>CSS layout: 100% height with header and footer</h1> 
+			<p>Sometimes things that used to be really simple with tables can 
+still appear pretty hard with CSS. This layout for instance would 
+consist of 3 cells; two with a fixed height, and a third one in the 
+center filling up the remaining space. Using CSS, however, you have to 
+take a different approach.</p>
+		</div>
+
+		<div id="content" style="background-color: blue">
+			<p>
+				<a href="http://peterned.home.xs4all.nl/css.html">Back to CSS Examples</a>
+			</p>
+		</div>
+
+		<div id="footer">
+			<p>
+				This footer is absolutely positioned to bottom:0; of  #container. 
+The padding-bottom of #content keeps me from overlapping it when the 
+page is longer than the viewport.
+			</p>
+		</div>
+	</div>
+
+
+	<script src="index_files/urchin.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		_uacct = "UA-472607-1"; urchinTracker();
+	</script>
+
+</body></html>

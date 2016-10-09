@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "browserify": "^9.0.3",
+    "browserify-shim": "^3.8.3",
+    "watchify": "^2.5.0"
+  },
+  "browserify-shim": {
+    "jQuery": "global:jQuery",
+    "Underscore": "global:_",
+    "Backbone": "global:Backbone",
+    "Q": "global:Q"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "scripts": {
+    "build-example-3": "watchify example3.js -d -o app3.js -v"
+  }
+}

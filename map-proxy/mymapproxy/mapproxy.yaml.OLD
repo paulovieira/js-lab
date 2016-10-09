@@ -1,0 +1,76 @@
+# start the dev server: mapproxy-util serve-develop mapproxy.yaml --bind=localhost:8081
+
+
+# -------------------------------
+# MapProxy example configuration.
+# -------------------------------
+#
+# This is a minimal MapProxy configuration.
+# See full_example.yaml and the documentation for more options.
+#
+
+# Starts the following services:
+# Demo:
+#     http://localhost:8080/demo
+# WMS:
+#     capabilities: http://localhost:8080/service?REQUEST=GetCapabilities
+# WMTS:
+#     capabilities: http://localhost:8080/wmts/1.0.0/WMTSCapabilities.xml
+#     first tile: http://localhost:8080/wmts/osm/webmercator/0/0/0.png
+# Tile service (compatible with OSM/etc.)
+#     first tile: http://localhost:8080/tiles/osm/webmercator/0/0/0.png
+# TMS:
+#     note: TMS is not compatible with OSM/Google Maps/etc.
+#     fist tile: http://localhost:8080/tms/1.0.0/osm/webmercator/0/0/0.png
+# KML:
+#     initial doc: http://localhost:8080/kml/osm/webmercator
+
+services:
+  demo:
+  wms:
+    md:
+      title: MapProxy WMS Proxy
+      abstract: This is a minimal MapProxy example.
+
+sources:
+  sigam:
+    type: wms
+    req:
+      # use of this source is only permitted for testing
+      url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMG/MapServer/WMSServer
+      layers: 143,152
+      transparent: true
+
+grids:
+    webmercator:
+        base: GLOBAL_WEBMERCATOR
+    wgs84_grid:
+        base: GLOBAL_GEODETIC
+
+
+caches:
+  test_cache:
+    grids: [wgs84_grid]
+    sources: [sigam]
+    cache:
+#      type: mbtiles
+#      filename: /home/pvieira/github/js-lab-2/map-proxy/mymapproxy/xyz.mbtiles
+      type: file
+
+layers:
+  - name: concelho
+    title: concelho title
+    sources: [test_cache]
+
+
+
+globals:
+  cache:
+#    # where to store the cached images
+    base_dir: './cache_datax'
+#    # where to store lockfiles for concurrent_requests
+    lock_dir: './cache_datax/locks'
+#    # where to store lockfiles for tile creation
+    tile_lock_dir: './cache_datax/tile_locks'
+
+

@@ -1,0 +1,71 @@
+{
+    "description": "simple mapbox map",
+    "tree": {
+        "template": "document-bootstrap",
+        "children": [
+            {
+                /*
+                    these containers should probably be present in the html sent by the server;
+                    the div#map element is here and has the style properties that leaflet adds
+                    after the map is initialized
+                */
+
+                "template": "templates/map/top-containers.html",
+                "insertIn": "body",
+                "children": [
+
+                    {
+                        /*
+                        */
+
+                        "template": "templates/map/navigation.html",
+                        "insertIn": "#navbar-container",
+                        "children": [
+                        ]
+                    },
+                
+                    {
+                        /* 
+                            this is the dom state we get after calling the initilization code 
+                            from leaflet, that is:
+
+                            var map = L.map('map').setView(...);
+                            L.tileLayer(...).addTo(map);
+
+                            All the DOM mutations done by leaflet are scoped to the div#map element
+
+                        */
+
+                        "template": "templates/map/leaflet-map.html",
+                        "insertIn": "#map",
+                        "children": [
+
+
+                        ]
+                    }
+
+                ]
+            }
+        ]
+    },
+    "css": [
+        "/resources/leaflet/mapbox-2.2.1/mapbox.uncompressed.css", 
+        "/resources/font-awesome/4.3.0/css/font-awesome.css", 
+        "/states/map-menu/base-map.css", 
+/*
+        "/resources/leaflet/minimap/Control.MiniMap.css", 
+*/
+    ],
+    "scripts": [
+        "/states/map-menu/base-map.js", 
+/*
+        "/resources/underscore/underscore-1.6.0.js", 
+        "/resources/backbone/backbone-1.1.2.js", 
+        "/resources/backbone/backbone.marionette-2.4.1.js", 
+        "/resources/leaflet/mapbox-2.2.1/mapbox.uncompressed.js", 
+        "/resources/leaflet/minimap/Control.MiniMap.js", 
+        "/states/simple-map/leaflet-backbone-view.js", 
+        "/states/simple-map/map.js", 
+*/
+    ]
+}

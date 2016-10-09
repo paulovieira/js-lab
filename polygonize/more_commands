@@ -1,0 +1,50 @@
+
+gdal_calc.py --co="COMPRESS=LZW" --overwrite --NoDataValue=0 -A tmin_annual.tif  --outfile=tmin_annual_5_6.tif --calc="5*logical_and(A>=5, A<6)"  
+gdal_calc.py --co="COMPRESS=LZW" --overwrite --NoDataValue=0 -A tmin_annual.tif  --outfile=tmin_annual_6_7.tif --calc="6*logical_and(A>=6, A<7)"  
+gdal_calc.py --co="COMPRESS=LZW" --overwrite --NoDataValue=0 -A tmin_annual.tif  --outfile=tmin_annual_7_8.tif --calc="7*logical_and(A>=7, A<8)"  
+gdal_calc.py --co="COMPRESS=LZW" --overwrite --NoDataValue=0 -A tmin_annual.tif  --outfile=tmin_annual_8_9.tif --calc="8*logical_and(A>=8, A<9)"  
+
+--
+
+gdal_polygonize.py tmin_annual_5_6.tif -f "ESRI Shapefile"  shapes/tmin_annual_5_6.shp tmin_annual_5_6 tmin
+gdal_polygonize.py tmin_annual_6_7.tif -f "ESRI Shapefile"  shapes/tmin_annual_6_7.shp tmin_annual_6_7 tmin
+gdal_polygonize.py tmin_annual_7_8.tif -f "ESRI Shapefile"  shapes/tmin_annual_7_8.shp tmin_annual_7_8 tmin
+gdal_polygonize.py tmin_annual_8_9.tif -f "ESRI Shapefile"  shapes/tmin_annual_8_9.shp tmin_annual_8_9 tmin
+
+--
+
+ogr2ogr -update -append -f "ESRI Shapefile" tmin_annual.shp tmin_annual_5_6.shp -dialect sqlite -sql "SELECT ST_Union(geometry) AS geometry, tmin FROM tmin_annual_5_6"
+ogr2ogr -update -append -f "ESRI Shapefile" tmin_annual.shp tmin_annual_6_7.shp -dialect sqlite -sql "SELECT ST_Union(geometry) AS geometry, tmin FROM tmin_annual_6_7"
+ogr2ogr -update -append -f "ESRI Shapefile" tmin_annual.shp tmin_annual_7_8.shp -dialect sqlite -sql "SELECT ST_Union(geometry) AS geometry, tmin FROM tmin_annual_7_8"
+ogr2ogr -update -append -f "ESRI Shapefile" tmin_annual.shp tmin_annual_8_9.shp -dialect sqlite -sql "SELECT ST_Union(geometry) AS geometry, tmin FROM tmin_annual_8_9"
+
+TODO: exprimentar usar 
+-t_srs EPSG:4326
+Reproject/transform to this SRS on output
+
+--
+
+ogr2ogr -t_srs EPSG:4326 tmin_annual_4326.shp tmin_annual.shp
+
+--
+
+ogrinfo example.shp -sql "CREATE SPATIAL INDEX ON example"
+
+--
+
+SEE: 
+gdal_calc.py outputs huge files
+http://gis.stackexchange.com/questions/69462/gdal-calc-py-outputs-huge-files
+ 
+
+
+
+ ogr2ogr -update -append -f "ESRI Shapefile" tmin_annual.shp tmin_annual_7_8_a.shp -dialect sqlite -sql "SELECT ST_Union(geometry) AS geometry, DN FROM tmin_annual_7_8"
+
+ ogr2ogr -update -append -f "ESRI Shapefile" tmin_annual.shp tmin_annual_7_8_a.shp -dialect sqlite -sql "SELECT ST_Union(geometry) AS geometry, DN FROM tmin_annual_7_8"
+
+
+
+
+gdal_polygonize.py tmin_annual_7_8.tif -f "ESRI Shapefile"  test/tmin_annual_7_8_b.shp layername tmin_annual
+

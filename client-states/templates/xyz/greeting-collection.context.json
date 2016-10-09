@@ -1,0 +1,10 @@
+[
+    {
+        "greeting": "hello 1 - default",
+        "subject": "world 1 - default"
+    },
+    {
+        "greeting": "hello 2 - default",
+        "subject": "world 2 - default"
+    }
+]

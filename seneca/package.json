@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "bluebird": "^3.0.2",
+    "seneca": "^0.6.1"
+  }
+}

@@ -1,0 +1,14 @@
+{% include "./page2.html" %}
+{% import "./macros/macro.html" as myMacro %}
+
+hello {{ name }}
+x
+
+data: {{ data | stringify  | safe }}
+
+{{ myMacro.something("xxx") }}
+{{ myMacro.something("yyy") }}
+
+{% if lang %}
+  lang is {{ lang }} 
+{% endif %}

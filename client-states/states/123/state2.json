@@ -1,0 +1,20 @@
+    {
+        "description": "state 2 description",
+        "tree": {
+            "template": "document-bootstrap",
+            "children": [
+                {
+                    "template": "templates/abc/name.html",
+                    "container": "<i>",
+                    "insertIn": "body",
+                    "children": [
+                        {
+                            "template": "templates/abc/name2.html",
+                            "insertIn": "#container-a1",
+                        },
+                    ]
+                }
+
+            ]
+        }
+    }

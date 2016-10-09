@@ -1,0 +1,80 @@
+{% extends 'layouts/default.html' %}
+{% from "macros/navigation.html" import navigation %}
+
+
+{% block title %}Área pessoal{% endblock %}
+
+{% block css %}
+    <link href="/dashboard/css/dashboard.css" rel="stylesheet" />
+{% endblock %}
+
+{% block navigation %}
+
+{{ navigation(ctx) }}
+
+{% endblock %}
+
+{% block content %}
+
+    <div class="row">
+        <div class="col-sm-10 col-sm-offset-1" id="main-region" >
+
+        </div>
+    </div>
+
+
+    <div class="modal xfade" id="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content" id="modal-content-region">
+
+
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block scripts %}
+
+{# NOTE: libraries that are loaded in all pages: jquery, bootstrap, underscore, q #}
+
+    <script src="/common/js/json2.js"></script>
+
+    <script src="/common/js/backbone.js"></script>
+    <script src="/common/js/backbone.radio.js"></script>
+    <script src="/common/js/backbone.marionette.js"></script>
+    <script src="/common/js/backbone.stickit.js"></script>
+    <script src="/common/js/backbone.syphon.js"></script>
+    <script src="/common/js/backbone_override.js"></script>
+
+    <script src="/common/js/nunjucks-slim.js"></script>
+    <script src="/common/js/moment_2.9.0.js"></script>
+
+
+    <script src="/dashboard/templates.js"></script>
+
+
+    <script type="text/javascript">
+        window.Clima = window.Clima || {};
+        Clima.lang = "{{ lang }}";
+        Clima.texts  = {{ ctx.textsArray | stringify }};
+        Clima.files  = {{ ctx.filesArray | stringify }};
+        Clima.userId = {{ ctx.auth.credentials.id }};
+    </script>
+
+    <script src="/dashboard/texts/texts.js"></script>
+    <script src="/dashboard/profile/profile.js"></script>
+    <script src="/dashboard/users/users.js"></script>
+    <script src="/dashboard/index.js"></script>
+{#
+#}
+{#
+    <script src="/dashboard/texts/texts.js"></script>
+    <script src="/dashboard/profile/profile.js"></script>
+    <script src="/dashboard2/index.js"></script>
+#}
+{#
+    <script src="/dashboard2/app-dev.js"></script>
+#}
+
+{% endblock %}

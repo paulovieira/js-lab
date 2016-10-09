@@ -1,0 +1,217 @@
+{% macro navigation(ctx) %}
+
+	<nav class="navbar navbar-default">
+
+
+	    <div class="container-fluid">
+	        <!-- Brand and toggle get grouped for better mobile display -->
+	        <div class="navbar-header">
+	            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-bar">
+	                <span class="sr-only">Toggle navigation</span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	            </button>
+	            <a class="navbar-brand" href="/{{ lang }}" style="padding-left: 30px; padding-right: 30px;">
+	            	{{ ctx.texts[0]["pt"] }}
+	            </a>
+	        </div>
+
+	        <!-- Collect the nav links, forms, and other content for toggling -->
+	        <div class="collapse navbar-collapse" id="top-bar">
+	            <ul class="nav navbar-nav">
+
+					{# dropdown for the introduction #}
+	                <li class="dropdown {% if ctx.urlParam1=='introducao' %}active{% endif %} nav-border-left">
+
+	                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{ ctx.texts[17][lang] }} <span class="caret"></span></a>
+
+						<ul class="dropdown-menu" role="menu">
+
+	                        <li class="{% if ctx.urlParam1=='introducao' and ctx.urlParam2=='mensagem' %}active{% endif %}">
+	                        	<a href="/{{ lang }}/introducao/mensagem">{{ ctx.texts[83][lang] }}</a>
+	                        </li>
+
+	                        <li class="{% if ctx.urlParam1=='introducao' and ctx.urlParam2=='metodologia' %}active{% endif %}">
+	                        	<a href="/{{ lang }}/introducao/metodologia">{{ ctx.texts[84][lang] }}</a>
+	                        </li>
+
+	                        <li class="{% if ctx.urlParam1=='introducao' and ctx.urlParam2=='workshops' %}active{% endif %}">
+	                        	<a href="/{{ lang }}/introducao/workshops">{{ ctx.texts[92][lang] }}</a>
+	                        </li>
+
+	                        <li class="{% if ctx.urlParam1=='introducao' and ctx.urlParam2=='equipa' %}active{% endif %}">
+	                        	<a href="/{{ lang }}/introducao/equipa">{{ ctx.texts[21][lang] }}</a>
+	                        </li>
+						</ul>
+                    </li>
+
+
+	                <li class="{% if ctx.urlParam1=='sumario-executivo' %}active{% endif %} nav-border-left">
+	                	<a href="/{{ lang }}/sumario-executivo">{{ ctx.texts[85][lang] }}</a>
+	                </li>
+
+
+					{# dropdown for the sectors #}
+	                <li class="dropdown {% if ctx.urlParam1=='sectores' %}active{% endif %} nav-border-left">
+	                    <a href="/{{ lang }}/sectores" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{ ctx.texts[23][lang] }} <span class="caret"></span></a>
+
+	                    <ul class="dropdown-menu" role="menu">
+
+	                        <li class="{% if ctx.urlParam1=='sectores' and ctx.urlParam2=='clima' %}active{% endif %}">
+	                        	<a href="/{{ lang }}/sectores/clima">{{ ctx.texts[95][lang] }}</a>
+	                        </li>
+
+	                        <li class="{% if ctx.urlParam1=='sectores' and ctx.urlParam2=='adaptacao' %}active{% endif %}">
+	                        	<a href="/{{ lang }}/sectores/adaptacao">{{ ctx.texts[96][lang] }}</a>
+	                        </li>
+
+	                        <li class="{% if ctx.urlParam1=='sectores' and ctx.urlParam2=='biodiversidade' %}active{% endif %}">
+	                        	<a href="/{{ lang }}/sectores/biodiversidade">{{ ctx.texts[33][lang] }}</a>
+	                        </li>
+
+	                        <li class="{% if ctx.urlParam1=='sectores' and ctx.urlParam2=='saude' %}active{% endif %}">
+	                        	<a href="/{{ lang }}/sectores/saude">{{ ctx.texts[41][lang] }}</a>
+	                        </li>
+
+	                        <li class="{% if ctx.urlParam1=='sectores' and ctx.urlParam2=='turismo' %}active{% endif %}">
+	                        	<a href="/{{ lang }}/sectores/turismo">{{ ctx.texts[45][lang] }}</a>
+	                        </li>
+
+	                        <li class="{% if ctx.urlParam1=='sectores' and ctx.urlParam2=='agricultura-florestas' %}active{% endif %}">
+	                        	<a href="/{{ lang }}/sectores/agricultura-florestas">{{ ctx.texts[49][lang] }}</a>
+	                        </li>
+
+	                        <li class="{% if ctx.urlParam1=='sectores' and ctx.urlParam2=='energia' %}active{% endif %}">
+	                        	<a href="/{{ lang }}/sectores/energia">{{ ctx.texts[53][lang] }}</a>
+	                        </li>
+
+	                        <li class="{% if ctx.urlParam1=='sectores' and ctx.urlParam2=='risco-hidrologico' %}active{% endif %}">
+	                        	<a href="/{{ lang }}/sectores/risco-hidrologico">{{ ctx.texts[93][lang] }}</a>
+	                        </li>
+
+	                        <li class="{% if ctx.urlParam1=='sectores' and ctx.urlParam2=='qualidade-disponibilidade-agua' %}active{% endif %}">
+	                        	<a href="/{{ lang }}/sectores/qualidade-disponibilidade-agua">{{ ctx.texts[94][lang] }}</a>
+	                        </li>
+	                    </ul>
+
+	                </li>
+
+	                <li class="{% if ctx.urlParam1=='cartografia' %}active{% endif %} nav-border-left">
+	                	<a href="/{{ lang }}/cartografia">{{ ctx.texts[19][lang] }}</a>
+	                </li>
+
+	                <li class="{% if ctx.urlParam1=='adaptacao' %}active{% endif %} nav-border-left nav-border-right">
+	                	<a href="/{{ lang }}/estrategia-adaptacao">{{ ctx.texts[20][lang] }}</a>
+	                </li>
+
+	            </ul>
+
+{#
+	            <form class="navbar-form navbar-right" role="search">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="{{ ctx.texts[5][lang] }}">
+							<span class="input-group-addon search-box"><span class="glyphicon glyphicon-search"></span></span>
+						</div>
+	            </form>
+#}
+
+
+				{# 
+				NOTE: the flag button is always shown; as for the other buttons, 2 situations can happen:
+				a) if the user is logged in, 2 buttons are shown: "go to dashboard" and "logout" (except in the dashboard page itself, 
+				where only the "logout" button is shown); 
+				b) if not, only 1 button is shown: "login"
+
+				Below we set the correct button id and icon class. The id is used to attach the click handler, which will then redirect the 
+				the browser to the correct url. This is necessary because we can't use <a class='btn'> in the navbar. More details here:
+				http://getbootstrap.com/css/#buttons
+				#}
+
+            	{% if ctx.auth.isAuthenticated %}
+
+            		{% set dashboard_btn_id = "js-dashboard-nav" %} 
+            		{% set dashboard_btn_icon_class = "glyphicon-cog" %} 
+
+            		{% set logout_btn_id = "js-logout-nav" %} 
+            		{% set logout_btn_icon_class = "glyphicon-log-out" %} 
+
+            	{% else %}
+
+            		{% set login_btn_id = "js-login-nav" %} 
+            		{% set login_btn_icon_class = "glyphicon-user" %} 
+
+            	{% endif %}
+
+
+				{# set the correct icon class for the button relative to the language (flag) #}
+            	{% if lang == "pt" %}
+            		{% set language_icon_class = "flag-icon-pt"    %} 
+            	{% else %}
+            		{% set language_icon_class = "flag-icon-gb"    %} 
+            	{% endif %}
+
+
+	            <ul class="nav navbar-nav navbar-right">
+	
+		            <li style="margin-left: 15px;">
+
+		            	{% if ctx.auth.isAuthenticated %}
+
+		            		{% if ctx.urlParam1 != "dashboard" %}
+
+			            	<button style="padding-left: 18px; padding-right: 18px;" type="button" class="btn btn-default navbar-btn" id="{{ dashboard_btn_id }}" data-toggle="tooltip" data-placement="bottom" title="{{ ctx.texts[82][lang] }}">
+			            		<span class="glyphicon {{ dashboard_btn_icon_class }}"></span> 
+			            	</button>
+
+			            	{% endif %}
+
+			            	<button style="margin-left: 6px; padding-left: 18px; padding-right: 18px;" type="button" class="btn btn-default navbar-btn" id="{{ logout_btn_id }}" data-toggle="tooltip" data-placement="bottom" title="{{ ctx.texts[79][lang] }}">
+			            		<span class="glyphicon {{ logout_btn_icon_class }}"></span> 
+			            	</button>
+
+		            	{% else %}
+
+							{% if ctx.urlParam1 != "login" %}
+
+				            	<button style="padding-left: 18px; padding-right: 18px;" type="button" class="btn btn-default navbar-btn" id="{{ login_btn_id }}" data-toggle="tooltip" data-placement="bottom" title="{{ ctx.texts[81][lang] }}">
+				            		<span class="glyphicon {{ login_btn_icon_class }}"></span> 
+				            	</button>
+
+			            	{% endif %}
+
+			           	{% endif %}
+{#
+	            		<button style="margin-left: 5px; " type="button" class="btn btn-default navbar-btn" id="js-lang-nav" data-toggle="tooltip" data-placement="bottom" title="{{ ctx.texts[80][lang] }}">
+	            			<span class="flag-icon {{ language_icon_class }}"></span>
+	            		</button>
+
+#}
+						<div class="btn-group">
+						    <button style="margin-left: 5px; " type="button" class="btn btn-default navbar-btn dropdown-toggle" data-toggle="dropdown">
+						        <span class="flag-icon {{ language_icon_class }}"></span>&nbsp;&nbsp;<span class="caret"></span>
+						    </button>
+						    <ul class="dropdown-menu" role="menu" style="min-width: 0">
+						        <li>
+						        	<a style="padding: 3px 15px;" href="/pt{{ ctx.urlWithoutLang }}">Português <span class="flag-icon flag-icon-pt"></span></a>
+						        </li>
+						        <li>
+						        	<a style="padding: 3px 15px;" href="/en{{ ctx.urlWithoutLang }}">Inglês <span class="flag-icon flag-icon-gb"></span></a>
+						        </li>
+						    </ul>
+						</div>
+
+
+		            </li>
+
+
+	            </ul>
+
+           
+	        </div>
+	        <!-- /.navbar-collapse -->
+	    </div>
+	    <!-- /.container-fluid -->
+	</nav>
+
+{% endmacro %}

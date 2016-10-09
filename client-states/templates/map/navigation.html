@@ -1,0 +1,92 @@
+<nav class="navbar navbar-default" role="navigation" style="margin-bottom: 0; z-index: 999999;">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/{{ lang }}">Rede Convergir</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+            <li style="border-left: solid; border-width: 1px; border-color: #e7e7e7; padding-left: 8px; padding-right: 8px;"><a href="/{{ lang }}/mapa">Projectos</a>
+            </li>
+            <li style="border-left: solid; border-width: 1px; border-color: #e7e7e7; padding-left: 8px; padding-right: 8px;"><a href="#" id="eventos">Eventos</a>
+            </li>
+            <li style="border-left: solid; border-right: solid;  border-color: #e7e7e7; border-width: 1px; padding-left: 8px; padding-right: 8px;"><a href="#" id="newsletter">Newsletter</a>
+            </li>
+
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Inserir<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Novo projecto</a></li>
+                    <li><a href="#">Novo evento</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            {% if not ctx.auth.isAuthenticated %}
+            <li style="border-left: solid; border-width: 1px; border-color: #e7e7e7; padding-left: 8px; padding-right: 8px;"><a href="#" id="registar">Registar</a>
+            </li>
+            <li style="border-left: solid; border-width: 1px; border-color: #e7e7e7; padding-left: 8px; padding-right: 8px;" class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Entrar&nbsp;<b class="caret"></b></a>
+                <ul class="dropdown-menu" style="padding: 15px 25px; min-width: 250px;">
+                    <li>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <form class="form" role="form" method="post" action="/{{ lang }}/loginAuthenticate">
+                                    <div class="form-group">
+                                        <label for="inputEmail">Endereço de email</label>
+                                        <input type="email" class="form-control" id="inputEmail" name="username" placeholder="" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputPassword">Password</label>
+                                        <input type="password" class="form-control" id="inputPassword" name="password" placeholder="" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-success btn-block">Entrar</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <input style="margin-top: 25px; margin-bottom: 10px;" class="btn btn-primary btn-block" type="button" id="sign-in-google" value="Entrar com a conta do Google">
+                        <input class="btn btn-primary btn-block" type="button" id="sign-in-facebook" value="Entrar com a conta do Facebook">
+                    </li>
+                </ul>
+            </li>
+            {% else %}
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Área de utilizador&nbsp;<b class="caret"></b></a>
+                <ul class="dropdown-menu" style="padding: 15px 25px; min-width: 250px;">
+                    <li>
+                        <div class="row">
+                            <div class="xcol-sm-offset-1 col-sm-12" style="margin-bottom: 10px;">
+                                Bem-vindo(a) {{ ctx.auth.credentials.firstName}}!
+                            </div>
+                            {% if ctx.urlParam1 != "dashboard" %}
+                            <div class="xcol-sm-offset-1 col-sm-12" style="margin-bottom: 10px;">
+                                <a class="btn btn-primary btn-block" href="/{{ lang }}/dashboard" role="button">
+                                    <span class="glyphicon glyphicon-cog"></span>&nbsp; Dashboard
+                                </a>
+                            </div>
+                            {% endif %}
+                            <div class="xcol-sm-offset-1 col-sm-12">
+                                <a class="btn btn-warning btn-block" href="/{{ lang }}/logout" role="button">
+                                    <span class="glyphicon glyphicon-log-out"></span>&nbsp; Sair
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            {% endif %}
+        </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+</nav>

@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+}
+
+.menu-section {
+    float: left;
+    padding: 10px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.menu-left {
+    width: 25%;
+    border: dotted 1px green; 
+}
+
+.menu-right {
+    width: 75%;
+    border: dashed 1px red; 
+}
+

@@ -1,0 +1,232 @@
+{% if ctx.auth.isAuthenticated %}
+
+	{% set dashboard_btn_id = "js-dashboard-nav" %} 
+	{% set dashboard_btn_icon_class = "glyphicon-cog" %} 
+
+	{% set logout_btn_id = "js-logout-nav" %} 
+	{% set logout_btn_icon_class = "glyphicon-log-out" %} 
+
+{% else %}
+
+	{% set login_btn_id = "js-login-nav" %} 
+	{% set login_btn_icon_class = "glyphicon-user" %} 
+
+{% endif %}
+
+
+{# set the correct icon class for the button relative to the language (flag) #}
+{% if lang == "pt" %}
+	{% set language_icon_class = "flag-icon-pt"    %} 
+{% else %}
+	{% set language_icon_class = "flag-icon-gb"    %} 
+{% endif %}
+
+
+<div class="row header header-bg">
+	<div class="col-xs-12">
+
+		<div class="row">
+
+			<div class="col-xs-12 col-sm-7 col-md-6 col-lg-5" style="xborder: 1px solid green; padding-left: 20px;">
+
+				<h1 class="text-title text-centerx" style="" >
+					<div class="is-editable" data-text-id="15">{{ ctx.texts[15][lang] | upper }}</div>
+				</h1>
+
+			</div>
+
+			<div class="col-xs-offset-8 col-xs-4 col-sm-offset-2 col-sm-3 col-md-offset-3 col-md-3 col-lg-offset-5 col-lg-2" style="xborder: 1px solid red;">
+
+
+				<div class="row">
+					<div class="col-xs-12 text-right" style="xborder: 1px solid blue; padding-left: 0px; xpadding-right: 7px;">
+
+{#
+	            		<button type="button" style="margin-left: 6px;" class="btn btn-default navbar-btn" id="js-lang-nav" data-toggle="tooltip" data-placement="bottom" title="{{ ctx.texts[80][lang] }}">
+	            			<span class="flag-icon {{ language_icon_class }}"></span>
+	            		</button>
+#}
+						<div class="btn-group">
+						    <button type="button" class="btn btn-default navbar-btn dropdown-toggle" data-toggle="dropdown">
+						        <span class="flag-icon {{ language_icon_class }}"></span>&nbsp;&nbsp;<span class="caret"></span>
+						    </button>
+						    <ul class="dropdown-menu" role="menu" style="min-width: 0">
+						        <li>
+						        	<a style="padding: 3px 15px;" href="/pt{{ ctx.urlWithoutLang }}">Português <span class="flag-icon flag-icon-pt"></span></a>
+						        </li>
+						        <li>
+						        	<a style="padding: 3px 15px;" href="/en{{ ctx.urlWithoutLang }}">Inglês <span class="flag-icon flag-icon-gb"></span></a>
+						        </li>
+						    </ul>
+						</div>
+
+					  	{% if ctx.auth.isAuthenticated %}
+
+			            	<button type="button" style="margin-left: 6px; padding-left: 18px; padding-right: 18px;" class="btn btn-default navbar-btn" id="{{ dashboard_btn_id }}" data-toggle="tooltip" data-placement="bottom" title="{{ ctx.texts[82][lang] }}">
+			            		<span class="glyphicon {{ dashboard_btn_icon_class }}"></span> 
+			            	</button>
+
+			            	<button type="button" style="margin-left: 6px; padding-left: 18px; padding-right: 18px;" class="btn btn-default navbar-btn" id="{{ logout_btn_id }}" data-toggle="tooltip" data-placement="bottom" title="{{ ctx.texts[79][lang] }}">
+			            		<span class="glyphicon {{ logout_btn_icon_class }}"></span> 
+			            	</button>
+
+						{% else %}
+
+			            	<button type="button" style="margin-left: 6px; padding-left: 18px; padding-right: 18px;" class="btn btn-default navbar-btn" id="{{ login_btn_id }}" data-toggle="tooltip" data-placement="bottom" title="{{ ctx.texts[81][lang] }}">
+			            		<span class="glyphicon {{ login_btn_icon_class }}"></span> 
+			            	</button>
+
+						{% endif %}
+
+
+					</div>
+				</div>
+
+				<div class="row" style="margin-top: 8px;">
+					<div class="col-xs-12" style="xborder: 1px solid yellow; padding-left: 0px;">
+
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="{{ ctx.texts[5][lang] }}">
+							<span class="input-group-addon search-box"><span class="glyphicon glyphicon-search"></span></span>
+						</div>
+					</div>
+
+				</div>
+
+
+			</div>
+		</div>
+
+{#
+		<div class="row">
+			<div class="col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3">
+
+				<div class="jumbotron jumbo-shadow" style="margin-top: 30px; padding: 20px 30px; border: 1px solid #888;">
+					<p>
+						{{ ctx.texts[1][lang] }}
+					</p>
+					<div class="text-center" style="margin-top: -10px;">
+						<a href="/{{ lang }}/introducao" class="btn btn-sm btn-info" style="xmargin-left: 15px; padding: 5px 20px; letter-spacing: 1px; word-spacing: 2px;" role="button">
+							{{ ctx.texts[1][lang] | upper }}
+						</a>
+					</div>
+					<h6 class="text-center"><em>[Usar este espaço para descrever o CLIMA-MADEIRA em 50 palavras] </em></h6>
+				</div>
+		
+			</div>
+		</div>
+#}
+
+{#
+		<div class="row">
+			<div class="col-sm-12 col-md-12 col-lg-12 col-xlg-10 col-xlg-offset-1" style="margin-top: 270px; xborder: 1px solid blue;">
+
+				<ul class="nav nav-pills nav-justified" style="margin-top: 75px; margin-bottom: 45px;">
+
+
+
+
+
+
+					<li class="home-pills">
+						<a href="/{{ lang }}/introducao" class="main-menu-text 
+							main-menu-not-active">
+							<i class="icon-lightbulb"></i> &nbsp;
+							<span class="is-editable" data-text-id="17">{{ ctx.texts[17][lang] }}</span>
+						</a>
+					</li>
+					<li class="home-pills">
+						<a href="/{{ lang }}/cartografia" class="main-menu-text 
+							main-menu-not-active">
+							<i class="icon-map"></i> &nbsp;
+							<span class="is-editable" data-text-id="19">{{ ctx.texts[19][lang] }}</span>
+						</a>
+					</li>
+					<li class="home-pills">
+						<a href="/{{ lang }}/adaptacao" class="main-menu-text 
+							main-menu-not-active">
+							<i class="icon-cubes"></i> &nbsp;
+							<span class="is-editable" data-text-id="20">{{ ctx.texts[20][lang] }}</span>
+						</a>
+					</li>
+					<li class="home-pills">
+						<a href="/{{ lang }}/equipa" class="main-menu-text 
+							main-menu-not-active">
+							<i class="icon-users"></i> &nbsp;
+							<span class="is-editable" data-text-id="21">{{ ctx.texts[21][lang] }}</span>
+						</a>
+					</li>
+				</ul>
+
+
+
+
+			</div>
+		</div>
+#}
+
+		<div class="row" style="margin: 270px 0px 20px 0px; padding-left: 40px; padding-right: 30px;">
+
+
+
+				<div class="btn-group col-xs-6 col-sm-6 col-md-3 container-home-menu">
+				    <button type="button" class="btn btn-default btn-block btn-lg dropdown-toggle btn-home-menu" data-toggle="dropdown" aria-expanded="false">
+				    	<i class="icon-lightbulb" style="margin-right: 3px;"></i> 
+				        {{ ctx.texts[17][lang] }} <span class="caret"></span>
+				    </button>
+				    <ul class="dropdown-menu" role="menu">
+				        <li>
+				        	<a href="/{{ lang }}/introducao/mensagem">{{ ctx.texts[83][lang] }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+				        </li>
+				        <li>
+				        	<a href="/{{ lang }}/introducao/metodologia">{{ ctx.texts[84][lang] }}</a>
+				        </li>
+				        <li>
+				        	<a href="/{{ lang }}/introducao/workshops">{{ ctx.texts[92][lang] }}</a>
+				        </li>
+				        <li>
+				        	<a href="/{{ lang }}/introducao/equipa">{{ ctx.texts[21][lang] }}</a>
+				        </li>
+				    </ul>
+				</div>
+
+				<div class="col-xs-6 col-sm-6 col-md-3 container-home-menu">
+					<a class="btn btn-default btn-lg btn-block btn-home-menu" role="button" href="/{{ lang }}/sumario-executivo">
+						<span class="glyphicon glyphicon-pencil" style="margin-right: 3px;"></span>
+						{{ ctx.texts[85][lang] }}							
+
+					</a>
+				</div>
+
+				<div class="col-xs-6 col-sm-6 col-md-3 container-home-menu">
+					<a role="button" class="btn btn-default btn-lg btn-block btn-home-menu" href="/{{ lang }}/cartografia">
+						<i class="icon-map" style="margin-right: 3px;"></i>
+						{{ ctx.texts[19][lang] }}
+					</a>
+				</div>
+
+
+				<div class="col-xs-6 col-sm-6 col-md-3 container-home-menu">
+					<a role="button" class="btn btn-default btn-lg btn-block btn-home-menu" href="/{{ lang }}/estrategia-adaptacao">
+						<i class="icon-cubes" style="margin-right: 5px;"></i>
+						{{ ctx.texts[20][lang] }}
+					</a>
+				</div>
+
+		</div>
+
+
+		<div class="row" style="padding: 0px 20px;">
+			
+
+
+
+
+
+
+
+
+
+		</div>
+	</div>
+</div>

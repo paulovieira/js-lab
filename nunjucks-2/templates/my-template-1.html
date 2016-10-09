@@ -1,0 +1,13 @@
+{% set lorem = "lorem "%}
+<div>{{ findWhere(users, {name: "paulo", page: "y"}).name | default(lorem, true) }}
+
+
+{{ xyz }}
+</div>
+
+<span>{{ keys(temp) | first | upper }}</span>
+
+{% for i in users %}
+
+  <li>{{ i.name | upper | default("no name", true) }}</li>
+{% endfor %}

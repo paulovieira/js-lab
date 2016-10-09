@@ -1,0 +1,27 @@
+{#  NOTE: lang is a global variable #}
+{% extends "layouts/default.html"          %}
+{% from "macros/navigation.html" import navigation %}
+
+
+{% block title %}{{ ctx.texts[15][lang] }} - mapa de vulnerabilidades{% endblock %} 
+
+
+{% block navigation %}
+
+{{ navigation(ctx) }}
+
+{% endblock %}
+
+{% block content %}
+
+<div class="row">
+    <div class="col-sm-12 text-center">
+		<h1>Mapa</h1>
+    </div>
+</div>
+
+
+
+{% endblock %}
+
+

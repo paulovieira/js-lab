@@ -1,0 +1,28 @@
+{# NOTE: this macro is used only in the homepage #}
+
+{# {% macro sectorBox(ctx, title, sectorDesc, sectorPath, sectorImg) %} #}
+{% macro sectorBox(ctx, data) %}
+
+<div class="sector-box">
+	<h4 class="text-center sector-title" >
+		<span class="is-editable" data-text-id="{{ data.title }}"> {{ ctx.texts[data.title][lang] | upper }}</span>
+	</h4>
+	
+
+	<!-- <img src="{{ ctx.files[sectorImg].fullPath }}" class="img-responsive img-thumbnail center-block" alt="Responsive image"> -->
+	<span class="is-editable" data-text-id="{{ data.sectorImg }}">
+		{# IMPORTANT: the img tag itself is part of the text (including all the required classes); this makes the html coupled with the databasem, but will allow the user to change the image using summernote#}
+		{{ ctx.texts[data.sectorImg][lang] }}  
+	</span>
+	<span class="is-editable" data-text-id="{{ data.sectorDesc }}">
+		<p>{{ ctx.texts[data.sectorDesc][lang] }}</p>
+	</span>
+
+	<div class="text-center">
+		<a href="/{{ lang }}/{{ data.sectorPath }}" class="btn btn-info" style="padding: 4px 30px; letter-spacing: 1px;" role="button">
+			{{ ctx.texts[6][lang] }}
+		</a>
+	</div>
+</div>
+
+{% endmacro %}

@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "sendgrid-promise": "^1.0.0"
+  }
+}

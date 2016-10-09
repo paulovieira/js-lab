@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<orcid-message xmlns="http://www.orcid.org/ns/orcid">
+    <message-version>1.2</message-version>
+    <orcid-profile type="user">
+        <orcid-identifier>
+            <uri>http://orcid.org/0000-0002-1663-6594</uri>
+            <path>0000-0002-1663-6594</path>
+            <host>orcid.org</host>
+        </orcid-identifier>
+        <orcid-preferences>
+            <locale>en</locale>
+        </orcid-preferences>
+        <orcid-history>
+            <creation-method>website</creation-method>
+            <submission-date>2013-11-18T11:05:51.470Z</submission-date>
+            <last-modified-date>2016-04-13T13:53:11.000Z</last-modified-date>
+            <claimed>true</claimed>
+            <verified-email>true</verified-email>
+            <verified-primary-email>true</verified-primary-email>
+        </orcid-history>
+        <orcid-bio>
+            <personal-details>
+                <given-names>Pedro</given-names>
+                <family-name>Garrett</family-name>
+                <credit-name visibility="public">Garrett, P.</credit-name>
+                <other-names visibility="public">
+                    <other-name>Garrett, P.</other-name>
+                    <other-name>Lopes, P.</other-name>
+                </other-names>
+            </personal-details>
+            <biography visibility="public"></biography>
+            <researcher-urls visibility="public">
+                <researcher-url>
+                    <url-name>Publications</url-name>
+                    <url>http://scholar.google.com/citations?user=PG3I01kAAAAJ&amp;hl=pt-PT</url>
+                </researcher-url>
+                <researcher-url>
+                    <url-name>ResearchGate</url-name>
+                    <url>https://www.researchgate.net/profile/Pedro_Lopes23</url>
+                </researcher-url>
+            </researcher-urls>
+            <contact-details>
+                <email primary="true" current="true" verified="true" visibility="public">pmagarrett@fc.ul.pt</email>
+            </contact-details>
+            <keywords visibility="public">
+                <keyword>health, climate change, air pollution</keyword>
+            </keywords>
+            <external-identifiers visibility="public">
+                <external-identifier>
+                    <external-id-common-name>ResearcherID</external-id-common-name>
+                    <external-id-reference>O-8082-2015</external-id-reference>
+                    <external-id-url>http://www.researcherid.com/rid/O-8082-2015</external-id-url>
+                    <source>
+                        <source-orcid>
+                            <uri>http://orcid.org/0000-0001-7707-4137</uri>
+                            <path>0000-0001-7707-4137</path>
+                            <host>orcid.org</host>
+                        </source-orcid>
+                    </source>
+                </external-identifier>
+                <external-identifier>
+                    <external-id-common-name>Scopus Author ID</external-id-common-name>
+                    <external-id-reference>37461306200</external-id-reference>
+                    <external-id-url>http://www.scopus.com/inward/authorDetails.url?authorID=37461306200&amp;partnerID=MN8TOARS</external-id-url>
+                    <source>
+                        <source-orcid>
+                            <uri>http://orcid.org/0000-0002-5982-8983</uri>
+                            <path>0000-0002-5982-8983</path>
+                            <host>orcid.org</host>
+                        </source-orcid>
+                    </source>
+                </external-identifier>
+            </external-identifiers>
+        </orcid-bio>
+        <orcid-activities>
+            <affiliations>
+                <affiliation visibility="public" put-code="1270997">
+                    <type>employment</type>
+                    <role-title>Auxiliary Researcher</role-title>
+                    <start-date>
+                        <year>2007</year>
+                        <month>07</month>
+                        <day>01</day>
+                    </start-date>
+                    <organization>
+                        <name>Fundação da Faculdade de Ciências da Universidade de Lisboa</name>
+                        <address>
+                            <city>Lisboa</city>
+                            <region>Lisboa</region>
+                            <country>PT</country>
+                        </address>
+                        <disambiguated-organization>
+                            <disambiguated-organization-identifier>426093</disambiguated-organization-identifier>
+                            <disambiguation-source>RINGGOLD</disambiguation-source>
+                        </disambiguated-organization>
+                    </organization>
+                    <source>
+                        <source-orcid>
+                            <uri>http://orcid.org/0000-0002-1663-6594</uri>
+                            <path>0000-0002-1663-6594</path>
+                            <host>orcid.org</host>
+                        </source-orcid>
+                        <source-name>Garrett, P.</source-name>
+                        <source-date>2015-10-21T10:10:29.171Z</source-date>
+                    </source>
+                    <created-date>2015-10-21T10:10:29.171Z</created-date>
+                    <last-modified-date>2015-10-21T10:10:29.171Z</last-modified-date>
+                </affiliation>
+                <affiliation visibility="public" put-code="1270971">
+                    <type>education</type>
+                    <department-name>Environmental Engenering</department-name>
+                    <role-title>Engenering</role-title>
+                    <start-date>
+                        <year>1996</year>
+                        <month>09</month>
+                        <day>01</day>
+                    </start-date>
+                    <end-date>
+                        <year>2001</year>
+                        <month>06</month>
+                        <day>31</day>
+                    </end-date>
+                    <organization>
+                        <name>Universidade Nova de Lisboa Faculdade de Ciências e Tecnologia</name>
+                        <address>
+                            <city>Caparica</city>
+                            <region>Setúbal</region>
+                            <country>PT</country>
+                        </address>
+                        <disambiguated-organization>
+                            <disambiguated-organization-identifier>119482</disambiguated-organization-identifier>
+                            <disambiguation-source>RINGGOLD</disambiguation-source>
+                        </disambiguated-organization>
+                    </organization>
+                    <source>
+                        <source-orcid>
+                            <uri>http://orcid.org/0000-0002-1663-6594</uri>
+                            <path>0000-0002-1663-6594</path>
+                            <host>orcid.org</host>
+                        </source-orcid>
+                        <source-name>Garrett, P.</source-name>
+                        <source-date>2015-10-21T10:08:14.293Z</source-date>
+                    </source>
+                    <created-date>2015-10-21T10:08:14.293Z</created-date>
+                    <last-modified-date>2015-10-21T10:08:14.293Z</last-modified-date>
+                </affiliation>
+            </affiliations>
+            <orcid-works>
+                <orcid-work put-code="19437313" visibility="public">
+                    <work-title>
+                        <title>Continental Portuguese Territory Flood Social Susceptibility Index</title>
+                    </work-title>
+                    <journal-title>Natural Hazards and Earth System Science</journal-title>
+                    <work-citation>
+                        <work-citation-type>bibtex</work-citation-type>
+                        <citation>@article{grosso2015continental, title= {Continental Portuguese Territory Flood Social Susceptibility Index}, author= {Grosso, N and Dias, L and Costa, HP and Santos, FD and Garrett, P}, journal= {Natural Hazards and Earth System Science}, volume= {15}, number= {8}, pages= {1921--1931}, year= {2015}, publisher= {Copernicus GmbH}}
+
+</citation>
+                    </work-citation>
+                    <work-type>journal-article</work-type>
+                    <publication-date>
+                        <year>2015</year>
+                    </publication-date>
+                    <source>
+                        <source-orcid>
+                            <uri>http://orcid.org/0000-0002-1663-6594</uri>
+                            <path>0000-0002-1663-6594</path>
+                            <host>orcid.org</host>
+                        </source-orcid>
+                        <source-name>Garrett, P.</source-name>
+                        <source-date>2015-10-21T10:02:57.937Z</source-date>
+                    </source>
+                    <created-date>2015-10-21T10:02:57.937Z</created-date>
+                    <last-modified-date>2015-12-01T10:48:54.952Z</last-modified-date>
+                </orcid-work>
+                <orcid-work put-code="19437312" visibility="public">
+                    <work-title>
+                        <title>Continental Portuguese Territory Flood Susceptibility Index contribution to a vulnerability index.</title>
+                    </work-title>
+                    <journal-title>Natural Hazards &amp; Earth System Sciences</journal-title>
+                    <work-citation>
+                        <work-citation-type>bibtex</work-citation-type>
+                        <citation>@article{jacinto2015continental, title= {Continental Portuguese Territory Flood Susceptibility Index contribution to a vulnerability index.}, author= {Jacinto, R and Grosso, N and Reis, E and Dias, L and Santos, FD and Garrett, P}, journal= {Natural Hazards \&amp; Earth System Sciences}, volume= {15}, number= {8}, year= {2015}}
+
+</citation>
+                    </work-citation>
+                    <work-type>journal-article</work-type>
+                    <publication-date>
+                        <year>2015</year>
+                    </publication-date>
+                    <source>
+                        <source-orcid>
+                            <uri>http://orcid.org/0000-0002-1663-6594</uri>
+                            <path>0000-0002-1663-6594</path>
+                            <host>orcid.org</host>
+                        </source-orcid>
+                        <source-name>Garrett, P.</source-name>
+                        <source-date>2015-10-21T10:02:57.905Z</source-date>
+                    </source>
+                    <created-date>2015-10-21T10:02:57.905Z</created-date>
+                    <last-modified-date>2015-12-01T10:48:54.952Z</last-modified-date>
+                </orcid-work>
+                <orcid-work put-code="19437311" visibility="public">
+                    <work-title>
+                        <title>Continental Portuguese Territory Flood Social Susceptibility Index</title>
+                    </work-title>
+                    <journal-title>Natural Hazards and Earth System Sciences Discussions</journal-title>
+                    <work-citation>
+                        <work-citation-type>bibtex</work-citation-type>
+                        <citation>@article{grosso2014continental, title= {Continental Portuguese Territory Flood Social Susceptibility Index}, author= {Grosso, N and Dias, L and Costa, HP and Santos, FD and Garrett, P}, journal= {Natural Hazards and Earth System Sciences Discussions}, volume= {2}, number= {12}, pages= {7553--7582}, year= {2014}, publisher= {Copernicus GmbH}}
+
+</citation>
+                    </work-citation>
+                    <work-type>journal-article</work-type>
+                    <publication-date>
+                        <year>2014</year>
+                    </publication-date>
+                    <source>
+                        <source-orcid>
+                            <uri>http://orcid.org/0000-0002-1663-6594</uri>
+                            <path>0000-0002-1663-6594</path>
+                            <host>orcid.org</host>
+                        </source-orcid>
+                        <source-name>Garrett, P.</source-name>
+                        <source-date>2015-10-21T10:02:57.488Z</source-date>
+                    </source>
+                    <created-date>2015-10-21T10:02:57.488Z</created-date>
+                    <last-modified-date>2015-12-01T10:48:54.953Z</last-modified-date>
+                </orcid-work>
+                <orcid-work put-code="19437310" visibility="public">
+                    <work-title>
+                        <title>Innovative Visualization Techniques applied to a Flood Scenario</title>
+                    </work-title>
+                    <journal-title>EGU General Assembly Conference Abstracts</journal-title>
+                    <work-citation>
+                        <work-citation-type>bibtex</work-citation-type>
+                        <citation>@inproceedings{falcao2013innovative, title= {Innovative Visualization Techniques applied to a Flood Scenario}, author= {Falc{\~a}o, Ant{\'o}nio and Ho, Quan and Lopes, Pedro and Malamud, Bruce D and Ribeiro, Rita and Jern, Mikael}, booktitle= {EGU General Assembly Conference Abstracts}, volume= {15}, pages= {12720}, year= {2013}}
+
+</citation>
+                    </work-citation>
+                    <work-type>conference-paper</work-type>
+                    <publication-date>
+                        <year>2013</year>
+                    </publication-date>
+                    <source>
+                        <source-orcid>
+                            <uri>http://orcid.org/0000-0002-1663-6594</uri>
+                            <path>0000-0002-1663-6594</path>
+                            <host>orcid.org</host>
+                        </source-orcid>
+                        <source-name>Garrett, P.</source-name>
+                        <source-date>2015-10-21T10:02:57.257Z</source-date>
+                    </source>
+                    <created-date>2015-10-21T10:02:57.257Z</created-date>
+                    <last-modified-date>2015-12-01T10:48:54.953Z</last-modified-date>
+                </orcid-work>
+                <orcid-work put-code="19437309" visibility="public">
+                    <work-title>
+                        <title>Remote Sensing of Rotavirus</title>
+                    </work-title>
+                    <work-citation>
+                        <work-citation-type>bibtex</work-citation-type>
+                        <citation>@article{lopesremote, title= {Remote Sensing of Rotavirus}, author= {LOPES, Pedro and LOURENCO, Pedro and TUCKER, Compton}}
+
+</citation>
+                    </work-citation>
+                    <work-type>journal-article</work-type>
+                    <source>
+                        <source-orcid>
+                            <uri>http://orcid.org/0000-0002-1663-6594</uri>
+                            <path>0000-0002-1663-6594</path>
+                            <host>orcid.org</host>
+                        </source-orcid>
+                        <source-name>Garrett, P.</source-name>
+                        <source-date>2015-10-21T10:02:56.878Z</source-date>
+                    </source>
+                    <created-date>2015-10-21T10:02:56.878Z</created-date>
+                    <last-modified-date>2015-12-01T10:48:54.953Z</last-modified-date>
+                </orcid-work>
+                <orcid-work put-code="19437308" visibility="public">
+                    <work-title>
+                        <title>On using a generalized linear model to downscale daily precipitation for the center of Portugal: an analysis of trends and extremes</title>
+                    </work-title>
+                    <journal-title>Theoretical and Applied Climatology</journal-title>
+                    <work-citation>
+                        <work-citation-type>bibtex</work-citation-type>
+                        <citation>@article{pulquerio2014using, title= {On using a generalized linear model to downscale daily precipitation for the center of Portugal: an analysis of trends and extremes}, author= {Pulqu{\'e}rio, M{\'a}rio and Garrett, Pedro and Santos, Filipe Duarte and Cruz, Maria Jo{\~a}o}, journal= {Theoretical and Applied Climatology}, volume= {120}, number= {1-2}, pages= {147--158}, year= {2014}, publisher= {Springer Vienna}}
+
+</citation>
+                    </work-citation>
+                    <work-type>journal-article</work-type>
+                    <publication-date>
+                        <year>2014</year>
+                    </publication-date>
+                    <source>
+                        <source-orcid>
+                            <uri>http://orcid.org/0000-0002-1663-6594</uri>
+                            <path>0000-0002-1663-6594</path>
+                            <host>orcid.org</host>
+                        </source-orcid>
+                        <source-name>Garrett, P.</source-name>
+                        <source-date>2015-10-21T10:02:56.873Z</source-date>
+                    </source>
+                    <created-date>2015-10-21T10:02:56.873Z</created-date>
+                    <last-modified-date>2015-12-01T10:48:54.953Z</last-modified-date>
+                </orcid-work>
+                <orcid-work put-code="19437307" visibility="public">
+                    <work-title>
+                        <title>Continental Portuguese Territory Flood Susceptibility Index--contribution for a vulnerability index</title>
+                    </work-title>
+                    <journal-title>Natural Hazards and Earth System Sciences Discussions</journal-title>
+                    <work-citation>
+                        <work-citation-type>bibtex</work-citation-type>
+                        <citation>@article{jacinto2014continental, title= {Continental Portuguese Territory Flood Susceptibility Index--contribution for a vulnerability index}, author= {Jacinto, R and Grosso, N and Reis, E and Dias, L and Santos, FD and Garrett, P}, journal= {Natural Hazards and Earth System Sciences Discussions}, volume= {2}, number= {12}, pages= {7521--7552}, year= {2014}, publisher= {Copernicus GmbH}}
+
+</citation>
+                    </work-citation>
+                    <work-type>journal-article</work-type>
+                    <publication-date>
+                        <year>2014</year>
+                    </publication-date>
+                    <source>
+                        <source-orcid>
+                            <uri>http://orcid.org/0000-0002-1663-6594</uri>
+                            <path>0000-0002-1663-6594</path>
+                            <host>orcid.org</host>
+                        </source-orcid>
+                        <source-name>Garrett, P.</source-name>
+                        <source-date>2015-10-21T10:02:56.869Z</source-date>
+                    </source>
+                    <created-date>2015-10-21T10:02:56.869Z</created-date>
+                    <last-modified-date>2015-12-01T10:48:54.953Z</last-modified-date>
+                </orcid-work>
+                <orcid-work put-code="19437306" visibility="public">
+                    <work-title>
+                        <title>STATISTICAL DOWNSCALING OF EXTREME PRECIPITATION</title>
+                    </work-title>
+                    <work-citation>
+                        <work-citation-type>bibtex</work-citation-type>
+                        <citation>@article{garrettstatistical, title= {STATISTICAL DOWNSCALING OF EXTREME PRECIPITATION}, author= {Garrett, P and Grosso, N and Dias, LF}}
+
+</citation>
+                    </work-citation>
+                    <work-type>journal-article</work-type>
+                    <source>
+                        <source-orcid>
+                            <uri>http://orcid.org/0000-0002-1663-6594</uri>
+                            <path>0000-0002-1663-6594</path>
+                            <host>orcid.org</host>
+                        </source-orcid>
+                        <source-name>Garrett, P.</source-name>
+                        <source-date>2015-10-21T10:02:56.814Z</source-date>
+                    </source>
+                    <created-date>2015-10-21T10:02:56.814Z</created-date>
+                    <last-modified-date>2015-12-01T10:48:54.953Z</last-modified-date>
+                </orcid-work>
+                <orcid-work put-code="19437305" visibility="public">
+                    <work-title>
+                        <title>Assessment of statistical downscaling methods--application and comparison of two statistical methods to a single site in Lisbon</title>
+                    </work-title>
+                    <journal-title>IOP Conference Series: Earth and Environmental Science</journal-title>
+                    <work-citation>
+                        <work-citation-type>bibtex</work-citation-type>
+                        <citation>@article{lopes2009assessment, title= {Assessment of statistical downscaling methods--application and comparison of two statistical methods to a single site in Lisbon}, author= {Lopes, Pedro}, journal= {IOP Conference Series: Earth and Environmental Science}, volume= {6}, number= {2}, pages= {022015}, year= {2009}, publisher= {IOP Publishing}}
+
+</citation>
+                    </work-citation>
+                    <work-type>journal-article</work-type>
+                    <publication-date>
+                        <year>2009</year>
+                    </publication-date>
+                    <source>
+                        <source-orcid>
+                            <uri>http://orcid.org/0000-0002-1663-6594</uri>
+                            <path>0000-0002-1663-6594</path>
+                            <host>orcid.org</host>
+                        </source-orcid>
+                        <source-name>Garrett, P.</source-name>
+                        <source-date>2015-10-21T10:02:56.341Z</source-date>
+                    </source>
+                    <created-date>2015-10-21T10:02:56.341Z</created-date>
+                    <last-modified-date>2015-12-01T10:48:54.953Z</last-modified-date>
+                </orcid-work>
+                <orcid-work put-code="19437304" visibility="public">
+                    <work-title>
+                        <title>MODIS land cover product validation in the Iberian Peninsula</title>
+                    </work-title>
+                    <journal-title>INTERNATIONAL GEOSCIENCE AND REMOTE SENSING SYMPOSIUM</journal-title>
+                    <work-citation>
+                        <work-citation-type>bibtex</work-citation-type>
+                        <citation>@article{lopes2003modis, title= {MODIS land cover product validation in the Iberian Peninsula}, author= {Lopes, P and Louren{\c{c}}o, P and Carvalhais, N and Seixas, J}, journal= {INTERNATIONAL GEOSCIENCE AND REMOTE SENSING SYMPOSIUM}, volume= {3}, pages= {III--1733}, year= {2003}}
+
+</citation>
+                    </work-citation>
+                    <work-type>journal-article</work-type>
+                    <publication-date>
+                        <year>2003</year>
+                    </publication-date>
+                    <source>
+                        <source-orcid>
+                            <uri>http://orcid.org/0000-0002-1663-6594</uri>
+                            <path>0000-0002-1663-6594</path>
+                            <host>orcid.org</host>
+                        </source-orcid>
+                        <source-name>Garrett, P.</source-name>
+                        <source-date>2015-10-21T10:02:56.336Z</source-date>
+                    </source>
+                    <created-date>2015-10-21T10:02:56.336Z</created-date>
+                    <last-modified-date>2015-12-01T10:48:54.953Z</last-modified-date>
+                </orcid-work>
+                <orcid-work put-code="19437303" visibility="public">
+                    <work-title>
+                        <title>Organic carbon dynamics in a constructed mangrove wastewater wetland populated with benthic fauna: A modelling approach</title>
+                    </work-title>
+                    <journal-title>Ecological Modelling</journal-title>
+                    <work-citation>
+                        <work-citation-type>bibtex</work-citation-type>
+                        <citation>@article{penha2012organic, title= {Organic carbon dynamics in a constructed mangrove wastewater wetland populated with benthic fauna: A modelling approach}, author= {Penha-Lopes, Gil and Flindt, Mogens R and Ommen, Bo and Kristensen, Erik and Garret, Pedro and Paula, Jos{\'e}}, journal= {Ecological Modelling}, volume= {232}, pages= {97--108}, year= {2012}, publisher= {Elsevier}}
+
+</citation>
+                    </work-citation>
+                    <work-type>journal-article</work-type>
+                    <publication-date>
+                        <year>2012</year>
+                    </publication-date>
+                    <source>
+                        <source-orcid>
+                            <uri>http://orcid.org/0000-0002-1663-6594</uri>
+                            <path>0000-0002-1663-6594</path>
+                            <host>orcid.org</host>
+                        </source-orcid>
+                        <source-name>Garrett, P.</source-name>
+                        <source-date>2015-10-21T10:02:55.893Z</source-date>
+                    </source>
+                    <created-date>2015-10-21T10:02:55.893Z</created-date>
+                    <last-modified-date>2015-12-01T10:48:54.953Z</last-modified-date>
+                </orcid-work>
+                <orcid-work put-code="19437302" visibility="public">
+                    <work-title>
+                        <title>Modelling patterns of mosquito density based on remote sensing images</title>
+                    </work-title>
+                    <journal-title>Estoril Congress Center</journal-title>
+                    <work-citation>
+                        <work-citation-type>bibtex</work-citation-type>
+                        <citation>@article{lopes2005modelling, title= {Modelling patterns of mosquito density based on remote sensing images}, author= {Lopes, P and Louren{\c{c}}o, P and Sousa, C and Novo, T and Rodrigues, J and Almeida, APG and Seixas, J}, journal= {Estoril Congress Center}, year= {2005}}
+
+</citation>
+                    </work-citation>
+                    <work-type>journal-article</work-type>
+                    <publication-date>
+                        <year>2005</year>
+                    </publication-date>
+                    <source>
+                        <source-orcid>
+                            <uri>http://orcid.org/0000-0002-1663-6594</uri>
+                            <path>0000-0002-1663-6594</path>
+                            <host>orcid.org</host>
+                        </source-orcid>
+                        <source-name>Garrett, P.</source-name>
+                        <source-date>2015-10-21T10:02:55.855Z</source-date>
+                    </source>
+                    <created-date>2015-10-21T10:02:55.855Z</created-date>
+                    <last-modified-date>2015-12-01T10:48:54.953Z</last-modified-date>
+                </orcid-work>
+                <orcid-work put-code="19437301" visibility="public">
+                    <work-title>
+                        <title>Anopheles atroparvus density modeling using MODIS NDVI in a former malarious area in Portugal</title>
+                    </work-title>
+                    <journal-title>Journal of Vector Ecology</journal-title>
+                    <work-citation>
+                        <work-citation-type>bibtex</work-citation-type>
+                        <citation>@article{lourencco2011anopheles, title= {Anopheles atroparvus density modeling using MODIS NDVI in a former malarious area in Portugal}, author= {Louren{\c{c}}o, Pedro M and Sousa, Carla A and Seixas, J{\'u}lia and Lopes, Pedro and Novo, Maria T and Almeida, A Paulo G}, journal= {Journal of Vector Ecology}, volume= {36}, number= {2}, pages= {279--291}, year= {2011}, publisher= {Wiley Online Library}}
+
+</citation>
+                    </work-citation>
+                    <work-type>journal-article</work-type>
+                    <publication-date>
+                        <year>2011</year>
+                    </publication-date>
+                    <source>
+                        <source-orcid>
+                            <uri>http://orcid.org/0000-0002-1663-6594</uri>
+                            <path>0000-0002-1663-6594</path>
+                            <host>orcid.org</host>
+                        </source-orcid>
+                        <source-name>Garrett, P.</source-name>
+                        <source-date>2015-10-21T10:02:55.847Z</source-date>
+                    </source>
+                    <created-date>2015-10-21T10:02:55.847Z</created-date>
+                    <last-modified-date>2015-12-01T10:48:54.953Z</last-modified-date>
+                </orcid-work>
+                <orcid-work put-code="19437299" visibility="public">
+                    <work-title>
+                        <title>Making adaptation decisions: the far end of the uncertainty cascade</title>
+                    </work-title>
+                    <work-citation>
+                        <work-citation-type>bibtex</work-citation-type>
+                        <citation>@article{lourenccomaking, title= {Making adaptation decisions: the far end of the uncertainty cascade}, author= {Louren{\c{c}}o, Tiago Capela and Rovisco, Ana and Groot, Annemarie and van Bree, Leendert and Street, Roger and Garrett, Pedro and Santos, Filipe Duarte}}
+
+</citation>
+                    </work-citation>
+                    <work-type>journal-article</work-type>
+                    <source>
+                        <source-orcid>
+                            <uri>http://orcid.org/0000-0002-1663-6594</uri>
+                            <path>0000-0002-1663-6594</path>
+                            <host>orcid.org</host>
+                        </source-orcid>
+                        <source-name>Garrett, P.</source-name>
+                        <source-date>2015-10-21T10:02:55.392Z</source-date>
+                    </source>
+                    <created-date>2015-10-21T10:02:55.392Z</created-date>
+                    <last-modified-date>2015-12-01T10:48:54.953Z</last-modified-date>
+                </orcid-work>
+                <orcid-work put-code="19437298" visibility="public">
+                    <work-title>
+                        <title>Statistical approach to estimate the impact of climate change on daily ozone concentrations</title>
+                    </work-title>
+                    <journal-title>International Journal of Global Warming</journal-title>
+                    <work-citation>
+                        <work-citation-type>bibtex</work-citation-type>
+                        <citation>@article{garrett2012statistical, title= {Statistical approach to estimate the impact of climate change on daily ozone concentrations}, author= {Garrett, Pedro and Casimiro, Elsa and Pulqu{\'e}rio, M{\'a}rio and Santos, Filipe Duarte}, journal= {International Journal of Global Warming}, volume= {4}, number= {3-4}, pages= {273--286}, year= {2012}, publisher= {Inderscience Publishers}}
+
+</citation>
+                    </work-citation>
+                    <work-type>journal-article</work-type>
+                    <publication-date>
+                        <year>2012</year>
+                    </publication-date>
+                    <source>
+                        <source-orcid>
+                            <uri>http://orcid.org/0000-0002-1663-6594</uri>
+                            <path>0000-0002-1663-6594</path>
+                            <host>orcid.org</host>
+                        </source-orcid>
+                        <source-name>Garrett, P.</source-name>
+                        <source-date>2015-10-21T10:02:55.366Z</source-date>
+                    </source>
+                    <created-date>2015-10-21T10:02:55.366Z</created-date>
+                    <last-modified-date>2015-12-01T10:48:54.953Z</last-modified-date>
+                </orcid-work>
+                <orcid-work put-code="19437297" visibility="public">
+                    <work-title>
+                        <title>Short-term effect of fine particulate matter (PM2. 5) and ozone on daily mortality in Lisbon, Portugal</title>
+                    </work-title>
+                    <journal-title>Environmental Science and Pollution Research</journal-title>
+                    <work-citation>
+                        <work-citation-type>bibtex</work-citation-type>
+                        <citation>@article{garrett2011short, title= {Short-term effect of fine particulate matter (PM2. 5) and ozone on daily mortality in Lisbon, Portugal}, author= {Garrett, Pedro and Casimiro, Elsa}, journal= {Environmental Science and Pollution Research}, volume= {18}, number= {9}, pages= {1585--1592}, year= {2011}, publisher= {Springer}}
+
+</citation>
+                    </work-citation>
+                    <work-type>journal-article</work-type>
+                    <publication-date>
+                        <year>2011</year>
+                    </publication-date>
+                    <source>
+                        <source-orcid>
+                            <uri>http://orcid.org/0000-0002-1663-6594</uri>
+                            <path>0000-0002-1663-6594</path>
+                            <host>orcid.org</host>
+                        </source-orcid>
+                        <source-name>Garrett, P.</source-name>
+                        <source-date>2015-10-21T10:02:55.095Z</source-date>
+                    </source>
+                    <created-date>2015-10-21T10:02:55.095Z</created-date>
+                    <last-modified-date>2015-12-01T10:48:54.953Z</last-modified-date>
+                </orcid-work>
+            </orcid-works>
+        </orcid-activities>
+    </orcid-profile>
+</orcid-message>

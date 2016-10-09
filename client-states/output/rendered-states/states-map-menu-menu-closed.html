@@ -1,0 +1,162 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>States listing</title>
+
+    <link href="/resources/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
+  
+<link href="/resources/leaflet/mapbox-2.2.1/mapbox.uncompressed.css" rel="stylesheet">
+
+<link href="/resources/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet">
+
+<link href="/states/map-menu/base-map.css" rel="stylesheet">
+</head>
+
+  <body>
+
+<div id="main-container">
+    <div id="navbar-container">
+
+<nav class="navbar navbar-default" role="navigation" style="margin-bottom: 0; z-index: 999999;">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">Rede Convergir</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+            <li style="border-left: solid; border-width: 1px; border-color: #e7e7e7; padding-left: 8px; padding-right: 8px;"><a href="//mapa">Projectos</a>
+            </li>
+            <li style="border-left: solid; border-width: 1px; border-color: #e7e7e7; padding-left: 8px; padding-right: 8px;"><a href="#" id="eventos">Eventos</a>
+            </li>
+            <li style="border-left: solid; border-right: solid;  border-color: #e7e7e7; border-width: 1px; padding-left: 8px; padding-right: 8px;"><a href="#" id="newsletter">Newsletter</a>
+            </li>
+
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Inserir<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Novo projecto</a></li>
+                    <li><a href="#">Novo evento</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            
+            <li style="border-left: solid; border-width: 1px; border-color: #e7e7e7; padding-left: 8px; padding-right: 8px;"><a href="#" id="registar">Registar</a>
+            </li>
+            <li style="border-left: solid; border-width: 1px; border-color: #e7e7e7; padding-left: 8px; padding-right: 8px;" class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Entrar&#xA0;<b class="caret"></b></a>
+                <ul class="dropdown-menu" style="padding: 15px 25px; min-width: 250px;">
+                    <li>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <form class="form" role="form" method="post" action="//loginAuthenticate">
+                                    <div class="form-group">
+                                        <label for="inputEmail">Endere&#xE7;o de email</label>
+                                        <input type="email" class="form-control" id="inputEmail" name="username" placeholder="" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputPassword">Password</label>
+                                        <input type="password" class="form-control" id="inputPassword" name="password" placeholder="" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-success btn-block">Entrar</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <input style="margin-top: 25px; margin-bottom: 10px;" class="btn btn-primary btn-block" type="button" id="sign-in-google" value="Entrar com a conta do Google">
+                        <input class="btn btn-primary btn-block" type="button" id="sign-in-facebook" value="Entrar com a conta do Facebook">
+                    </li>
+                </ul>
+            </li>
+            
+        </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+</nav>
+
+         
+    </div>
+
+     <div id="map-container">
+         <div class="row" style="height: 100%; margin: 0; padding: 0;">
+
+             <div id="map" class="col-sm-12 leaflet-container leaflet-fade-anim" style="height: 100%; margin: 0; padding: 0;" tabindex="0">
+
+
+<div class="leaflet-map-pane" style="transform: translate3d(0px, 0px, 0px);">
+    <div class="leaflet-tile-pane">
+        <div class="leaflet-layer">
+            <div class="leaflet-tile-container"></div>
+            <div class="leaflet-tile-container leaflet-zoom-animated"><img class="leaflet-tile leaflet-tile-loaded" style="height: 256px; width: 256px; left: 662px; top: 167px;" src="https://api.tiles.mapbox.com/v4/mapbox.streets/11/972/784.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6IjZjNmRjNzk3ZmE2MTcwOTEwMGY0MzU3YjUzOWFmNWZhIn0.Y8bhBaUMqFiPrDRW9hieoQ"><img class="leaflet-tile leaflet-tile-loaded" style="height: 256px; width: 256px; left: 406px; top: 167px;" src="https://api.tiles.mapbox.com/v4/mapbox.streets/11/971/784.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6IjZjNmRjNzk3ZmE2MTcwOTEwMGY0MzU3YjUzOWFmNWZhIn0.Y8bhBaUMqFiPrDRW9hieoQ"><img class="leaflet-tile leaflet-tile-loaded" style="height: 256px; width: 256px; left: 662px; top: -89px;" src="https://api.tiles.mapbox.com/v4/mapbox.streets/11/972/783.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6IjZjNmRjNzk3ZmE2MTcwOTEwMGY0MzU3YjUzOWFmNWZhIn0.Y8bhBaUMqFiPrDRW9hieoQ"><img class="leaflet-tile leaflet-tile-loaded" style="height: 256px; width: 256px; left: 662px; top: 423px;" src="https://api.tiles.mapbox.com/v4/mapbox.streets/11/972/785.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6IjZjNmRjNzk3ZmE2MTcwOTEwMGY0MzU3YjUzOWFmNWZhIn0.Y8bhBaUMqFiPrDRW9hieoQ"><img class="leaflet-tile leaflet-tile-loaded" style="height: 256px; width: 256px; left: 406px; top: -89px;" src="https://api.tiles.mapbox.com/v4/mapbox.streets/11/971/783.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6IjZjNmRjNzk3ZmE2MTcwOTEwMGY0MzU3YjUzOWFmNWZhIn0.Y8bhBaUMqFiPrDRW9hieoQ"><img class="leaflet-tile leaflet-tile-loaded" style="height: 256px; width: 256px; left: 406px; top: 423px;" src="https://api.tiles.mapbox.com/v4/mapbox.streets/11/971/785.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6IjZjNmRjNzk3ZmE2MTcwOTEwMGY0MzU3YjUzOWFmNWZhIn0.Y8bhBaUMqFiPrDRW9hieoQ"><img class="leaflet-tile leaflet-tile-loaded" style="height: 256px; width: 256px; left: 150px; top: 167px;" src="https://api.tiles.mapbox.com/v4/mapbox.streets/11/970/784.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6IjZjNmRjNzk3ZmE2MTcwOTEwMGY0MzU3YjUzOWFmNWZhIn0.Y8bhBaUMqFiPrDRW9hieoQ"><img class="leaflet-tile leaflet-tile-loaded" style="height: 256px; width: 256px; left: 918px; top: 167px;" src="https://api.tiles.mapbox.com/v4/mapbox.streets/11/973/784.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6IjZjNmRjNzk3ZmE2MTcwOTEwMGY0MzU3YjUzOWFmNWZhIn0.Y8bhBaUMqFiPrDRW9hieoQ"><img class="leaflet-tile leaflet-tile-loaded" style="height: 256px; width: 256px; left: 918px; top: 423px;" src="https://api.tiles.mapbox.com/v4/mapbox.streets/11/973/785.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6IjZjNmRjNzk3ZmE2MTcwOTEwMGY0MzU3YjUzOWFmNWZhIn0.Y8bhBaUMqFiPrDRW9hieoQ"><img class="leaflet-tile leaflet-tile-loaded" style="height: 256px; width: 256px; left: 918px; top: -89px;" src="https://api.tiles.mapbox.com/v4/mapbox.streets/11/973/783.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6IjZjNmRjNzk3ZmE2MTcwOTEwMGY0MzU3YjUzOWFmNWZhIn0.Y8bhBaUMqFiPrDRW9hieoQ"><img class="leaflet-tile leaflet-tile-loaded" style="height: 256px; width: 256px; left: 150px; top: 423px;" src="https://api.tiles.mapbox.com/v4/mapbox.streets/11/970/785.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6IjZjNmRjNzk3ZmE2MTcwOTEwMGY0MzU3YjUzOWFmNWZhIn0.Y8bhBaUMqFiPrDRW9hieoQ"><img class="leaflet-tile leaflet-tile-loaded" style="height: 256px; width: 256px; left: 150px; top: -89px;" src="https://api.tiles.mapbox.com/v4/mapbox.streets/11/970/783.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6IjZjNmRjNzk3ZmE2MTcwOTEwMGY0MzU3YjUzOWFmNWZhIn0.Y8bhBaUMqFiPrDRW9hieoQ"><img class="leaflet-tile leaflet-tile-loaded" style="height: 256px; width: 256px; left: 1174px; top: 167px;" src="https://api.tiles.mapbox.com/v4/mapbox.streets/11/974/784.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6IjZjNmRjNzk3ZmE2MTcwOTEwMGY0MzU3YjUzOWFmNWZhIn0.Y8bhBaUMqFiPrDRW9hieoQ"><img class="leaflet-tile leaflet-tile-loaded" style="height: 256px; width: 256px; left: -106px; top: 167px;" src="https://api.tiles.mapbox.com/v4/mapbox.streets/11/969/784.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6IjZjNmRjNzk3ZmE2MTcwOTEwMGY0MzU3YjUzOWFmNWZhIn0.Y8bhBaUMqFiPrDRW9hieoQ"><img class="leaflet-tile leaflet-tile-loaded" style="height: 256px; width: 256px; left: 1174px; top: -89px;" src="https://api.tiles.mapbox.com/v4/mapbox.streets/11/974/783.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6IjZjNmRjNzk3ZmE2MTcwOTEwMGY0MzU3YjUzOWFmNWZhIn0.Y8bhBaUMqFiPrDRW9hieoQ"><img class="leaflet-tile leaflet-tile-loaded" style="height: 256px; width: 256px; left: -106px; top: 423px;" src="https://api.tiles.mapbox.com/v4/mapbox.streets/11/969/785.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6IjZjNmRjNzk3ZmE2MTcwOTEwMGY0MzU3YjUzOWFmNWZhIn0.Y8bhBaUMqFiPrDRW9hieoQ"><img class="leaflet-tile leaflet-tile-loaded" style="height: 256px; width: 256px; left: -106px; top: -89px;" src="https://api.tiles.mapbox.com/v4/mapbox.streets/11/969/783.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6IjZjNmRjNzk3ZmE2MTcwOTEwMGY0MzU3YjUzOWFmNWZhIn0.Y8bhBaUMqFiPrDRW9hieoQ"><img class="leaflet-tile leaflet-tile-loaded" style="height: 256px; width: 256px; left: 1174px; top: 423px;" src="https://api.tiles.mapbox.com/v4/mapbox.streets/11/974/785.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6IjZjNmRjNzk3ZmE2MTcwOTEwMGY0MzU3YjUzOWFmNWZhIn0.Y8bhBaUMqFiPrDRW9hieoQ"></div>
+        </div>
+    </div>
+    <div class="leaflet-objects-pane">
+        <div class="leaflet-shadow-pane"></div>
+        <div class="leaflet-overlay-pane"></div>
+        <div class="leaflet-marker-pane"></div>
+        <div class="leaflet-popup-pane"></div>
+    </div>
+</div>
+<div class="leaflet-control-container" style="">
+    <div class="leaflet-top leaflet-left" style="">
+
+<div style="height: 100%"><div style="height: 95%; xborder: solid 2px; " class="menu-container leaflet-control ">
+    <div id="menu-header" style="xborder: solid red 1px; ">
+        <span id="menu-header-2" class="glyphicon glyphicon-menu-hamburger" title="click to toggle"></span>
+    </div>
+
+    
+    <div id="menu-contents" style="xborder: solid blue 1px; padding-left: 5px;" class="">
+        <div style="xpadding: 0px 0px; " id="mn-filters">
+        </div>
+        <div style="xpadding: 0px 0px; " id="mn-projects-list">
+        </div>
+    </div>
+</div>
+</div>
+    </div>
+    <div class="leaflet-top leaflet-right">
+    </div>
+    <div class="leaflet-bottom leaflet-left">
+    </div>
+    <div class="leaflet-bottom leaflet-right">
+    </div>
+</div>
+
+             </div>
+
+             <div id="map2" class="col-sm-0" style="display:none; height: 100%; margin: 0; padding: 0;">
+             </div>
+             
+         </div>
+     </div>
+
+     <div id="footer-container">
+        
+     </div>
+</div>
+
+
+    <script src="/resources/jquery/jquery-1.11.2.js"></script>
+    <script src="/resources/bootstrap/3.3.5/js/bootstrap.js"></script>
+  
+<script src="/states/map-menu/base-map.js"></script>
+</body>
+</html>

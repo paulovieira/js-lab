@@ -1,0 +1,317 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>States listing</title>
+
+    <link href="/resources/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
+  
+<link href="/resources/leaflet/mapbox-2.2.1/mapbox.uncompressed.css" rel="stylesheet">
+
+<link href="/resources/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet">
+
+<link href="/states/map-menu/base-map.css" rel="stylesheet">
+</head>
+
+  <body>
+
+<div id="main-container">
+    <div id="navbar-container" style="xborder: solid 1px;">
+
+<nav class="navbar navbar-default" role="navigation" style="margin-bottom: 0; z-index: 999999;">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">Rede Convergir</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+            <li style="border-left: solid; border-width: 1px; border-color: #e7e7e7; padding-left: 8px; padding-right: 8px;"><a href="//mapa">Projectos</a>
+            </li>
+            <li style="border-left: solid; border-width: 1px; border-color: #e7e7e7; padding-left: 8px; padding-right: 8px;"><a href="#" id="eventos">Eventos</a>
+            </li>
+            <li style="border-left: solid; border-right: solid;  border-color: #e7e7e7; border-width: 1px; padding-left: 8px; padding-right: 8px;"><a href="#" id="newsletter">Newsletter</a>
+            </li>
+
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Inserir<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Novo projecto</a></li>
+                    <li><a href="#">Novo evento</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            
+            <li style="border-left: solid; border-width: 1px; border-color: #e7e7e7; padding-left: 8px; padding-right: 8px;"><a href="#" id="registar">Registar</a>
+            </li>
+            <li style="border-left: solid; border-width: 1px; border-color: #e7e7e7; padding-left: 8px; padding-right: 8px;" class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Entrar&#xA0;<b class="caret"></b></a>
+                <ul class="dropdown-menu" style="padding: 15px 25px; min-width: 250px;">
+                    <li>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <form class="form" role="form" method="post" action="//loginAuthenticate">
+                                    <div class="form-group">
+                                        <label for="inputEmail">Endere&#xE7;o de email</label>
+                                        <input type="email" class="form-control" id="inputEmail" name="username" placeholder="" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputPassword">Password</label>
+                                        <input type="password" class="form-control" id="inputPassword" name="password" placeholder="" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-success btn-block">Entrar</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <input style="margin-top: 25px; margin-bottom: 10px;" class="btn btn-primary btn-block" type="button" id="sign-in-google" value="Entrar com a conta do Google">
+                        <input class="btn btn-primary btn-block" type="button" id="sign-in-facebook" value="Entrar com a conta do Facebook">
+                    </li>
+                </ul>
+            </li>
+            
+        </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+</nav>
+
+         
+    </div>
+
+     <div id="map-container">
+         <div class="row" style="height: 100%; margin: 0; padding: 0;">
+
+            <div style="margin-top: 20px;" id="contents">
+
+<div class="row">
+    <div class="col-sm-6 col-sm-offset-3" style="background-color: white; xborder: solid 1px; border-radius: 10px;">
+        
+        
+        
+        <h1 class="text-center">TERRA DO MILHO</h1>
+
+        
+        <img class="img-responsive img-rounded center-block" style="" ;="" xborder-color:="" #f6f6f6;"="" src="/templates/map/logos/logo.png" alt="">
+        
+
+
+        <div class="row">
+            <div class="col-sm-8">
+
+                
+                <p>
+                <span style="" class="icon-margin attribute-title"><i class="fa fa-external-link"></i></span> <a href="http://www.terradomilho.com">http://www.terradomilho.com</a> 
+                </p>
+                
+
+
+                <p>
+                <span style="" title="Pessoa de contacto" class="attribute-title icon-margin"><i class="fa fa-user"></i></span> Lu&#xED;s Stuart <br>
+
+                <span style=""><i class="fa fa-at"></i></span> <a href="mailto:joanamealhasantos@gmail.com">joanamealhasantos@gmail.com</a> <br>
+
+                
+                <span style="" title="Promotor" class="attribute-title icon-margin"><i class="fa fa-user-plus"></i></span> Sociedade Agr&#xED;cola do Freixo do Meio, S.A.  <br>
+                
+
+                </p>
+
+                <p>
+                <span style="" class="attribute-title icon-margin"><i class="fa fa-map-marker"></i></span> Estrada de Tr&#xE1;s-&#xC2;ncora, 4925 Montaria <br>
+
+
+                
+                <span style="" class="attribute-title icon-margin"><i class="fa fa-phone"></i></span> 910392122 <br>
+                
+
+                
+                <span style="" class="attribute-title icon-margin"><i class="fa fa-phone"></i></span> 913963155 <br>
+                
+                </p>
+
+            </div>
+
+            <div class="col-sm-4" style="padding-right: 40px; padding-left: 40px;">
+                <div id="project-page-map" style="height: 200px;" "=""></div>
+
+            
+
+            </div>
+        </div>
+
+        <hr style="margin-right: 25px;">
+
+        <div class="row">
+            <div class="col-sm-12">
+                <p>
+                
+                    video 
+                
+                </p>
+
+                <span class="attribute-title">Fundado em:</span> 1/1/2010
+                <br>
+
+                <span class="attribute-title">Tipo de projecto ou iniciativa:</span> Gest&#xE3;o da Terra e da Natureza
+                <br>
+
+                <span class="attribute-title">Dominios de interesse:</span>
+                <br>                
+                <div class="row" style="color: gray; font-size: 12px;">
+                    <div class="col-sm-2">
+                    </div>
+                    <div class="col-sm-5">
+
+                    <i class="fa fa-close icon-margin icon-close"></i>Agricultura<br>
+                    <i class="fa fa-check-square-o icon-margin icon-check"></i>Pecu&#xE1;ria<br>
+                    <i class="fa fa-close icon-margin icon-close"></i>Bio-Constru&#xE7;&#xE3;o<br>
+                    <i class="fa fa-close icon-margin icon-close"></i>Eco-Tecnologia<br>
+                    <i class="fa fa-check-square-o icon-margin icon-check"></i>Arte<br>
+                    <i class="fa fa-close icon-margin icon-close"></i>Educa&#xE7;&#xE3;o
+                        
+                    </div>
+                    <div class="col-sm-5">
+                        
+
+                    <i class="fa fa-close icon-margin icon-close"></i>Sa&#xFA;de<br>
+                    <i class="fa fa-close icon-margin icon-close"></i>Espiritualidade<br>
+                    <i class="fa fa-check-square-o icon-margin icon-check"></i>Economia alternativa<br>
+                    <i class="fa fa-close icon-margin icon-close"></i>Partilha de terra ou equipamentos<br>
+                    <i class="fa fa-close icon-margin icon-close"></i>Ferramentas Sociais
+
+                    </div>
+                </div>
+
+                <span class="attribute-title">Disponibilidade para visitas:</span> 
+                    
+                        Sujeito a confirma&#xE7;&#xE3;o
+                    
+                <br>
+
+                <span class="attribute-title">N&#xFA;mero de membros envolvidos no projecto:</span> 200
+                <br>
+
+                <span class="attribute-title">Projecto inserido em espa&#xE7;o:</span>
+                <br>                
+                <div class="row" style="color: gray; font-size: 12px;">
+                    <div class="col-sm-2">
+                    </div>
+                    <div class="col-sm-10">
+
+                    <i class="fa fa-close icon-margin icon-close"></i>Rural<br>
+                    <i class="fa fa-check-square-o icon-margin icon-check"></i>Urbano<br>
+                        
+                    </div>
+                </div>
+
+
+                <span class="attribute-title">Universo de acc&#xE7;&#xE3;o:</span>
+                <br>                
+                <div class="row" style="color: gray; font-size: 12px;">
+                    <div class="col-sm-2">
+                    </div>
+                    <div class="col-sm-5">
+
+                    <i class="fa fa-close icon-margin icon-close"></i>&lt; 10<br>
+                    <i class="fa fa-close icon-margin icon-close"></i>10 - 25<br>
+                    <i class="fa fa-close icon-margin icon-close"></i>25 - 50<br>
+                    <i class="fa fa-check-square-o icon-margin icon-check"></i>50 - 100<br>
+                        
+                    </div>
+
+                    <div class="col-sm-5">
+
+                    <i class="fa fa-close icon-margin icon-close"></i>100 - 500<br>
+                    <i class="fa fa-close icon-margin icon-close"></i>500 - 5000<br>
+                    <i class="fa fa-close icon-margin icon-close"></i>5000 - 10000<br>
+                    <i class="fa fa-close icon-margin icon-close"></i>&gt; 10000<br>
+                        
+                    </div>
+                </div>
+                
+
+                <span class="attribute-title">P&#xFA;blico alvo:</span>
+                <br>                
+                <div class="row" style="color: gray; font-size: 12px;">
+                    <div class="col-sm-2">
+                    </div>
+                    <div class="col-sm-5">
+
+                    <i class="fa fa-close icon-margin icon-close"></i>Crian&#xE7;as<br>
+                    <i class="fa fa-check-square-o icon-margin icon-check"></i>Adolescentes<br>
+                    <i class="fa fa-close icon-margin icon-close"></i>Adultos<br>
+                    <i class="fa fa-close icon-margin icon-close"></i>Idosos<br>
+                    <i class="fa fa-check-square-o icon-margin icon-check"></i>Fam&#xED;lias<br>
+                        
+                    </div>
+                    <div class="col-sm-5">
+                        
+
+                    <i class="fa fa-close icon-margin icon-close"></i>Pessoas com defici&#xEA;ncia<br>
+                    <i class="fa fa-close icon-margin icon-close"></i>Crian&#xE7;as com necessidades educativas especiais<br>
+                    <i class="fa fa-check-square-o icon-margin icon-check"></i>Geral<br>
+                    <i class="fa fa-close icon-margin icon-close"></i>Outro (especificar)<br>
+
+                    </div>
+                </div>
+
+                
+                <span class="attribute-title">&#xC1;rea:</span> 23 ha
+                <br>
+                
+
+                <span class="attribute-title">Descri&#xE7;&#xE3;o:</span> Tamera &#xE9; uma oficina do futuro e um ponto de encontro internacional para trabalhadores pela paz de muitas partes do mundo.<p>Tamera fica no sudoeste de Portugal, foi fundada em 1995 num terreno de 134 ha e conta actualmente com mais de 200 colaboradores e estudantes. Com o seu centro de investiga&#xE7;&#xE3;o para tecnologia energ&#xE9;tica descentralizada &#x2013; a Aldeia Solar, com a sua paisagem de lagos de permacultura no meio do Alentejo seco, com a sua arquitectura experimental de constru&#xE7;&#xF5;es leves e de terra, Tamera &#xE9; um local dedicado a experi&#xEA;ncias e forma&#xE7;&#xE3;o para a cria&#xE7;&#xE3;o de Aldeias pela Paz pelo mundo afora.</p><p>No centro do seu trabalho de investiga&#xE7;&#xE3;o encontram-se os temas interiores do ser humano: amor, sexualidade, relacionamento e comunidade. A Academia Er&#xF3;tica que se est&#xE1; a formar baseia-se em mais de 30 anos de experi&#xEA;ncia na &#xE1;rea da arte e da cura, na cria&#xE7;&#xE3;o de comunidades e na investiga&#xE7;&#xE3;o da verdade no Tema n&#xBA; 1. Tamera associa o seu trabalho de investiga&#xE7;&#xE3;o ao trabalho de rede pol&#xED;tico, a peregrina&#xE7;&#xF5;es, ac&#xE7;&#xF5;es de apoio e de paz em &#xE1;reas de crise. Tratam-se de ac&#xE7;&#xF5;es exemplares cuja finalidade &#xE9; contribuir para a comunica&#xE7;&#xE3;o e cria&#xE7;&#xE3;o de comunidades, al&#xE9;m de ajudar a preparar um campo morfogen&#xE9;tico pela paz.</p><p>Desde 2006 Tamera oferece a possibilidade a pessoas do mundo inteiro de realizarem durante v&#xE1;rios anos a forma&#xE7;&#xE3;o pela paz Monte Cerro Peace Education. Est&#xE1; em prepara&#xE7;&#xE3;o um Campus Global: uma rede mundialmente interligada de iniciativas de forma&#xE7;&#xE3;o de paz. O t&#xED;tulo para a postura fundamental &#xE9;tica de todas as actividades pela paz &#xE9; a palavra Grace, uma postura de solidariedade com todos os seres vivos, pelo perd&#xE3;o, pela ajuda m&#xFA;tua e pela orienta&#xE7;&#xE3;o de cura.</p><p>Nasceu o plano das Aldeias pela Paz, ou Bi&#xF3;topos de Cura: em conjunto com parceiros internacionais, deveriam ser constru&#xED;dos modelos de futuro em diferentes partes do mundo &#x2013; autosuficientes a n&#xED;vel regional, social- e ecologicamente sustent&#xE1;veis, independentes das grandes ind&#xFA;strias e dos sistemas centrais de fornecimento: c&#xE9;lulas germinativas de uma nova cultura pela paz.</p><p>As/Os colaboradoras/es de Tamera partem do princ&#xED;pio de que diversas destas Aldeias de Paz, com tamanho e complexidade suficientes em diferentes partes do mundo, ser&#xE3;o suficientes para que o conhecimento abrangente nelas desenvolvido origine um efeito de cura global.</p><p>A efic&#xE1;cia deste plano resulta de uma combina&#xE7;&#xE3;o l&#xF3;gica entre os resultados da investiga&#xE7;&#xE3;o do caos, holografia, ecologia profunda, investiga&#xE7;&#xE3;o da consci&#xEA;ncia e da hist&#xF3;ria. No cont&#xED;nuo infinitamente interligado do organismo Terra, uma altera&#xE7;&#xE3;o microscopicamente pequena num determinado local do planeta pode provocar um efeito que se reflecte no todo. 
+                <br>
+
+
+                
+                
+            </p></div>
+        </div>
+
+        
+        
+
+
+
+
+    </div>
+</div></div>
+
+
+         </div>
+     </div>
+
+     <div id="footer-container">
+        
+     </div>
+</div>
+
+
+
+
+
+
+    <script src="/resources/jquery/jquery-1.11.2.js"></script>
+    <script src="/resources/bootstrap/3.3.5/js/bootstrap.js"></script>
+  
+<script src="/resources/leaflet/mapbox-2.2.1/mapbox.uncompressed.js"></script>
+
+<script src="/states/map-menu/base-map.js"></script>
+</body>
+</html>

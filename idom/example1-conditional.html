@@ -1,0 +1,34 @@
+<html>
+    <head></head>
+
+    <body>
+        <div id="main"></div>
+        <!-- <script src="/lib/incremental-dom-0.3.0.js"></script> -->
+        <script src="/lib/incremental-dom-0.4.0.js"></script>
+
+        <script>
+
+        /* for 0.4.0 */
+        window.patch = IncrementalDOM.patchInner;
+        window.patchInner = IncrementalDOM.patchInner;
+        window.patchOuter = IncrementalDOM.patchOuter;
+        window.currentElement = IncrementalDOM.currentElement;
+        window.skip = IncrementalDOM.skip;
+        window.elementVoid = IncrementalDOM.elementVoid;
+        window.elementOpenStart = IncrementalDOM.elementOpenStart;
+        window.elementOpenEnd = IncrementalDOM.elementOpenEnd;
+        window.elementOpen = IncrementalDOM.elementOpen;
+        window.elementClose = IncrementalDOM.elementClose;
+        window.elementPlaceholder = IncrementalDOM.elementPlaceholder;
+        window.text = IncrementalDOM.text;
+        window.attr = IncrementalDOM.attr;
+        window.symbols = IncrementalDOM.symbols;
+        window.attributes = IncrementalDOM.attributes;
+        window.applyAttr = IncrementalDOM.applyAttr;
+        window.applyProp = IncrementalDOM.applyProp;
+        window.notifications = IncrementalDOM.notifications;
+        </script>
+
+        <script src="/example1.js"></script>
+    </body>
+</html>

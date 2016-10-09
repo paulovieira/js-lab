@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "slugg": "^1.0.0",
+    "superviews.js": "davidjamesstone/superviews.js",
+    "umd": "^3.0.1"
+  }
+}

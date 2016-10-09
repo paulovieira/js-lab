@@ -1,0 +1,16 @@
+{% if not _isReady %}
+alpha one - loading
+<p>
+{{ 'current time:' | now }}
+
+{% else %}
+
+alpha one
+<p>
+x: {{ x }}
+<p>
+y: {{ y  }}
+<p>
+{{ 'current time:' | now }}
+
+{% endif %}

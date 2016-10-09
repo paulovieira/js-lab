@@ -1,0 +1,14 @@
+{
+  "name": "spinon-client",
+  "script": "index.js",
+  "args": [
+  ],
+  "env": {
+    "NODE_ENV": "production"
+  },
+  "max_memory_restart" : "400M",
+  "treekill": true,
+  "restart_delay": 10000,
+  "out_file": "/dev/null"
+}
+

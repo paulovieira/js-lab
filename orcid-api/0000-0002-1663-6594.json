@@ -1,0 +1,148 @@
+{
+  "message-version" : "1.2",
+  "orcid-profile" : {
+    "orcid" : null,
+    "orcid-id" : null,
+    "orcid-identifier" : {
+      "value" : null,
+      "uri" : "http://orcid.org/0000-0002-1663-6594",
+      "path" : "0000-0002-1663-6594",
+      "host" : "orcid.org"
+    },
+    "orcid-deprecated" : null,
+    "orcid-preferences" : {
+      "locale" : "EN"
+    },
+    "orcid-history" : {
+      "creation-method" : "WEBSITE",
+      "completion-date" : null,
+      "submission-date" : {
+        "value" : 1384772751470
+      },
+      "last-modified-date" : {
+        "value" : 1460555591000
+      },
+      "claimed" : {
+        "value" : true
+      },
+      "source" : null,
+      "deactivation-date" : null,
+      "verified-email" : {
+        "value" : true
+      },
+      "verified-primary-email" : {
+        "value" : true
+      },
+      "visibility" : null
+    },
+    "orcid-bio" : {
+      "personal-details" : {
+        "given-names" : {
+          "value" : "Pedro",
+          "visibility" : null
+        },
+        "family-name" : {
+          "value" : "Garrett",
+          "visibility" : null
+        },
+        "credit-name" : {
+          "value" : "Garrett, P.",
+          "visibility" : "PUBLIC"
+        },
+        "other-names" : {
+          "other-name" : [ {
+            "value" : "Garrett, P."
+          }, {
+            "value" : "Lopes, P."
+          } ],
+          "visibility" : "PUBLIC"
+        }
+      },
+      "biography" : {
+        "value" : "",
+        "visibility" : "PUBLIC"
+      },
+      "researcher-urls" : {
+        "researcher-url" : [ {
+          "url-name" : {
+            "value" : "Publications"
+          },
+          "url" : {
+            "value" : "http://scholar.google.com/citations?user=PG3I01kAAAAJ&hl=pt-PT"
+          }
+        }, {
+          "url-name" : {
+            "value" : "ResearchGate"
+          },
+          "url" : {
+            "value" : "https://www.researchgate.net/profile/Pedro_Lopes23"
+          }
+        } ],
+        "visibility" : "PUBLIC"
+      },
+      "contact-details" : {
+        "email" : [ {
+          "value" : "pmagarrett@fc.ul.pt",
+          "primary" : true,
+          "current" : true,
+          "verified" : true,
+          "visibility" : "PUBLIC",
+          "source" : null,
+          "source-client-id" : null
+        } ],
+        "address" : null
+      },
+      "keywords" : {
+        "keyword" : [ {
+          "value" : "health, climate change, air pollution"
+        } ],
+        "visibility" : "PUBLIC"
+      },
+      "external-identifiers" : {
+        "external-identifier" : [ {
+          "orcid" : null,
+          "external-id-orcid" : null,
+          "external-id-common-name" : {
+            "value" : "ResearcherID"
+          },
+          "external-id-reference" : {
+            "value" : "O-8082-2015"
+          },
+          "external-id-url" : {
+            "value" : "http://www.researcherid.com/rid/O-8082-2015"
+          },
+          "external-id-source" : null,
+          "source" : {
+            "source-orcid" : {
+              "value" : null,
+              "uri" : "http://orcid.org/0000-0001-7707-4137",
+              "path" : "0000-0001-7707-4137",
+              "host" : "orcid.org"
+            },
+            "source-client-id" : null,
+            "source-name" : null,
+            "source-date" : null
+          }
+        }, {
+          "orcid" : null,
+          "external-id-orcid" : null,
+          "external-id-common-name" : {
+            "value" : "Scopus Author ID"
+          },
+          "external-id-reference" : {
+            "value" : "37461306200"
+          },
+          "external-id-url" : {
+            "value" : "http://www.scopus.com/inward/authorDetails.url?authorID=37461306200&partnerID=MN8TOARS"
+          },
+          "external-id-source" : null,
+          "source" : {
+            "source-orcid" : {
+              "value" : null,
+              "uri" : "http://orcid.org/0000-0002-5982-8983",
+              "path" : "0000-0002-5982-8983",
+              "host" : "orcid.org"
+            },
+            "source-client-id" : null,
+            "source-name" : null,
+            "source

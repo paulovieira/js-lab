@@ -1,0 +1,12 @@
+{
+  "name": "hapi_views",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "BSD",
+  "dependencies": {
+    "glue": "2.2.x",
+    "hoek": "2.x.x",
+    "nunjucks": "^2.3.0",
+    "vision": "3.0.x"
+  }
+}

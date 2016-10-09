@@ -1,0 +1,65 @@
+{
+    "description": "base leaflet map (has the tiles and the control for the menu)",
+    "tree": {
+        "state": "states/map-menu/base-map.json",
+        "children": [
+
+
+
+            {
+
+                /* 
+                    view with main layout for the menu (top container + container
+                    for the header (icon) + container for the contents;
+                    this is the view given to the Control.BackboneView;
+                    when the menu is opened we have to add the "menuOpen" class
+                */
+                "template": "templates/map/menu-main-layout.html",
+                "ctx": {
+                    "menuOpen": true
+                },
+                "insertIn": ".leaflet-top.leaflet-left",
+                "container": "<div style='height: 100%'>",
+                "children": [
+
+                
+                    {
+                /*      
+                        view with the options and filters (sort by date, etc)
+                  */
+
+                        "template": "templates/map/filters.html",
+                        "insertIn": "#mn-filters",
+                        "container": "<div style='padding-top: 5px'>",
+                        "children": [
+
+                        ]                            
+
+                    },
+
+                    {
+                        /*
+                        collection view with the projects list
+                        */
+
+                        "template": "templates/map/projects-list.html",
+                        "insertIn": "#mn-projects-list",
+                        "container": "<div style='padding-top: 5px; padding-right: 15px;'>",
+                        "children": [
+
+                        ]                            
+
+                    }
+
+                ]                            
+            }
+        ]
+    },
+
+    // note: the scripts included in the base-map state will also be included in this
+    // script (before the ones below)
+    "scripts": [
+        "/states/map-menu/menu-open.js", 
+    ]
+}
+

@@ -1,0 +1,1 @@
+Some quick experiments with javascript that might be useful later.

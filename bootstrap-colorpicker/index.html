@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link href="lib/bootstrap-colorpicker-2.2.0/css/bootstrap-colorpicker.css" rel="stylesheet">
+    <style>
+    .colorpicker-2x .colorpicker-saturation {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .colorpicker-2x .colorpicker-hue,
+    .colorpicker-2x .colorpicker-alpha {
+        width: 30px;
+        height: 150px;
+    }
+    
+    .colorpicker-2x .colorpicker-color,
+    .colorpicker-2x .colorpicker-color div {
+        height: 30px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4 col-sm-offset-1" style="margin-top: 20px; border: 1px solid;">
+                <input type="text" id="js-color-picker" class="my-color-picker" value="#5367ce" />
+                <input type="text" id="js-color-picker" class="my-color-picker" value="#333" />
+            </div>
+        </div>
+    </div>
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="lib/bootstrap-colorpicker-2.2.0/js/bootstrap-colorpicker.js"></script>
+    <script src="colorpicker-demo.js"></script>
+</body>
+
+</html>

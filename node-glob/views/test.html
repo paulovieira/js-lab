@@ -1,0 +1,31 @@
+{#  NOTE: lang is a global variable #}
+{% extends "layouts/default.html"          %}
+{% from "macros/navigation.html" import navigation %}
+
+{% block title %}{{ ctx.texts[15][lang] }} - sectores{% endblock %} 
+
+
+{% block navigation %}
+
+{{ navigation(ctx) }}
+
+{% endblock %}
+
+{% block content %}
+
+<div class="row">
+    <div class="col-sm-12 text-center">
+		<h1 id="xxx">test</h1>
+    </div>
+</div>
+
+
+
+{% endblock %}
+
+
+
+{% block scripts %}
+	<script src="/test/lib.js"></script>
+	<script src="/test/app.js"></script>
+{% endblock %}

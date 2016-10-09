@@ -1,0 +1,20 @@
+{
+    "description": "state 3 description",
+    "tree": {
+        "template": "templates/abc/name.html",
+        "insertIn": "body",
+        "children": [
+            {
+                "template": "templates/xyz/greeting-collection.html",
+                "insertIn": "#container-a1",
+                "container": "<ul>",
+                "children": [
+                    {
+                        "template": "templates/abc/name-again.html",
+                        "insertIn": ".container-c1"
+                    }
+                ]
+            }
+        ]
+    }
+}

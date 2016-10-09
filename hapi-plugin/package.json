@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "hapi": "^9.5.1",
+    "json-loader": "^0.5.4"
+  }
+}

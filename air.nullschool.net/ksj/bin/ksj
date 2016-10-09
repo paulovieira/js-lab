@@ -1,0 +1,34 @@
+#!/usr/bin/env node
+
+// Before starting, the topojson library/command is required:
+//     npm install -g topojson
+
+// ./ksj -c ../../scratch/N03-110331_13.xml ../../scratch/tokyo-raw.json
+// ./ksj -t ../../scratch/tokyo-raw.json ../../scratch/main.json
+// topojson --bbox -o ../../scratch/tokyo-topo.json ../../scratch/main.json
+// cp ../../scratch/tokyo-topo.json ../../public
+
+var fs = require("fs");
+var when = require("when");
+var ksj = require("../ksj");
+
+function write(file, data) {
+    var d = when.defer();
+    fs.writeFile(file, data, function(error) {
+        if (error) {
+            return d.reject(error);
+        }
+        d.resolve(true);
+    });
+    return d.promise;
+}
+
+if (process.argv[2] === "-c") {
+    ksj.convertToJSON(process.argv[3]).then(write.bind(null, process.argv[4]));
+}
+else if (process.argv[2] === "-t") {
+    when(ksj.convertToGeoJSON(require(process.argv[3]))).then(write.bind(null, process.argv[4]));
+}
+else {
+    console.log("wrong.");
+}

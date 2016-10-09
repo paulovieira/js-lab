@@ -1,0 +1,27 @@
+
+Temperatura mínima
+Temperatura média
+Temperatura máxima
+Humidade relativa mínima
+Humidade relativa máxima
+Precipitação
+
+
+
+
+4.5_2070-2099 rain_sum_anomalia
+4.5_2070-2099 rhmax_annual_anomalia
+4.5_2070-2099 rhmin_annual_anomalia
+4.5_2070-2099 tmax_annual_anomalia
+4.5_2070-2099 tmed_annual_anomalia
+4.5_2070-2099 tmin_annual_anomalia
+
+
+
+
+Temperatura média - anomalia (mm/ano), RCP4.5 2010-2039
+Temperatura média - anomalia (mm/ano), RCP4.5 2040-2069
+Temperatura média - anomalia (mm/ano), RCP4.5 2070-2099
+
+
+Temperatura média - anomalia: {{{value}}} (ºC)

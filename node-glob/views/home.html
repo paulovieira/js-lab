@@ -1,0 +1,290 @@
+{#  NOTE: lang is a global variable #}
+{% extends "layouts/default.html"          %}
+
+
+{% from "macros/sector-box.html" import sectorBox %}
+{#
+  {% from "macros/grupo.html"  import grupo  %}  #}
+
+
+
+
+{% block content %}
+
+
+
+
+{#############################################################  
+
+LANDING PAGE
+
+The landing page has 3 main sections
+
+1) Header: logo, main menu, search, login button
+
+2) Informações para diferentes grupos: público em geral, técnicos, investigadores
+
+3) Informação sectorial
+
+#############################################################} 
+ 
+
+	{#  ---------------------------------------  HEADER  ---------------------------------------  #} 
+
+
+	{% include "includes/header-home.html" %}  
+
+
+
+	{#  ---------------------------------------  /HEADER  ---------------------------------------  #} 
+
+
+
+	{#  ---------------------------------------  INFORMACOES PARA  ---------------------------------------  #} 
+
+{#
+	<div class="row" style="padding: 20px 0px 80px 0px; margin-top: 1px; border-width: 1px 0px 1px 0px; border-style: solid; border-bottom-color: #ddd; border-top-color: #ddd;">
+
+		<div class="col-sm-12 col-md-10 col-md-offset-1" style="margin-bottom: 20px;">
+			<h2 class="text-center">
+				{{ ctx.texts[1][lang] }}
+			</h2>
+		</div>
+
+		<div class="col-sm-4 xcol-sm-offset-2 informacoes-left" style="xborder: 1px solid #c5c5c5; xpadding: 0px 60px 0px 120px;">
+			{{ grupo(
+				ctx.texts[1][lang], 
+				ctx.texts[1][lang], 
+				ctx.texts[1][lang], 
+				ctx.texts[1][lang], 
+				ctx) 
+			}}   
+		</div>
+
+		<div class="col-sm-4 xcol-sm-offset-1 informacoes-center" style="xborder: 1px solid #c5c5c5; xpadding: 0px 90px 0px 90px;">
+			{{ grupo(
+				ctx.texts[1][lang], 
+				ctx.texts[1][lang], 
+				ctx.texts[1][lang], 
+				ctx.texts[1][lang], 
+				ctx) 
+			}}   
+		</div>
+
+		<div class="col-sm-4 xcol-sm-offset-1 informacoes-right" style="xborder: 1px solid #c5c5c5; xpadding: 0px 120px 0px 60px;">
+			{{ grupo(
+				ctx.texts[1][lang], 
+				ctx.texts[1][lang], 
+				ctx.texts[1][lang], 
+				ctx.texts[1][lang], 
+				ctx) 
+			}}   
+		</div>
+
+	</div>
+#}
+
+	{#  ---------------------------------------  /INFORMACOES PARA  ---------------------------------------  #} 
+
+
+
+	{#  ---------------------------------------  SECTORES  ---------------------------------------  #} 
+
+	<div class="row xblue-triangles" style="margin-top: 1px; xmargin-bottom: 120px; border-width: 0px 0px 1px 0px; border-style: solid; white; border-bottom-color: white;">
+{#
+		<div class="col-sm-12 text-center" style="margin: 30px 0px 30px 0px;">
+			<h1 class="sector-main-title">{{ ctx.texts[1][lang] | upper }}</h1>
+
+		</div>
+#}
+
+
+
+
+<!-- 		<div class="col-sm-12" style="margin: 60px 0px 30px 0px; xborder: 1px solid #c5c5c5; xpadding: 0px 200px 0px 200px;">
+
+			<div class="row" style="">
+
+ -->
+ 			<div style="margin: 60px 0px 30px 0px">
+				<div class="col-sm-6 col-md-4" style="xborder: 1px solid red; padding: 0px 30px 0px 60px;">
+
+					<div class="row" style="">
+
+
+
+{% 
+set biodiversidadeBoxData = {
+    title: 508,
+    sectorDesc: 35,
+    sectorImg: 57,
+    sectorPath: "sectores/biodiversidade"
+}
+%}
+
+{% 
+set turismoBoxData = {
+    title: 514,
+    sectorDesc: 47,
+    sectorImg: 60,
+    sectorPath: "sectores/turismo"
+}
+
+%}
+
+{% 
+set qualidadeDisponibilidadeAguaBoxData = {
+    title: 529,
+    sectorDesc: 97,
+    sectorImg: 100,
+    sectorPath: "sectores/qualidade-disponibilidade-agua"
+}
+%}
+
+						<div class="col-sm-12" style="xborder: 1px solid red; xpadding: 0px 200px 0px 200px; margin-bottom: 50px;">
+		    				{{ sectorBox(ctx, biodiversidadeBoxData) }} 
+    					</div>
+
+ 						<div class="col-sm-12" style="xborder: 1px solid red; xpadding: 0px 200px 0px 200px; margin-bottom: 50px;">
+		    				{{ sectorBox(ctx, turismoBoxData) }} 
+    					</div>
+						<div class="col-sm-12" style="xborder: 1px solid red; xpadding: 0px 200px 0px 200px; margin-bottom: 50px;">
+		    				{{ sectorBox(ctx, qualidadeDisponibilidadeAguaBoxData) }} 
+    					</div> 
+
+    				</div>
+
+				</div>
+
+
+				<div class="col-sm-6 col-md-4" style="xborder: 1px solid blue; padding: 0px 45px 0px 45px;">
+
+					<div class="row" style="">
+
+{% 
+set energiaBoxData = {
+    title: 517,
+    sectorDesc: 55,
+    sectorImg: 62,
+    sectorPath: "sectores/energia"
+}
+%}
+
+{% 
+set agriculturaFlorestasBoxData = {
+    title: 505,
+    sectorDesc: 51,
+    sectorImg: 61,
+    sectorPath: "sectores/agricultura-florestas"
+}
+
+%}
+
+{% 
+set climaBoxData = {
+    title: 526,
+    sectorDesc: 51,
+    sectorImg: 101,
+    sectorPath: "sectores/clima"
+}
+%}
+
+						<div class="col-sm-12" style="xborder: 1px solid red; xpadding: 0px 200px 0px 200px; margin-bottom: 50px;">
+		    				{{ sectorBox(ctx, energiaBoxData) }} 
+    					</div>
+						<div class="col-sm-12" style="xborder: 1px solid red; xpadding: 0px 200px 0px 200px; margin-bottom: 50px;">
+		    				{{ sectorBox(ctx, agriculturaFlorestasBoxData) }} 
+    					</div>
+
+						<div class="col-sm-12" style="xborder: 1px solid red; xpadding: 0px 200px 0px 200px; margin-bottom: 50px;">
+		    				{{ sectorBox(ctx, climaBoxData) }} 
+    					</div> 
+
+    				</div>
+    				
+				</div>
+
+
+				<div class="col-sm-6 col-md-4" style="xborder: 1px solid orange; padding: 0px 60px 0px 30px;">
+
+					<div class="row" style="">
+
+{% 
+set saudeBoxData = {
+    title: 511,
+    sectorDesc: 43,
+    sectorImg: 59,
+    sectorPath: "sectores/saude"
+}
+%}
+
+{% 
+set riscoHidrologicoBoxData = {
+    title: 520,
+    sectorDesc: 39,
+    sectorImg: 58,
+    sectorPath: "sectores/risco-hidrologico"
+}
+
+%}
+
+{% 
+set adaptacaoBoxData = {
+    title: 523,
+    sectorDesc: 99,
+    sectorImg: 102,
+    sectorPath: "sectores/adaptacao"
+}
+%}
+
+
+ 						<div class="col-sm-12" style="xborder: 1px solid red; xpadding: 0px 200px 0px 200px; margin-bottom: 50px;">
+		    				{{ sectorBox(ctx, saudeBoxData) }} 
+    					</div>
+
+						<div class="col-sm-12" style="xborder: 1px solid red; xpadding: 0px 200px 0px 200px; margin-bottom: 50px;">
+		    				{{ sectorBox(ctx, riscoHidrologicoBoxData) }} 
+    					</div>
+
+						<div class="col-sm-12" style="xborder: 1px solid red; xpadding: 0px 200px 0px 200px; margin-bottom: 50px;">
+		    				{{ sectorBox(ctx, adaptacaoBoxData) }} 
+    					</div> 
+
+    				</div>
+
+				</div>
+			</div>
+
+
+
+
+<!-- 			</div>
+
+
+		</div> -->
+{# #}
+
+
+	</div>
+
+	{#  ---------------------------------------  /SECTORES  ---------------------------------------  #} 
+
+
+
+
+
+
+{% endblock %}
+
+
+
+{% block scripts %}
+
+
+    <script type="text/javascript">
+        window.Clima = window.Clima || {};
+        Clima.lang = "{{ lang }}";
+        Clima.texts  = {{ ctx.textsArray | stringify }};
+    </script>
+
+{% endblock %}

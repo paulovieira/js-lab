@@ -1,0 +1,257 @@
+{% extends "layouts/general-page.html"          %}
+
+{% block title %}{{ ctx.texts[15][lang] }} - login{% endblock %} 
+
+
+{% block mainColumnContent %}
+
+<div class="row" style="margin-top: 60px; margin-bottom: 40px;">
+    <div class="col-sm-6 col-sm-offset-3">
+
+        <div class="row">
+            <div class="col-sm-offset-3 col-sm-9 col-md-offset-2 col-md-10">
+
+                {# 
+                After the username/pw have been submitted, if there are errors, it will redirect to the login page again, showing the form + error message 
+
+                Possible errors: 
+                2 - "missing username or password" (won't even connect to the DB) 
+                3 - "username does not exist" 
+                4 - "wrong password" (username exists but password doesn't match) 
+
+                The error code (if any) is available in ctx.lfr ("login fail reason") 
+                #} 
+
+                {% if ctx.lfr == 2 %}
+                <div class="alert alert-danger text-center" style="margin-bottom: 30px;" role="alert">
+                <strong>{{ ctx.texts[75][lang] }}
+                    </strong>
+                </div>
+                {% elif ctx.lfr == 3 %}
+                <div class="alert alert-danger text-center" style="margin-bottom: 30px;" role="alert">
+                    <strong>{{ ctx.texts[76][lang] }}</strong>
+                </div>
+                {% elif ctx.lfr == 4 %}
+                <div class="alert alert-danger text-center" style="margin-bottom: 30px;" role="alert">
+                    <strong>{{ ctx.texts[77][lang] }}</strong>
+                </div>
+                {% endif %}
+
+                <h4 class="text-center">
+					<span class="is-editable" data-text-id="70">{{ ctx.texts[70][lang] }}</span>
+				</h4>
+
+            </div>
+        </div>
+
+
+        <!-- .form-horizontal will align labels and groups of form controls in a horizontal layout  -->
+        <form class="form-horizontal" style="margin-top: 30px;" role="form" method="post" action="/{{ lang }}/loginAuthenticate">
+
+            <div class="form-group">
+                <label for="inputEmail" class="col-sm-3 col-lg-2 control-label">
+                    <span class="is-editable" data-text-id="71">{{ ctx.texts[71][lang] }}</span>
+                </label>
+                <div class="col-sm-9 col-lg-10">
+                    <input type="email" class="form-control" id="inputEmail" name="username" placeholder="">
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <label for="inputPassword" class="col-sm-3 col-lg-2 control-label">
+                    <span class="is-editable" data-text-id="72">{{ ctx.texts[72][lang] }}</span>
+                </label>
+                <div class="col-sm-9 col-lg-10">
+                    <input type="password" class="form-control" id="inputPassword" name="password" placeholder="">
+                </div>
+            </div>
+
+            <div class="form-group" style="margin-top: 30px;">
+                <div class="col-sm-offset-3 col-sm-9 col-lg-offset-2 col-lg-10">
+                    <input type="submit" class="btn btn-primary btn-block" value="{{ ctx.texts[74][lang] }}" xstyle="padding-left: 25px; padding-right: 25px;">
+                </div>
+            </div>
+
+        </form>
+
+        {% if ctx.lfr != 3 %}
+        <div class="row" style="margin: 20px 0px 20px 0px;">
+            <div class="col-sm-offset-3 col-sm-9 col-md-offset-2 col-md-10 text-center">
+                <small>
+					<a href="#" data-toggle="modal" data-target="#modal-recover-pw">
+						{{ ctx.texts[73][lang] }}
+					</a>
+				</small>
+            </div>
+        </div>
+        {% endif %}
+
+{#
+        <div class="row" style="margin: 0px 0px 50px 0px;">
+            <div class="col-sm-offset-3 col-sm-9 col-md-offset-2 col-md-10 text-center">
+                <a href="/{{ lang }}">
+                    <h4><span class="is-editable" data-text-id="78">{{ ctx.texts[78][lang] }}</span></h4>
+                </a>
+            </div>
+        </div>
+#}
+    </div>
+</div>
+
+
+{# TODO - move the modal html to an include? #}
+
+<div class="modal fade" id="modal-recover-pw" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title">{{ ctx.texts[89][lang] }}</h4>
+            </div>
+            <div class="modal-body">
+
+                {{ ctx.texts[86][lang] }}
+
+                <div class="row" style="margin-top: 25px;">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <form>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email" placeholder="{{ ctx.texts[87][lang] }}">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3" style="text-align: center;">
+                        <button id="btn-recover-pw" class="btn btn-primary btn-block" href="/{{ lang }}" role="button">{{ ctx.texts[88][lang] }}</button>
+                    </div>
+                </div>
+
+                <div id="message-status" style="margin-top: 35px;"></div>
+                <div id="" style="margin-top: 10px;"><h5 id="message-links"></h5></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %} 
+
+
+{% block scripts %}
+
+{#
+<script src="/common/js/jquery-1.11.2.js"></script>
+<script src="/common/js/bootstrap-3.3.2.js"></script>
+#}
+
+<script src="/common/js/q-1.1.2.js"></script>
+
+
+{% set jquery_is_loaded = true %}
+{% set q_is_loaded      = true %}
+
+
+<script type="text/javascript">
+
+Clima.ajaxOptions = {
+    url: "",
+    type: "GET"
+};
+
+Clima.baseUrl = "/api/users/recover/";
+Clima.minCharacters = 3;
+Clima.artificialDelay = 700;
+
+
+$("#btn-recover-pw").on("click", function(e){
+    debugger;
+    e.preventDefault();
+
+    var $this = $(this),
+    	emailAddress = $("#email").val().trim();
+
+    if(emailAddress === ""){
+        alert("{{ ctx.texts[91][lang] }}");
+        return;
+    }
+
+    Clima.ajaxOptions.url = Clima.baseUrl + emailAddress;
+
+
+{#  
+    function getPromise(){
+        var deferred = Q.defer();
+
+        setTimeout(function(){
+            deferred.resolve("ok");
+            //deferred.reject(new Error("xxx"));
+        }, 1000);
+
+        return deferred.promise;
+    }
+#}
+    Q.all([$.ajax(Clima.ajaxOptions), Q.delay(Clima.artificialDelay)])
+    //Q.all([getPromise()])
+    .done(
+        function(resp){
+
+			var mandrillstatus = resp[0].status.toLowerCase();
+
+        	debugger;
+            // change text with the the success message; the button will still be disabled
+            $this.html("Terminado!");
+
+            if(mandrillstatus==="sent"){
+            	$("#message-status").addClass("text-left").html("O seu pedido foi processado. Dentro de minutos irá receber um email com o link de recuparação.");
+            }
+            else{
+				$("#message-status").addClass("text-left").html("O seu pedido foi processado mas o envio do email com o link de recuparação poderá demorar algum tempo.");
+            }
+
+            $("#message-links").addClass("text-center").html("Regressar à <a href='/{{ lang }}'>página de entrada</a>.");
+        }, 
+        function(err){
+        	debugger;
+        	if(err.status === 400){
+        		$("#message-status").addClass("text-left").html("O endereço de email não está no formato correcto. Tente novamente.");
+        		$this.removeClass("disabled").html("{{ ctx.texts[88][lang] }}");
+        		return;
+        	}
+
+        	if(err.status === 404){
+        		$("#message-status").addClass("text-left").html("Este endereço de email não está registado na plataforma. Tente novamente.");
+        		$this.removeClass("disabled").html("{{ ctx.texts[88][lang] }}");
+        		return;
+        	}
+
+            $this.removeClass("btn-primary").addClass("btn-danger").html("Erro!");
+            $("#message-status").addClass("text-left").html("Ocorreu um erro no processamento do seu pedido. Por favor tente novamente mais tarde.");
+           	$("#message-links").addClass("text-center").html("Regressar à <a href='/{{ lang }}'>página de entrada</a>.");
+        }
+    );
+
+    // immediately after the button has been clicked, disable the button
+    $this.addClass("disabled").html("{{ ctx.texts[90][lang] }}");
+});
+
+
+$("#modal-recover-pw").on("show.bs.modal", function resetModal(e){
+	// reset the state of the input and button in the modal (it might have been changed if the user opened the modal before)
+	$("#btn-recover-pw").removeClass("btn-danger disabled").addClass("btn-primary").html("{{ ctx.texts[88][lang] }}");
+	$("#email").val("");
+	$("#message-status").html("");
+	$("#message-links").html("");
+});
+
+</script>
+
+
+
+{% endblock %}
+

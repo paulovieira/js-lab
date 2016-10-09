@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "backbone.radio": "x.x.x",
+    "htmlparser2": "^3.9.0",
+    "js-beautify": "^1.6.2",
+    "underscore": "^1.8.3",
+    "underscore.string": "^3.3.4"
+  }
+}

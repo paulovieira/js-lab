@@ -1,0 +1,342 @@
+# -------------------------------
+# MapProxy example configuration.
+# -------------------------------
+#
+# start the dev server: mapproxy-util serve-develop mapproxy.yaml --bind=localhost:8081
+#
+# Will starts the following services:
+# Demo:
+#     http://localhost:8080/demo
+# WMS:
+#     capabilities: http://localhost:8080/service?REQUEST=GetCapabilities
+
+
+
+services:
+  demo:
+  wms:
+    md:
+      title: WMS test
+
+sources:
+
+  # COS - carta de ocupacao do solo
+  COS_SMG:
+    type: wms
+    req:
+      url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMG/MapServer/WMSServer
+      layers: 153
+      transparent: true
+
+  COS_SMA:
+      type: wms
+      req:
+        url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMA/MapServer/WMSServer
+        layers: 59
+        transparent: true
+
+  COS_TER:
+      type: wms
+      req:
+        url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_TER/MapServer/WMSServer
+        layers: 58
+        transparent: true
+
+  COS_FAI:
+      type: wms
+      req:
+        url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_FAI/MapServer/WMSServer
+        layers: 61
+        transparent: true
+
+  COS_PIC:
+      type: wms
+      req:
+        url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_PIC/MapServer/WMSServer
+        layers: 139
+        transparent: true
+
+  COS_SJO:
+      type: wms
+      req:
+        url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SJO/MapServer/WMSServer
+        layers: 65
+        transparent: true
+
+  # COS_GRA:
+  #     type: wms
+  #     req:
+  #       url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_GRA/MapServer/WMSServer
+  #       layers: xxx
+  #       transparent: true
+
+  COS_FLO:
+      type: wms
+      req:
+        url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_FLO/MapServer/WMSServer
+        layers: 60
+        transparent: true
+
+  COS_COR:
+      type: wms
+      req:
+        url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_COR/MapServer/WMSServer
+        layers: 61
+        transparent: true
+
+
+  # areas classificadas
+  AC_SMG:
+    type: wms
+    req:
+      url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMG/MapServer/WMSServer
+      layers: 152
+      transparent: true
+
+  AC_SMA:
+      type: wms
+      req:
+        url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMA/MapServer/WMSServer
+        layers: 58
+        transparent: true
+
+  AC_TER:
+      type: wms
+      req:
+        url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_TER/MapServer/WMSServer
+        layers: 57
+        transparent: true
+
+  AC_FAI:
+      type: wms
+      req:
+        url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_FAI/MapServer/WMSServer
+        layers: 60
+        transparent: true
+
+  AC_PIC:
+      type: wms
+      req:
+        url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_PIC/MapServer/WMSServer
+        layers: 138
+        transparent: true
+
+  AC_SJO:
+      type: wms
+      req:
+        url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SJO/MapServer/WMSServer
+        layers: 64
+        transparent: true
+
+  # AC_GRA:
+  #     type: wms
+  #     req:
+  #       url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_GRA/MapServer/WMSServer
+  #       layers: xxx
+  #       transparent: true
+
+  AC_FLO:
+      type: wms
+      req:
+        url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_FLO/MapServer/WMSServer
+        layers: 59
+        transparent: true
+
+  AC_COR:
+      type: wms
+      req:
+        url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_COR/MapServer/WMSServer
+        layers: 60
+        transparent: true
+
+  # hidrografia (elementos de referência)
+  HIDRO_SMG:
+    type: wms
+    req:
+      url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMG/MapServer/WMSServer
+      layers: 146
+      transparent: true
+
+  HIDRO_SMA:
+      type: wms
+      req:
+        url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMA/MapServer/WMSServer
+        layers: 52
+        transparent: true
+
+  HIDRO_TER:
+      type: wms
+      req:
+        url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_TER/MapServer/WMSServer
+        layers: 51
+        transparent: true
+
+  HIDRO_FAI:
+      type: wms
+      req:
+        url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_FAI/MapServer/WMSServer
+        layers: 54
+        transparent: true
+
+  HIDRO_PIC:
+      type: wms
+      req:
+        url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_PIC/MapServer/WMSServer
+        layers: 132
+        transparent: true
+
+  HIDRO_SJO:
+      type: wms
+      req:
+        url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SJO/MapServer/WMSServer
+        layers: 58
+        transparent: true
+
+  # HIDRO_GRA:
+  #     type: wms
+  #     req:
+  #       url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_GRA/MapServer/WMSServer
+  #       layers: xxx
+  #       transparent: true
+
+  HIDRO_FLO:
+      type: wms
+      req:
+        url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_FLO/MapServer/WMSServer
+        layers: 53
+        transparent: true
+
+  HIDRO_COR:
+      type: wms
+      req:
+        url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_COR/MapServer/WMSServer
+        layers: 54
+        transparent: true
+
+
+  # edificado (elementos de referência)
+  EDIFICADO_SMG:
+    type: wms
+    req:
+      url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMG/MapServer/WMSServer
+      layers: 148
+      transparent: true
+
+  EDIFICADO_SMA:
+      type: wms
+      req:
+        url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMA/MapServer/WMSServer
+        layers: 54
+        transparent: true
+
+  EDIFICADO_TER:
+      type: wms
+      req:
+        url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_TER/MapServer/WMSServer
+        layers: 53
+        transparent: true
+
+  EDIFICADO_FAI:
+      type: wms
+      req:
+        url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_FAI/MapServer/WMSServer
+        layers: 56
+        transparent: true
+
+  EDIFICADO_PIC:
+      type: wms
+      req:
+        url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_PIC/MapServer/WMSServer
+        layers: 134
+        transparent: true
+
+  EDIFICADO_SJO:
+      type: wms
+      req:
+        url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SJO/MapServer/WMSServer
+        layers: 60
+        transparent: true
+
+  # EDIFICADO_GRA:
+  #     type: wms
+  #     req:
+  #       url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_GRA/MapServer/WMSServer
+  #       layers: xxx
+  #       transparent: true
+
+  EDIFICADO_FLO:
+      type: wms
+      req:
+        url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_FLO/MapServer/WMSServer
+        layers: 55
+        transparent: true
+
+  EDIFICADO_COR:
+      type: wms
+      req:
+        url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_COR/MapServer/WMSServer
+        layers: 55
+        transparent: true
+
+# mbtiles stores tiles in the TMS scheme, so we need to flip the y coordinate 
+grids:
+  GLOBAL_WEBMERCATOR_TMS:
+    base: GLOBAL_WEBMERCATOR
+    origin: ll
+
+caches:
+  COS:
+    sources: [COS_SMG, COS_SMA, COS_TER, COS_FAI, COS_PIC, COS_SJO, COS_FLO, COS_COR]
+    grids: [GLOBAL_WEBMERCATOR_TMS]
+    cache:
+      type: file
+      directory_layout: tms
+      #type: mbtiles
+
+  AC:
+    sources: [AC_SMG, AC_SMA, AC_TER, AC_FAI, AC_PIC, AC_SJO, AC_FLO, AC_COR]
+    grids: [GLOBAL_WEBMERCATOR_TMS]
+    cache:
+      type: file
+      directory_layout: tms
+      #type: mbtiles
+
+  HIDRO:
+    sources: [HIDRO_SMG, HIDRO_SMA, HIDRO_TER, HIDRO_FAI, HIDRO_PIC, HIDRO_SJO, HIDRO_FLO, HIDRO_COR]
+    grids: [GLOBAL_WEBMERCATOR_TMS]
+    cache:
+      type: file
+      directory_layout: tms
+      #type: mbtiles
+
+  EDIFICADO:
+    sources: [EDIFICADO_SMG, EDIFICADO_SMA, EDIFICADO_TER, EDIFICADO_FAI, EDIFICADO_PIC, EDIFICADO_SJO, EDIFICADO_FLO, EDIFICADO_COR]
+    grids: [GLOBAL_WEBMERCATOR_TMS]
+    cache:
+      type: file
+      directory_layout: tms
+      #type: mbtiles
+
+# layers:
+#   - name: COS_name
+#     title: COS_title
+#     sources: [COS_SMG, COS_SMA, COS_TER, COS_FAI, COS_PIC, COS_SJO, COS_FLO, COS_COR]
+
+
+globals:
+#  image:
+#    resampling_method: bicubic
+  cache:
+    # this value for meta_size doesn't work
+    #meta_size: [8, 8]
+
+    # a larger meta_buffer helps solving the problem of cutted labels
+    meta_buffer: 256
+
+
+
+
+
+
+
+

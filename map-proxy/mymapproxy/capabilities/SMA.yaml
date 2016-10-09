@@ -1,0 +1,1002 @@
+# MapProxy configuration automatically generated from:
+#   http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMA/MapServer/WMSServer
+#
+# NOTE: The generated configuration can be highly inefficient,
+#       especially when multiple layers and caches are requested at once.
+#       Make sure you understand the generated configuration!
+#
+# Created on 2016-05-02 17:32:19.617695 with:
+# /usr/local/bin/mapproxy-util autoconfig --capabilities http://sig- \
+#    sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMA/MapServer/WMSServ \
+#    er --output SMA.yaml
+
+caches: {}
+layers:
+- layers:
+  - layers:
+    - layers:
+      - md:
+          abstract: "Faixa Mar\xEDtima de Protec\xE7\xE3o - POOC Santa Maria"
+        name: '2'
+        sources: [2_wms]
+        title: "Faixa Mar\xEDtima de Protec\xE7\xE3o - POOC Santa Maria"
+      - md:
+          abstract: "Zona Terrestre de Protec\xE7\xE3o - POOC Santa Maria"
+        name: '3'
+        sources: [3_wms]
+        title: "Zona Terrestre de Protec\xE7\xE3o - POOC Santa Maria"
+      - md:
+          abstract: Reserva Integral de Lapas - POOC Santa Maria
+        name: '4'
+        sources: [4_wms]
+        title: Reserva Integral de Lapas - POOC Santa Maria
+      - md:
+          abstract: Paisagem Protegida - POOC Santa Maria
+        name: '5'
+        sources: [5_wms]
+        title: Paisagem Protegida - POOC Santa Maria
+      - md:
+          abstract: "Zona de Protec\xE7\xE3o Especial - POOC Santa Maria"
+        name: '6'
+        sources: [6_wms]
+        title: "Zona de Protec\xE7\xE3o Especial - POOC Santa Maria"
+      - md:
+          abstract: "S\xEDtio de Import\xE2ncia Comunit\xE1ria - POOC Santa Maria"
+        name: '7'
+        sources: [7_wms]
+        title: "S\xEDtio de Import\xE2ncia Comunit\xE1ria - POOC Santa Maria"
+      - md:
+          abstract: Reserva Natural Regional - POOC Santa Maria
+        name: '8'
+        sources: [8_wms]
+        title: Reserva Natural Regional - POOC Santa Maria
+      - md:
+          abstract: Monumento Natural Regional - POOC Santa Maria
+        name: '9'
+        sources: [9_wms]
+        title: Monumento Natural Regional - POOC Santa Maria
+      - md:
+          abstract: Reserva Natural - POOC Santa Maria
+        name: '10'
+        sources: [10_wms]
+        title: Reserva Natural - POOC Santa Maria
+      - md:
+          abstract: "Reserva Agr\xEDcola Regional - POOC Santa Maria"
+        name: '11'
+        sources: [11_wms]
+        title: "Reserva Agr\xEDcola Regional - POOC Santa Maria"
+      - md:
+          abstract: "Reserva Ecol\xF3gica Regional - POOC Santa Maria"
+        name: '12'
+        sources: [12_wms]
+        title: "Reserva Ecol\xF3gica Regional - POOC Santa Maria"
+      - md:
+          abstract: Conjunto Protegido de Vila do Porto - POOC Santa Maria
+        name: '13'
+        sources: [13_wms]
+        title: Conjunto Protegido de Vila do Porto - POOC Santa Maria
+      - md:
+          abstract: "Im\xF3veis Classificados - POOC Santa Maria"
+        name: '14'
+        sources: [14_wms]
+        title: "Im\xF3veis Classificados - POOC Santa Maria"
+      - md:
+          abstract: "Dom\xEDnio P\xFAblico Mar\xEDtimo - POOC Santa Maria"
+        name: '15'
+        sources: [15_wms]
+        title: "Dom\xEDnio P\xFAblico Mar\xEDtimo - POOC Santa Maria"
+      - md:
+          abstract: "Dom\xEDnio P\xFAblico Lacustre e Fluvial - POOC Santa Maria"
+        name: '16'
+        sources: [16_wms]
+        title: "Dom\xEDnio P\xFAblico Lacustre e Fluvial - POOC Santa Maria"
+      - md:
+          abstract: Nascentes - POOC Santa Maria
+        name: '17'
+        sources: [17_wms]
+        title: Nascentes - POOC Santa Maria
+      - md:
+          abstract: Farol - POOC Santa Maria
+        name: '18'
+        sources: [18_wms]
+        title: Farol - POOC Santa Maria
+      - layers:
+        - md:
+            abstract: Pista do Aeroporto - POOC Santa Maria
+          name: '20'
+          sources: [20_wms]
+          title: Pista do Aeroporto - POOC Santa Maria
+        - md:
+            abstract: "Aeroporto e Respectivas Zonas de Protec\xE7\xE3o - POOC Santa\
+              \ Maria"
+          name: '21'
+          sources: [21_wms]
+          title: "Aeroporto e Respectivas Zonas de Protec\xE7\xE3o - POOC Santa Maria"
+        - md:
+            abstract: Aeroporto - POOC Santa Maria
+          name: '22'
+          sources: [22_wms]
+          title: Aeroporto - POOC Santa Maria
+        md:
+          abstract: "Infra-estruturas aeroportu\xE1rias"
+        title: "Infra-estruturas aeroportu\xE1rias"
+      - md:
+          abstract: "Infra-estruturas portu\xE1rias - POOC Santa Maria"
+        name: '23'
+        sources: [23_wms]
+        title: "Infra-estruturas portu\xE1rias - POOC Santa Maria"
+      - md:
+          abstract: ETAR - POOC Santa Maria
+        name: '24'
+        sources: [24_wms]
+        title: ETAR - POOC Santa Maria
+      - md:
+          abstract: Antenas - POOC Santa Maria
+        name: '25'
+        sources: [25_wms]
+        title: Antenas - POOC Santa Maria
+      - md:
+          abstract: "Rede El\xE9ctrica - POOC Santa Maria"
+        name: '26'
+        sources: [26_wms]
+        title: "Rede El\xE9ctrica - POOC Santa Maria"
+      - md:
+          abstract: "V\xE9rtice Geod\xE9sico - POOC Santa Maria"
+        name: '27'
+        sources: [27_wms]
+        title: "V\xE9rtice Geod\xE9sico - POOC Santa Maria"
+      md:
+        abstract: POOC Santa Maria - Condicionantes
+      title: POOC Santa Maria - Condicionantes
+    - layers:
+      - md:
+          abstract: "Faixa Mar\xEDtima de Protec\xE7\xE3o - POOC Santa Maria"
+        name: '29'
+        sources: [29_wms]
+        title: "Faixa Mar\xEDtima de Protec\xE7\xE3o - POOC Santa Maria"
+      - md:
+          abstract: "Zona Terrestre de Protec\xE7\xE3o - POOC Santa Maria"
+        name: '30'
+        sources: [30_wms]
+        title: "Zona Terrestre de Protec\xE7\xE3o - POOC Santa Maria"
+      - md:
+          abstract: "Classes e Categorias de Espa\xE7os - POOC Santa Maria"
+        name: '31'
+        sources: [31_wms]
+        title: "Classes e Categorias de Espa\xE7os - POOC Santa Maria"
+      - md:
+          abstract: "Tipologia de \xC1reas Balneares - POOC Santa Maria"
+        name: '32'
+        sources: [32_wms]
+        title: "Tipologia de \xC1reas Balneares - POOC Santa Maria"
+      - md:
+          abstract: "\xC1reas Vulner\xE1veis - POOC Santa Maria"
+        name: '33'
+        sources: [33_wms]
+        title: "\xC1reas Vulner\xE1veis - POOC Santa Maria"
+      - layers:
+        - md:
+            abstract: Frente Urbana Litoral - POOC Santa Maria
+          name: '35'
+          sources: [35_wms]
+          title: Frente Urbana Litoral - POOC Santa Maria
+        - md:
+            abstract: "\xC1reas de Projecto - POOC Santa Maria"
+          name: '36'
+          sources: [36_wms]
+          title: "\xC1reas de Projecto - POOC Santa Maria"
+        md:
+          abstract: "\xC1reas de Projecto"
+        title: "\xC1reas de Projecto"
+      - layers:
+        - md:
+            abstract: "\xC1rea do Aeroporto - POOC Santa Maria"
+          name: '38'
+          sources: [38_wms]
+          title: "\xC1rea do Aeroporto - POOC Santa Maria"
+        - md:
+            abstract: Pista do Aeroporto - POOC Santa Maria
+          name: '39'
+          sources: [39_wms]
+          title: Pista do Aeroporto - POOC Santa Maria
+        - md:
+            abstract: Aeroporto - POOC Santa Maria
+          name: '40'
+          sources: [40_wms]
+          title: Aeroporto - POOC Santa Maria
+        md:
+          abstract: "Infra-estruturas aeroportu\xE1rias"
+        title: "Infra-estruturas aeroportu\xE1rias"
+      - md:
+          abstract: "\xC1rea de Jurisdi\xE7\xE3o Portu\xE1ria da APSM (Proposta) -\
+            \ POOC Santa Maria"
+        name: '41'
+        sources: [41_wms]
+        title: "\xC1rea de Jurisdi\xE7\xE3o Portu\xE1ria da APSM (Proposta) - POOC\
+          \ Santa Maria"
+      - layers:
+        - md:
+            abstract: "\xC1rea do Porto - POOC Santa Maria"
+          name: '43'
+          sources: [43_wms]
+          title: "\xC1rea do Porto - POOC Santa Maria"
+        - md:
+            abstract: Portos - POOC Santa Maria
+          name: '44'
+          sources: [44_wms]
+          title: Portos - POOC Santa Maria
+        md:
+          abstract: "Infra-estruturas portu\xE1rias"
+        title: "Infra-estruturas portu\xE1rias"
+      - md:
+          abstract: "V\xE9rtice Geod\xE9sico - POOC Santa Maria"
+        name: '45'
+        sources: [45_wms]
+        title: "V\xE9rtice Geod\xE9sico - POOC Santa Maria"
+      md:
+        abstract: "POOC Santa Maria - S\xEDntese"
+      title: "POOC Santa Maria - S\xEDntese"
+    md:
+      abstract: "Planos Especiais de Ordenamento do Territ\xF3rio"
+    title: "Planos Especiais de Ordenamento do Territ\xF3rio"
+  - layers:
+    - md:
+        abstract: "\xC1rea de Interven\xE7\xE3o de Planos Especiais de Ordenamento\
+          \ do Territ\xF3rio"
+      name: '47'
+      sources: [47_wms]
+      title: "\xC1rea de Interven\xE7\xE3o de Planos Especiais de Ordenamento do Territ\xF3\
+        rio"
+    - md:
+        abstract: "\xC1rea de Interven\xE7\xE3o de Planos Directores Municipais"
+      name: '48'
+      sources: [48_wms]
+      title: "\xC1rea de Interven\xE7\xE3o de Planos Directores Municipais"
+    md:
+      abstract: "Instrumentos de Gest\xE3o Territorial"
+    title: "Instrumentos de Gest\xE3o Territorial"
+  - layers:
+    - md:
+        abstract: Concelhos
+      name: '50'
+      sources: [50_wms]
+      title: Concelhos
+    - md:
+        abstract: Freguesias
+      name: '51'
+      sources: [51_wms]
+      title: Freguesias
+    - md:
+        abstract: Hidrografia
+      name: '52'
+      sources: [52_wms]
+      title: Hidrografia
+    - md:
+        abstract: Altimetria
+      name: '53'
+      sources: [53_wms]
+      title: Altimetria
+    - md:
+        abstract: Edificado
+      name: '54'
+      sources: [54_wms]
+      title: Edificado
+    - md:
+        abstract: Caminhos
+      name: '55'
+      sources: [55_wms]
+      title: Caminhos
+    - md:
+        abstract: Estradas
+      name: '56'
+      sources: [56_wms]
+      title: Estradas
+    - md:
+        abstract: Toponimia
+      name: '57'
+      sources: [57_wms]
+      title: Toponimia
+    md:
+      abstract: "Elementos de Refer\xEAncia"
+    title: "Elementos de Refer\xEAncia"
+  - md:
+      abstract: "\xC1reas Classificadas"
+    name: '58'
+    sources: [58_wms]
+    title: "\xC1reas Classificadas"
+  - md:
+      abstract: "Carta de Ocupa\xE7\xE3o do Solo"
+    name: '59'
+    sources: [59_wms]
+    title: "Carta de Ocupa\xE7\xE3o do Solo"
+  title: Santa Maria
+services:
+  wms:
+    md:
+      title: WMS/SRIT_SMA
+sources:
+  10_wms:
+    coverage:
+      bbox: [-25.180262, 36.926129, -25.004459, 37.017002]
+      srs: EPSG:4326
+    req:
+      layers: '10'
+      transparent: true
+      url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMA/MapServer/WMSServer
+    supported_srs: ['EPSG:4326']
+    type: wms
+    wms_opts:
+      featureinfo: true
+      legendurl: http://s041siga/arcgisoutput/WMS_SRIT_SMA_MapServer/wms/default10.png
+  11_wms:
+    coverage:
+      bbox: [-25.134918, 36.962224, -25.032821, 37.011355]
+      srs: EPSG:4326
+    req:
+      layers: '11'
+      transparent: true
+      url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMA/MapServer/WMSServer
+    supported_srs: ['EPSG:4326']
+    type: wms
+    wms_opts:
+      featureinfo: true
+      legendurl: http://s041siga/arcgisoutput/WMS_SRIT_SMA_MapServer/wms/default11.png
+  12_wms:
+    coverage:
+      bbox: [-25.188224, 36.926627, -25.011515, 37.023739]
+      srs: EPSG:4326
+    req:
+      layers: '12'
+      transparent: true
+      url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMA/MapServer/WMSServer
+    supported_srs: ['EPSG:4326']
+    type: wms
+    wms_opts:
+      featureinfo: true
+      legendurl: http://s041siga/arcgisoutput/WMS_SRIT_SMA_MapServer/wms/default12.png
+  13_wms:
+    coverage:
+      bbox: [-25.148574, 36.944955, -25.143885, 36.949777]
+      srs: EPSG:4326
+    req:
+      layers: '13'
+      transparent: true
+      url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMA/MapServer/WMSServer
+    supported_srs: ['EPSG:4326']
+    type: wms
+    wms_opts:
+      featureinfo: true
+      legendurl: http://s041siga/arcgisoutput/WMS_SRIT_SMA_MapServer/wms/default13.png
+  14_wms:
+    coverage:
+      bbox: [-25.154253, 37.0048, -25.154253, 37.0048]
+      srs: EPSG:4326
+    min_res: 22.400000143431427
+    req:
+      layers: '14'
+      transparent: true
+      url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMA/MapServer/WMSServer
+    supported_srs: ['EPSG:4326']
+    type: wms
+    wms_opts:
+      featureinfo: true
+      legendurl: http://s041siga/arcgisoutput/WMS_SRIT_SMA_MapServer/wms/default14.png
+  15_wms:
+    coverage:
+      bbox: [-25.187307, 36.926627, -25.01166, 37.018162]
+      srs: EPSG:4326
+    req:
+      layers: '15'
+      transparent: true
+      url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMA/MapServer/WMSServer
+    supported_srs: ['EPSG:4326']
+    type: wms
+    wms_opts:
+      featureinfo: true
+      legendurl: http://s041siga/arcgisoutput/WMS_SRIT_SMA_MapServer/wms/default15.png
+  16_wms:
+    coverage:
+      bbox: [-25.186202, 36.927785, -25.013287, 37.01465]
+      srs: EPSG:4326
+    req:
+      layers: '16'
+      transparent: true
+      url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMA/MapServer/WMSServer
+    supported_srs: ['EPSG:4326']
+    type: wms
+    wms_opts:
+      featureinfo: true
+      legendurl: http://s041siga/arcgisoutput/WMS_SRIT_SMA_MapServer/wms/default16.png
+  17_wms:
+    coverage:
+      bbox: [-25.133538, 36.934216, -25.016935, 37.007476]
+      srs: EPSG:4326
+    min_res: 22.400000143431427
+    req:
+      layers: '17'
+      transparent: true
+      url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMA/MapServer/WMSServer
+    supported_srs: ['EPSG:4326']
+    type: wms
+    wms_opts:
+      featureinfo: true
+      legendurl: http://s041siga/arcgisoutput/WMS_SRIT_SMA_MapServer/wms/default17.png
+  18_wms:
+    coverage:
+      bbox: [-25.157757, 36.928655, -25.014389, 37.014083]
+      srs: EPSG:4326
+    min_res: 22.400000143431427
+    req:
+      layers: '18'
+      transparent: true
+      url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMA/MapServer/WMSServer
+    supported_srs: ['EPSG:4326']
+    type: wms
+    wms_opts:
+      featureinfo: true
+      legendurl: http://s041siga/arcgisoutput/WMS_SRIT_SMA_MapServer/wms/default18.png
+  20_wms:
+    coverage:
+      bbox: [-25.177672, 36.954864, -25.16711, 36.976953]
+      srs: EPSG:4326
+    req:
+      layers: '20'
+      transparent: true
+      url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMA/MapServer/WMSServer
+    supported_srs: ['EPSG:4326']
+    type: wms
+    wms_opts:
+      featureinfo: true
+      legendurl: http://s041siga/arcgisoutput/WMS_SRIT_SMA_MapServer/wms/default20.png
+  21_wms:
+    coverage:
+      bbox: [-25.194716, 36.934787, -25.139262, 37.014574]
+      srs: EPSG:4326
+    req:
+      layers: '21'
+      transparent: true
+      url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMA/MapServer/WMSServer
+    supported_srs: ['EPSG:4326']
+    type: wms
+    wms_opts:
+      featureinfo: true
+      legendurl: http://s041siga/arcgisoutput/WMS_SRIT_SMA_MapServer/wms/default21.png
+  22_wms:
+    coverage:
+      bbox: [-25.170878, 36.969185, -25.170878, 36.969185]
+      srs: EPSG:4326
+    min_res: 22.400000143431427
+    req:
+      layers: '22'
+      transparent: true
+      url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMA/MapServer/WMSServer
+    supported_srs: ['EPSG:4326']
+    type: wms
+    wms_opts:
+      featureinfo: true
+      legendurl: http://s041siga/arcgisoutput/WMS_SRIT_SMA_MapServer/wms/default22.png
+  23_wms:
+    coverage:
+      bbox: [-25.160121, 36.926651, -25.012382, 37.011805]
+      srs: EPSG:4326
+    min_res: 22.400000143431427
+    req:
+      layers: '23'
+      transparent: true
+      url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMA/MapServer/WMSServer
+    supported_srs: ['EPSG:4326']
+    type: wms
+    wms_opts:
+      featureinfo: true
+      legendurl: http://s041siga/arcgisoutput/WMS_SRIT_SMA_MapServer/wms/default23.png
+  24_wms:
+    coverage:
+      bbox: [-25.146045, 36.944506, -25.095408, 36.952182]
+      srs: EPSG:4326
+    min_res: 22.400000143431427
+    req:
+      layers: '24'
+      transparent: true
+      url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMA/MapServer/WMSServer
+    supported_srs: ['EPSG:4326']
+    type: wms
+    wms_opts:
+      featureinfo: true
+      legendurl: http://s041siga/arcgisoutput/WMS_SRIT_SMA_MapServer/wms/default24.png
+  25_wms:
+    coverage:
+      bbox: [-25.17731, 36.940203, -25.016048, 36.996791]
+      srs: EPSG:4326
+    min_res: 22.400000143431427
+    req:
+      layers: '25'
+      transparent: true
+      url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMA/MapServer/WMSServer
+    supported_srs: ['EPSG:4326']
+    type: wms
+    wms_opts:
+      featureinfo: true
+      legendurl: http://s041siga/arcgisoutput/WMS_SRIT_SMA_MapServer/wms/default25.png
+  26_wms:
+    coverage:
+      bbox: [-25.157638, 36.927755, -25.013459, 37.003313]
+      srs: EPSG:4326
+    req:
+      layers: '26'
+      transparent: true
+      url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMA/MapServer/WMSServer
+    supported_srs: ['EPSG:4326']
+    type: wms
+    wms_opts:
+      featureinfo: true
+      legendurl: http://s041siga/arcgisoutput/WMS_SRIT_SMA_MapServer/wms/default26.png
+  27_wms:
+    coverage:
+      bbox: [-25.180818, 36.928867, -25.015441, 37.011702]
+      srs: EPSG:4326
+    min_res: 22.400000143431427
+    req:
+      layers: '27'
+      transparent: true
+      url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMA/MapServer/WMSServer
+    supported_srs: ['EPSG:4326']
+    type: wms
+    wms_opts:
+      featureinfo: true
+      legendurl: http://s041siga/arcgisoutput/WMS_SRIT_SMA_MapServer/wms/default27.png
+  29_wms:
+    coverage:
+      bbox: [-25.199412, 36.920017, -25.001831, 37.033016]
+      srs: EPSG:4326
+    req:
+      layers: '29'
+      transparent: true
+      url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMA/MapServer/WMSServer
+    supported_srs: ['EPSG:4326']
+    type: wms
+    wms_opts:
+      featureinfo: true
+      legendurl: http://s041siga/arcgisoutput/WMS_SRIT_SMA_MapServer/wms/default29.png
+  2_wms:
+    coverage:
+      bbox: [-25.199412, 36.920017, -25.001831, 37.033016]
+      srs: EPSG:4326
+    req:
+      layers: '2'
+      transparent: true
+      url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMA/MapServer/WMSServer
+    supported_srs: ['EPSG:4326']
+    type: wms
+    wms_opts:
+      featureinfo: true
+      legendurl: http://s041siga/arcgisoutput/WMS_SRIT_SMA_MapServer/wms/default2.png
+  30_wms:
+    coverage:
+      bbox: [-25.188224, 36.926627, -25.011515, 37.023739]
+      srs: EPSG:4326
+    req:
+      layers: '30'
+      transparent: true
+      url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMA/MapServer/WMSServer
+    supported_srs: ['EPSG:4326']
+    type: wms
+    wms_opts:
+      featureinfo: true
+      legendurl: http://s041siga/arcgisoutput/WMS_SRIT_SMA_MapServer/wms/default30.png
+  31_wms:
+    coverage:
+      bbox: [-25.192731, 36.923753, -25.001958, 37.028079]
+      srs: EPSG:4326
+    req:
+      layers: '31'
+      transparent: true
+      url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMA/MapServer/WMSServer
+    supported_srs: ['EPSG:4326']
+    type: wms
+    wms_opts:
+      featureinfo: true
+      legendurl: http://s041siga/arcgisoutput/WMS_SRIT_SMA_MapServer/wms/default31.png
+  32_wms:
+    coverage:
+      bbox: [-25.159699, 36.926885, -25.011529, 37.006162]
+      srs: EPSG:4326
+    min_res: 22.400000143431427
+    req:
+      layers: '32'
+      transparent: true
+      url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMA/MapServer/WMSServer
+    supported_srs: ['EPSG:4326']
+    type: wms
+    wms_opts:
+      featureinfo: true
+      legendurl: http://s041siga/arcgisoutput/WMS_SRIT_SMA_MapServer/wms/default32.png
+  33_wms:
+    coverage:
+      bbox: [-25.188222, 36.926626, -25.011512, 37.023739]
+      srs: EPSG:4326
+    req:
+      layers: '33'
+      transparent: true
+      url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMA/MapServer/WMSServer
+    supported_srs: ['EPSG:4326']
+    type: wms
+    wms_opts:
+      featureinfo: true
+      legendurl: http://s041siga/arcgisoutput/WMS_SRIT_SMA_MapServer/wms/default33.png
+  35_wms:
+    coverage:
+      bbox: [-25.057734, 36.983655, -25.053253, 36.995384]
+      srs: EPSG:4326
+    req:
+      layers: '35'
+      transparent: true
+      url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMA/MapServer/WMSServer
+    supported_srs: ['EPSG:4326']
+    type: wms
+    wms_opts:
+      featureinfo: true
+      legendurl: http://s041siga/arcgisoutput/WMS_SRIT_SMA_MapServer/wms/default35.png
+  36_wms:
+    coverage:
+      bbox: [-25.161504, 36.928821, -25.01193, 37.007368]
+      srs: EPSG:4326
+    req:
+      layers: '36'
+      transparent: true
+      url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMA/MapServer/WMSServer
+    supported_srs: ['EPSG:4326']
+    type: wms
+    wms_opts:
+      featureinfo: true
+      legendurl: http://s041siga/arcgisoutput/WMS_SRIT_SMA_MapServer/wms/default36.png
+  38_wms:
+    coverage:
+      bbox: [-25.179298, 36.947455, -25.164942, 36.9789]
+      srs: EPSG:4326
+    req:
+      layers: '38'
+      transparent: true
+      url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMA/MapServer/WMSServer
+    supported_srs: ['EPSG:4326']
+    type: wms
+    wms_opts:
+      featureinfo: true
+      legendurl: http://s041siga/arcgisoutput/WMS_SRIT_SMA_MapServer/wms/default38.png
+  39_wms:
+    coverage:
+      bbox: [-25.177672, 36.954864, -25.16711, 36.976953]
+      srs: EPSG:4326
+    req:
+      layers: '39'
+      transparent: true
+      url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMA/MapServer/WMSServer
+    supported_srs: ['EPSG:4326']
+    type: wms
+    wms_opts:
+      featureinfo: true
+      legendurl: http://s041siga/arcgisoutput/WMS_SRIT_SMA_MapServer/wms/default39.png
+  3_wms:
+    coverage:
+      bbox: [-25.188224, 36.926627, -25.011515, 37.023739]
+      srs: EPSG:4326
+    req:
+      layers: '3'
+      transparent: true
+      url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMA/MapServer/WMSServer
+    supported_srs: ['EPSG:4326']
+    type: wms
+    wms_opts:
+      featureinfo: true
+      legendurl: http://s041siga/arcgisoutput/WMS_SRIT_SMA_MapServer/wms/default3.png
+  40_wms:
+    coverage:
+      bbox: [-25.170878, 36.969185, -25.170878, 36.969185]
+      srs: EPSG:4326
+    min_res: 22.400000143431427
+    req:
+      layers: '40'
+      transparent: true
+      url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMA/MapServer/WMSServer
+    supported_srs: ['EPSG:4326']
+    type: wms
+    wms_opts:
+      featureinfo: true
+      legendurl: http://s041siga/arcgisoutput/WMS_SRIT_SMA_MapServer/wms/default40.png
+  41_wms:
+    coverage:
+      bbox: [-25.157951, 36.938326, -25.140747, 36.945424]
+      srs: EPSG:4326
+    req:
+      layers: '41'
+      transparent: true
+      url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMA/MapServer/WMSServer
+    supported_srs: ['EPSG:4326']
+    type: wms
+    wms_opts:
+      featureinfo: true
+      legendurl: http://s041siga/arcgisoutput/WMS_SRIT_SMA_MapServer/wms/default41.png
+  43_wms:
+    coverage:
+      bbox: [-25.153516, 36.940244, -25.14866, 36.946918]
+      srs: EPSG:4326
+    req:
+      layers: '43'
+      transparent: true
+      url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMA/MapServer/WMSServer
+    supported_srs: ['EPSG:4326']
+    type: wms
+    wms_opts:
+      featureinfo: true
+      legendurl: http://s041siga/arcgisoutput/WMS_SRIT_SMA_MapServer/wms/default43.png
+  44_wms:
+    coverage:
+      bbox: [-25.160121, 36.926651, -25.012382, 37.011805]
+      srs: EPSG:4326
+    min_res: 22.400000143431427
+    req:
+      layers: '44'
+      transparent: true
+      url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMA/MapServer/WMSServer
+    supported_srs: ['EPSG:4326']
+    type: wms
+    wms_opts:
+      featureinfo: true
+      legendurl: http://s041siga/arcgisoutput/WMS_SRIT_SMA_MapServer/wms/default44.png
+  45_wms:
+    coverage:
+      bbox: [-25.180818, 36.928867, -25.015441, 37.011702]
+      srs: EPSG:4326
+    min_res: 22.400000143431427
+    req:
+      layers: '45'
+      transparent: true
+      url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMA/MapServer/WMSServer
+    supported_srs: ['EPSG:4326']
+    type: wms
+    wms_opts:
+      featureinfo: true
+      legendurl: http://s041siga/arcgisoutput/WMS_SRIT_SMA_MapServer/wms/default45.png
+  47_wms:
+    coverage:
+      bbox: [-25.199412, 36.920017, -25.001831, 37.033016]
+      srs: EPSG:4326
+    req:
+      layers: '47'
+      transparent: true
+      url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMA/MapServer/WMSServer
+    supported_srs: ['EPSG:4326']
+    type: wms
+    wms_opts:
+      featureinfo: true
+      legendurl: http://s041siga/arcgisoutput/WMS_SRIT_SMA_MapServer/wms/default47.png
+  48_wms:
+    coverage:
+      bbox: [-25.187303, 36.926628, -25.011655, 37.018163]
+      srs: EPSG:4326
+    req:
+      layers: '48'
+      transparent: true
+      url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMA/MapServer/WMSServer
+    supported_srs: ['EPSG:4326']
+    type: wms
+    wms_opts:
+      featureinfo: true
+      legendurl: http://s041siga/arcgisoutput/WMS_SRIT_SMA_MapServer/wms/default48.png
+  4_wms:
+    coverage:
+      bbox: [-25.192702, 36.924958, -25.002154, 37.020578]
+      srs: EPSG:4326
+    req:
+      layers: '4'
+      transparent: true
+      url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMA/MapServer/WMSServer
+    supported_srs: ['EPSG:4326']
+    type: wms
+    wms_opts:
+      featureinfo: true
+      legendurl: http://s041siga/arcgisoutput/WMS_SRIT_SMA_MapServer/wms/default4.png
+  50_wms:
+    coverage:
+      bbox: [-25.187303, 36.926629, -25.011655, 37.018163]
+      srs: EPSG:4326
+    max_res: 14.000000089644642
+    min_res: .inf
+    req:
+      layers: '50'
+      transparent: true
+      url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMA/MapServer/WMSServer
+    supported_srs: ['EPSG:4326']
+    type: wms
+    wms_opts:
+      featureinfo: true
+      legendurl: http://s041siga/arcgisoutput/WMS_SRIT_SMA_MapServer/wms/default50.png
+  51_wms:
+    coverage:
+      bbox: [-25.187303, 36.926629, -25.011655, 37.018163]
+      srs: EPSG:4326
+    max_res: 11.200000071715714
+    min_res: 16.80000010757357
+    req:
+      layers: '51'
+      transparent: true
+      url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMA/MapServer/WMSServer
+    supported_srs: ['EPSG:4326']
+    type: wms
+    wms_opts:
+      featureinfo: true
+      legendurl: http://s041siga/arcgisoutput/WMS_SRIT_SMA_MapServer/wms/default51.png
+  52_wms:
+    coverage:
+      bbox: [-25.186199, 36.927785, -25.013284, 37.01465]
+      srs: EPSG:4326
+    min_res: 14.000000089644642
+    req:
+      layers: '52'
+      transparent: true
+      url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMA/MapServer/WMSServer
+    supported_srs: ['EPSG:4326']
+    type: wms
+    wms_opts:
+      featureinfo: true
+      legendurl: http://s041siga/arcgisoutput/WMS_SRIT_SMA_MapServer/wms/default52.png
+  53_wms:
+    coverage:
+      bbox: [-25.188222, 36.926626, -25.011512, 37.023739]
+      srs: EPSG:4326
+    min_res: 7.000000044822321
+    req:
+      layers: '53'
+      transparent: true
+      url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMA/MapServer/WMSServer
+    supported_srs: ['EPSG:4326']
+    type: wms
+    wms_opts:
+      featureinfo: true
+      legendurl: http://s041siga/arcgisoutput/WMS_SRIT_SMA_MapServer/wms/default53.png
+  54_wms:
+    coverage:
+      bbox: [-25.180527, 36.927442, -25.012317, 37.01431]
+      srs: EPSG:4326
+    min_res: 14.000000089644642
+    req:
+      layers: '54'
+      transparent: true
+      url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMA/MapServer/WMSServer
+    supported_srs: ['EPSG:4326']
+    type: wms
+    wms_opts:
+      featureinfo: true
+      legendurl: http://s041siga/arcgisoutput/WMS_SRIT_SMA_MapServer/wms/default54.png
+  55_wms:
+    coverage:
+      bbox: [-25.178324, 36.927684, -25.012706, 37.013544]
+      srs: EPSG:4326
+    min_res: 14.000000089644642
+    req:
+      layers: '55'
+      transparent: true
+      url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMA/MapServer/WMSServer
+    supported_srs: ['EPSG:4326']
+    type: wms
+    wms_opts:
+      featureinfo: true
+      legendurl: http://s041siga/arcgisoutput/WMS_SRIT_SMA_MapServer/wms/default55.png
+  56_wms:
+    coverage:
+      bbox: [-25.166704, 36.929927, -25.012626, 37.012016]
+      srs: EPSG:4326
+    min_res: 14.000000089644642
+    req:
+      layers: '56'
+      transparent: true
+      url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMA/MapServer/WMSServer
+    supported_srs: ['EPSG:4326']
+    type: wms
+    wms_opts:
+      featureinfo: true
+      legendurl: http://s041siga/arcgisoutput/WMS_SRIT_SMA_MapServer/wms/default56.png
+  57_wms:
+    coverage:
+      bbox: [-25.187858, 36.928246, -25.012937, 37.022838]
+      srs: EPSG:4326
+    min_res: 11.200000071715714
+    req:
+      layers: '57'
+      transparent: true
+      url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMA/MapServer/WMSServer
+    supported_srs: ['EPSG:4326']
+    type: wms
+    wms_opts:
+      featureinfo: true
+      legendurl: http://s041siga/arcgisoutput/WMS_SRIT_SMA_MapServer/wms/default57.png
+  58_wms:
+    coverage:
+      bbox: [-25.192873, 36.91075, -24.61117, 37.359096]
+      srs: EPSG:4326
+    req:
+      layers: '58'
+      transparent: true
+      url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMA/MapServer/WMSServer
+    supported_srs: ['EPSG:4326']
+    type: wms
+    wms_opts:
+      featureinfo: true
+      legendurl: http://s041siga/arcgisoutput/WMS_SRIT_SMA_MapServer/wms/default58.png
+  59_wms:
+    coverage:
+      bbox: [-25.186804, 36.92703, -25.011325, 37.02359]
+      srs: EPSG:4326
+    req:
+      layers: '59'
+      transparent: true
+      url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMA/MapServer/WMSServer
+    supported_srs: ['EPSG:4326']
+    type: wms
+    wms_opts:
+      featureinfo: true
+      legendurl: http://s041siga/arcgisoutput/WMS_SRIT_SMA_MapServer/wms/default59.png
+  5_wms:
+    coverage:
+      bbox: [-25.147414, 36.996996, -25.0466, 37.027405]
+      srs: EPSG:4326
+    req:
+      layers: '5'
+      transparent: true
+      url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMA/MapServer/WMSServer
+    supported_srs: ['EPSG:4326']
+    type: wms
+    wms_opts:
+      featureinfo: true
+      legendurl: http://s041siga/arcgisoutput/WMS_SRIT_SMA_MapServer/wms/default5.png
+  6_wms:
+    coverage:
+      bbox: [-25.177539, 36.938967, -25.15669, 36.970352]
+      srs: EPSG:4326
+    req:
+      layers: '6'
+      transparent: true
+      url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMA/MapServer/WMSServer
+    supported_srs: ['EPSG:4326']
+    type: wms
+    wms_opts:
+      featureinfo: true
+      legendurl: http://s041siga/arcgisoutput/WMS_SRIT_SMA_MapServer/wms/default6.png
+  7_wms:
+    coverage:
+      bbox: [-25.07409, 36.923878, -25.011764, 36.93533]
+      srs: EPSG:4326
+    req:
+      layers: '7'
+      transparent: true
+      url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMA/MapServer/WMSServer
+    supported_srs: ['EPSG:4326']
+    type: wms
+    wms_opts:
+      featureinfo: true
+      legendurl: http://s041siga/arcgisoutput/WMS_SRIT_SMA_MapServer/wms/default7.png
+  8_wms:
+    coverage:
+      bbox: [-25.146158, 36.937698, -25.100918, 36.956172]
+      srs: EPSG:4326
+    req:
+      layers: '8'
+      transparent: true
+      url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMA/MapServer/WMSServer
+    supported_srs: ['EPSG:4326']
+    type: wms
+    wms_opts:
+      featureinfo: true
+      legendurl: http://s041siga/arcgisoutput/WMS_SRIT_SMA_MapServer/wms/default8.png
+  9_wms:
+    coverage:
+      bbox: [-25.146158, 36.938107, -25.126809, 36.950542]
+      srs: EPSG:4326
+    req:
+      layers: '9'
+      transparent: true
+      url: http://sig-sraa.azores.gov.pt/ArcGIS/services/WMS/SRIT_SMA/MapServer/WMSServer
+    supported_srs: ['EPSG:4326']
+    type: wms
+    wms_opts:
+      featureinfo: true
+      legendurl: http://s041siga/arcgisoutput/WMS_SRIT_SMA_MapServer/wms/default9.png

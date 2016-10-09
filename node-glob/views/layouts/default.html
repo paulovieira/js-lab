@@ -1,0 +1,69 @@
+{# top-level variables - to be used in the pages and includes #}
+
+{#
+{% set jquery_is_loaded     = false %} 
+{% set underscore_is_loaded = false %}
+{% set q_is_loaded          = false %}
+#}
+
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>
+        {# default title - to be overriden in each page #}
+        {% block title %}{{ ctx.texts[15][lang] }}{% endblock %}
+    </title>
+
+    {# common css (included in all pages) #}
+    {% include "common/common_stylesheets.html" %}
+
+    {# common css (included in all pages, but only after authentication and authorization) #}
+    {% if ctx.auth.isAuthenticated and ctx.auth.credentials.canEditTexts %}
+    {# {% include "common/kendo_stylesheets.html" %} #}
+    {% include "common/summernote_stylesheets.html" %}
+    {% endif %}
+
+    {# custom css (specific for each page - to be overriden in that page) #}
+    {% block css %}{% endblock %}
+
+</head>
+
+<body>
+
+    {# top navbar #}
+{# TO BE DELETED
+    {% block navigation %}{% endblock %} 
+#}
+
+    {# main container #}
+	<div class="container-fluid">
+        {% block content %}{% endblock %}
+	</div>
+
+    {# sticky footer #}
+    <footer class="footer">
+        {% include "common/footer.html" %}
+    </footer>
+
+
+    {# common javascript (included in all pages) #}
+    {% include "common/common_scripts.html" %} 
+
+    {# custom scripts (specific for each page - to be overriden in that page) #}    
+    {% block scripts %}{% endblock %}
+
+    {# editor javascript (included in all pages, but only after authentication and authorization) #}
+    {% if ctx.auth.isAuthenticated and ctx.auth.credentials.canEditTexts %}
+    {# {% include "common/editor_scripts.html" %} #}
+    {% include "common/summernote_scripts.html" %}
+    {% endif %}
+
+</body>
+
+</html>

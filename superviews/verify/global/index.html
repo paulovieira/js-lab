@@ -1,0 +1,23 @@
+<html>
+
+    <style>
+        .abc {
+            color: red;
+        }
+
+    </style>
+    <body>
+        <div id="main"></div>
+
+        <script src="/node_modules/incremental-dom/dist/incremental-dom.js"></script>
+
+        <script src="/_build/template1.js"></script>
+        <script src="/_build/template2.superviews.js"></script>
+
+        <script>
+        var main = document.getElementById("main");
+        IncrementalDOM.patch(main, window.template2_superviews_html.bind(IncrementalDOM), {name: "paulo", myClass: "abc"});
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,281 @@
+<form class="form-horizontal" style="width: 95%;">
+    <div class="form-group" style="">
+        <label class="control-label col-xs-3" for="quick-search">Pesquisar</label>
+        <div class="col-xs-9">
+            <div class="input-group" style="width: 100%">
+                <input type="text" style="border-top-left-radius: 0; border-bottom-left-radius: 0;" class="form-control" id="quick-search">
+                <span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+<!-- <form class="form-inline">
+    <div class="form-group">
+        <label style="margin-right: 5px;" class="control-label" for="quick-search-2">Pesquisar </label>
+        <div class="input-group">
+            <input type="text" class="form-control" id="quick-search-2">
+            <span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>
+        </div>
+    </div>
+</form>
+ -->
+<div class="text-right" style="width: 95%;">
+    <button class="btn btn-default btn-sm" style="padding: 3px 10px;" type="button" data-toggle="collapse" data-target="#more-options">
+        Mais opções
+    </button>
+</div>
+<div class="collapse" style="width: 95%; margin-right: 50px;" id="more-options">
+    <div class="well" style="margin-top: 10px;">
+        <div class="btn-group btn-block" style="margin-left: 5%;">
+            <button style="width: 90%;" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                Tipo de projecto
+                <span class="caret" style="margin-left: 5px;"></span>
+            </button>
+            {# NOTE: data-project-type is equivalent to the" value" sttribute in a <select> #}
+            <ul class="dropdown-menu" style="width: 90%; xheight: 300px; xoverflow-y: auto; padding-left: 10px; padding-right: 10px;">
+                <li>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" data-project-type="Todos" checked> Todos
+                        </label>
+                    </div>
+                </li>
+                <li class="divider"></li>
+                <li>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" data-project-type="Permacultura"> Permacultura
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" data-project-type="Transição"> Transição
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" data-project-type="Gestão da Terra e da Natureza"> Gestão da Terra e da Natureza
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" data-project-type="Espaço Construído"> Espaço Construído
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" data-project-type="Ferramentas e Tecnologias"> Ferramentas e Tecnologias
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" data-project-type="Cultura e Educação"> Cultura e Educação
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" data-project-type="Saúde e Bem-Estar Espiritual"> Saúde e Bem-Estar Espiritual
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" data-project-type="Economia e Finanças"> Economia e Finanças
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" data-project-type="Uso da Terra e Comunidade"> Uso da Terra e Comunidade
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" data-project-type="Outro"> Outro
+                        </label>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+
+
+        <div class="btn-group btn-block" style="margin-left: 5%;margin-top: 10px;">
+            <button style="width: 90%;" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                Domínio-chave
+                <span class="caret" style="margin-left: 5px;"></span>
+            </button>
+            <ul class="dropdown-menu" style="width: 90%; xheight: 300px; xoverflow-y: auto; padding-left: 10px; padding-right: 10px;">
+                <li>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" data-domain="Agricultura" checked> Agricultura
+                        </label>
+                    </div>
+                </li>
+                <li class="divider"></li>
+                <li>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" data-domain="Agricultura"> Agricultura
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" data-domain="Pecuária"> Pecuária
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" data-domain="Bio-Construção"> Bio-Construção
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" data-domain="Eco-Tecnologia"> Eco-Tecnologia
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" data-domain="Arte"> Arte
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" data-domain="Educação"> Educação
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" data-domain="Saúde"> Saúde
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" data-domain="Espiritualidade"> Espiritualidade
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" data-domain="Economia Alternativa"> Economia Alternativa
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" data-type="Partilha de Terra ou Equipamentos"> Partilha de Terra ou Equipamentos
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" data-type="Ferramentas Sociais"> Ferramentas Sociais
+                        </label>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="btn-group btn-block" style="margin-left: 5%;margin-top: 10px;">
+            <button style="width: 90%;" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                Público-Alvo
+                <span class="caret" style="margin-left: 5px;"></span>
+            </button>
+            <ul class="dropdown-menu" style="width: 90%; xheight: 300px; xoverflow-y: auto; padding-left: 10px; padding-right: 10px;">
+                <li>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" data-target="Crianças" checked> Crianças
+                        </label>
+                    </div>
+                </li>
+                <li class="divider"></li>
+                <li>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" data-target="Adolescentes"> Adolescentes
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" data-target="Adultos"> Adultos
+                        </label>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+
+
+        <div class="btn-group btn-block" style="margin-left: 5%;margin-top: 10px;">
+            <button style="width: 90%;" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                Espaço de Acção
+                <span class="caret" style="margin-left: 5px;"></span>
+            </button>
+            <ul class="dropdown-menu" style="width: 90%; xheight: 300px; xoverflow-y: auto; padding-left: 10px; padding-right: 10px;">
+                <li>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" data-action-space="Rural" checked> Rural
+                        </label>
+                    </div>
+                </li>
+                <li class="divider"></li>
+                <li>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" data-action-space="Urbano"> Urbano
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" data-action-space="Misto"> Misto
+                        </label>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</div>

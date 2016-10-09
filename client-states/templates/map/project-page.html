@@ -1,0 +1,208 @@
+<div class="row" >
+    <div class="col-sm-6 col-sm-offset-3"  style="background-color: white; xborder: solid 1px; border-radius: 10px;">
+        
+        
+        
+        <h1 class="text-center">{{ title }}</h1>
+
+        {% if logoImg %}
+        <img class="img-responsive img-rounded center-block" style=""; xborder-color: #f6f6f6;" src="/templates/map/logos/{{ logoImg }}" alt="">
+        {% endif %}
+
+
+        <div class="row">
+            <div class="col-sm-8">
+
+                {% if websiteUrl %}
+                <p>
+                <span style="" class="icon-margin attribute-title"><i class="fa fa-external-link"></i></span> <a href="{{ websiteUrl }}">{{ websiteUrl }}</a> 
+                </p>
+                {% endif %}
+
+
+                <p>
+                <span style="" title="Pessoa de contacto" class="attribute-title icon-margin"><i class="fa fa-user"></i></span> {{ contact.name }} <br>
+
+                <span style=""><i class="fa fa-at" class="attribute-title icon-margin"></i></span> <a href="mailto:{{ contact.email }}">{{ contact.email }}</a> <br>
+
+                {% if contact.promoter %}
+                <span style="" title="Promotor" class="attribute-title icon-margin"><i class="fa fa-user-plus"></i></span> {{ contact.promoter }} <br>
+                {% endif %}
+
+                </p>
+
+                <p>
+                <span style="" class="attribute-title icon-margin"><i class="fa fa-map-marker"></i></span> {{ address }} <br>
+
+
+                {% if contact.phone %}
+                <span style="" class="attribute-title icon-margin"><i class="fa fa-phone"></i></span> {{ contact.phone }} <br>
+                {% endif %}
+
+                {% if contact.other %}
+                <span style="" class="attribute-title icon-margin"><i class="fa fa-phone"></i></span> {{ contact.other }} <br>
+                {% endif %}
+                </p>
+
+            </div>
+
+            <div class="col-sm-4" style="padding-right: 40px; padding-left: 40px;">
+                <div id="project-page-map" style="height: 200px;""></div>
+
+            
+
+            </div>
+        </div>
+
+        <hr style="margin-right: 25px;">
+
+        <div class="row">
+            <div class="col-sm-12">
+                <p>
+                {% if videoUrl %}
+                    video 
+                {% endif %}
+                </p>
+
+                <span class="attribute-title">Fundado em:</span> {{ startDate }}
+                <br>
+
+                <span class="attribute-title">Tipo de projecto ou iniciativa:</span> {{ type }}
+                <br>
+
+                <span class="attribute-title">Dominios de interesse:</span>
+                <br>                
+                <div class="row" style="color: gray; font-size: 12px;">
+                    <div class="col-sm-2">
+                    </div>
+                    <div class="col-sm-5">
+
+                    <i class="fa fa-close icon-margin icon-close"></i>Agricultura<br>
+                    <i class="fa fa-check-square-o icon-margin icon-check"></i>Pecuária<br>
+                    <i class="fa fa-close icon-margin icon-close"></i>Bio-Construção<br>
+                    <i class="fa fa-close icon-margin icon-close"></i>Eco-Tecnologia<br>
+                    <i class="fa fa-check-square-o icon-margin icon-check"></i>Arte<br>
+                    <i class="fa fa-close icon-margin icon-close"></i>Educação
+                        
+                    </div>
+                    <div class="col-sm-5">
+                        
+
+                    <i class="fa fa-close icon-margin icon-close"></i>Saúde<br>
+                    <i class="fa fa-close icon-margin icon-close"></i>Espiritualidade<br>
+                    <i class="fa fa-check-square-o icon-margin icon-check"></i>Economia alternativa<br>
+                    <i class="fa fa-close icon-margin icon-close"></i>Partilha de terra ou equipamentos<br>
+                    <i class="fa fa-close icon-margin icon-close"></i>Ferramentas Sociais
+
+                    </div>
+                </div>
+
+                <span class="attribute-title">Disponibilidade para visitas:</span> 
+                    {% if visits == "yes" %}
+                        Sim
+                    {% elif visits == "no" %}
+                        Não
+                    {% elif visits == "needs_confirmation" %}
+                        Sujeito a confirmação
+                    {% else %}
+                        ERROR!
+                    {% endif %}
+                <br>
+
+                <span class="attribute-title">Número de membros envolvidos no projecto:</span> {{ teamSize }}
+                <br>
+
+                <span class="attribute-title">Projecto inserido em espaço:</span>
+                <br>                
+                <div class="row" style="color: gray; font-size: 12px;">
+                    <div class="col-sm-2">
+                    </div>
+                    <div class="col-sm-10">
+
+                    <i class="fa fa-close icon-margin icon-close"></i>Rural<br>
+                    <i class="fa fa-check-square-o icon-margin icon-check"></i>Urbano<br>
+                        
+                    </div>
+                </div>
+
+
+                <span class="attribute-title">Universo de accção:</span>
+                <br>                
+                <div class="row" style="color: gray; font-size: 12px;">
+                    <div class="col-sm-2">
+                    </div>
+                    <div class="col-sm-5">
+
+                    <i class="fa fa-close icon-margin icon-close"></i>&lt; 10<br>
+                    <i class="fa fa-close icon-margin icon-close"></i>10 - 25<br>
+                    <i class="fa fa-close icon-margin icon-close"></i>25 - 50<br>
+                    <i class="fa fa-check-square-o icon-margin icon-check"></i>50 - 100<br>
+                        
+                    </div>
+
+                    <div class="col-sm-5">
+
+                    <i class="fa fa-close icon-margin icon-close"></i>100 - 500<br>
+                    <i class="fa fa-close icon-margin icon-close"></i>500 - 5000<br>
+                    <i class="fa fa-close icon-margin icon-close"></i>5000 - 10000<br>
+                    <i class="fa fa-close icon-margin icon-close"></i>&gt; 10000<br>
+                        
+                    </div>
+                </div>
+                
+
+                <span class="attribute-title">Público alvo:</span>
+                <br>                
+                <div class="row" style="color: gray; font-size: 12px;">
+                    <div class="col-sm-2">
+                    </div>
+                    <div class="col-sm-5">
+
+                    <i class="fa fa-close icon-margin icon-close"></i>Crianças<br>
+                    <i class="fa fa-check-square-o icon-margin icon-check"></i>Adolescentes<br>
+                    <i class="fa fa-close icon-margin icon-close"></i>Adultos<br>
+                    <i class="fa fa-close icon-margin icon-close"></i>Idosos<br>
+                    <i class="fa fa-check-square-o icon-margin icon-check"></i>Famílias<br>
+                        
+                    </div>
+                    <div class="col-sm-5">
+                        
+
+                    <i class="fa fa-close icon-margin icon-close"></i>Pessoas com deficiência<br>
+                    <i class="fa fa-close icon-margin icon-close"></i>Crianças com necessidades educativas especiais<br>
+                    <i class="fa fa-check-square-o icon-margin icon-check"></i>Geral<br>
+                    <i class="fa fa-close icon-margin icon-close"></i>Outro (especificar)<br>
+
+                    </div>
+                </div>
+
+                {% if area %}
+                <span class="attribute-title">Área:</span> {{ area }} ha
+                <br>
+                {% endif %}
+
+                <span class="attribute-title">Descrição:</span> {{ description | replace("\n", "<p>") | safe }} 
+                <br>
+
+
+                {% if moreInfoDocs %}
+                <span class="attribute-title">Mais informações no seguinte documento:</span> {{ moreInfoDoc }} 
+                <br>
+                {% endif %}
+                
+            </div>
+        </div>
+
+        
+        
+
+
+{#
+        com icons
+            -website
+            -fundado
+            -publico-alvo
+            #}
+
+    </div>
+</div>

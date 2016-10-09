@@ -1,0 +1,100 @@
+{% extends "layouts/general-page.html"          %}
+
+{% from "macros/navigation.html" import navigation %}
+
+
+{% block title %}{{ ctx.texts[15][lang] }} - {{ ctx.texts[103][lang] }}{% endblock %} 
+
+{% block css %}
+    <link href="/common/css/bootstrap-modal-2.2.5.css" rel="stylesheet" />
+    <link href="/common/css/bootstrap-fileinput-4.2.0.css" rel="stylesheet" />
+    <link href="/dashboard3/css/dashboard.css" rel="stylesheet" />
+{% endblock %}
+
+
+{% block mainColumnContent %}
+
+    <div id="main-region">
+    </div>
+
+{#
+    <div class="modal xfade" id="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content" id="modal-content-region">
+
+
+            </div>
+        </div>
+    </div>
+#}
+
+    <div id="modal-1" class="modal fade" style="display: none;" data-width="700px">
+        <div id="modal1-content-region">
+        </div>
+    </div>
+
+    <div id="modal-2" class="modal fade" style="display: none;" data-width="600px">
+        <div id="modal2-content-region">
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block scripts %}
+
+{# NOTE: libraries that are loaded in all pages: jquery, bootstrap, underscore, q #}
+    <script src="/common/js/bootstrap-fileinput-4.2.0.js"></script>
+    <script src="/common/js/bootstrap-modal-2.2.5.js"></script>    
+    <script src="/common/js/underscore.string-3.0.3.js"></script>
+    <script src="/common/js/json2.js"></script>
+    <script src="/common/js/moment_2.9.0.js"></script>
+    <script src="/common/js/nunjucks-slim.js"></script>
+
+    <script src="/common/js/backbone-1.1.2.js"></script>
+    <script src="/common/js/backbone.radio.js"></script>
+    <script src="/common/js/backbone.marionette-2.4.1.js"></script>
+    <script src="/common/js/backbone.stickit.js"></script>
+    <script src="/common/js/backbone.syphon.js"></script>
+    <script src="/common/js/backbone.cocktail-0.5.10.js"></script>
+    <script src="/common/js/backbone_override.js"></script>
+    <script src="/common/js/renderer-nunjucks.js"></script>
+
+    <script type="text/javascript">
+        window.Clima = window.Clima || {};
+        Clima.lang = "{{ lang }}";
+        Clima.texts  = {{ ctx.textsArray | stringify }};
+        Clima.files  = {{ ctx.filesArray | stringify }};
+        Clima.userId = {{ ctx.auth.credentials.id }};
+    </script>
+{#
+    <script src="/dashboard/templates.js"></script>
+    <script src="/dashboard/behaviors.js"></script>
+    <script src="/dashboard/texts/texts.js"></script>
+    <script src="/dashboard/profile/profile.js"></script>
+    <script src="/dashboard/users/users.js"></script>
+    <script src="/dashboard/files/files.js"></script>
+    <script src="/dashboard/maps/maps.js"></script>
+    <script src="/dashboard/index.js"></script>
+#}
+
+    <script src="/dashboard3/entities.js"></script>
+    <script src="/dashboard3/templates.js"></script>
+    <script src="/dashboard3/behaviors.js"></script>
+    <script src="/dashboard3/profile/profile.js"></script>
+    <script src="/dashboard3/texts/texts.js"></script>
+    <script src="/dashboard3/users/users.js"></script>
+    <script src="/dashboard3/files/files.js"></script>
+    <script src="/dashboard3/maps/maps.js"></script>
+    <script src="/dashboard3/menu-left/menu-left.js"></script>
+    <script src="/dashboard3/main-layout/main-layout.js"></script>
+    <script src="/dashboard3/index.js"></script>
+{#
+    <script src="/dashboard/texts/texts.js"></script>
+    <script src="/dashboard/profile/profile.js"></script>
+    <script src="/dashboard2/index.js"></script>
+#}
+{#
+    <script src="/dashboard2/app-dev.js"></script>
+#}
+
+{% endblock %}

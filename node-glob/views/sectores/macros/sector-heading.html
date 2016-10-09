@@ -1,0 +1,77 @@
+{% macro sectorHeading(ctx, data) %}
+
+
+<div class="row">
+    <div class="col-sm-4">
+
+
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+
+
+            <!-- Wrapper for slides -->
+
+            {# TODO: iterate over ctx.images[sectorName][n] #}
+            <div class="carousel-inner" role="listbox">
+
+
+                <div class="item active">
+                    <img src="{{ ctx.images[data.sectorName][0].fullPath }}" alt="...">
+                    <div class="carousel-caption">
+                        caption 1
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="{{ ctx.images[data.sectorName][1].fullPath }}" class="img-responsive img-rounded" alt="">
+                    <div class="carousel-caption">
+                        caption 2
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="{{ ctx.images[data.sectorName][2].fullPath }}" class="img-responsive img-rounded" alt="">
+                    <div class="carousel-caption">
+                        caption 3
+                    </div>
+                </div>
+
+            </div>
+
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-circle-arrow-left"></span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-circle-arrow-right"></span>
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="col-sm-8">
+        <div>
+            <h1>
+                <span class="is-editable" data-text-id="{{ data.title }}">{{ ctx.texts[data.title][lang] }}</span>
+            </h1>
+        </div>
+
+        <span class="is-editable" data-text-id="{{ data.introParagraph }}">{{ ctx.texts[data.introParagraph][lang] }}</span>
+
+        <div class="collapse" id="hidden">
+            <span class="is-editable" data-text-id="{{ data.restOfParagraph }}">{{ ctx.texts[data.restOfParagraph][lang] }}</span>
+        </div>
+
+
+        <button type="button" class="center-block btn btn-primary btn-sm" data-toggle="collapse" data-target="#hidden" style="padding-left: 20px; padding-right: 20px; font-size: 16px; line-height: 1.2;">{{ ctx.texts[1][lang] }}</button>
+
+    </div>
+</div>
+
+
+{% endmacro %}

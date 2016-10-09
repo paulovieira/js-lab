@@ -1,0 +1,62 @@
+{
+    "description": "project page",
+    "tree": {
+        "template": "document-bootstrap",
+        "children": [
+            {
+                /*
+
+                */
+
+                "template": "templates/map/main-layout.html",
+                "insertIn": "body",
+                "children": [
+
+                    {
+                        /*
+                        */
+
+                        "template": "templates/map/navigation.html",
+                        "insertIn": "#navbar-container",
+                        "children": [
+                        ]
+                    },
+
+                
+
+                    {
+                        /*
+                        */
+
+                        "template": "templates/map/project-page.html",
+                        "insertIn": "#contents",
+                        "children": [
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "css": [
+        "/resources/leaflet/mapbox-2.2.1/mapbox.uncompressed.css", 
+        "/resources/font-awesome/4.3.0/css/font-awesome.css", 
+        "/states/map-menu/base-map.css", 
+/*
+        "/resources/leaflet/minimap/Control.MiniMap.css", 
+*/
+    ],
+    "scripts": [
+
+        "/resources/leaflet/mapbox-2.2.1/mapbox.uncompressed.js", 
+        "/states/map-menu/base-map.js", 
+/*
+        "/resources/underscore/underscore-1.6.0.js", 
+        "/resources/backbone/backbone-1.1.2.js", 
+        "/resources/backbone/backbone.marionette-2.4.1.js", 
+        
+        "/resources/leaflet/minimap/Control.MiniMap.js", 
+        "/states/simple-map/leaflet-backbone-view.js", 
+        "/states/simple-map/map.js", 
+*/
+    ]
+}

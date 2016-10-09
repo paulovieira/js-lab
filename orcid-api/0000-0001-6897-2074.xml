@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<orcid-message xmlns="http://www.orcid.org/ns/orcid">
+    <message-version>1.2</message-version>
+    <orcid-profile type="user">
+        <orcid-identifier>
+            <uri>http://orcid.org/0000-0001-6897-2074</uri>
+            <path>0000-0001-6897-2074</path>
+            <host>orcid.org</host>
+        </orcid-identifier>
+        <orcid-preferences>
+            <locale>en</locale>
+        </orcid-preferences>
+        <orcid-history>
+            <creation-method>Direct</creation-method>
+            <submission-date>2016-04-12T16:02:59.161Z</submission-date>
+            <last-modified-date>2016-04-13T13:57:52.405Z</last-modified-date>
+            <claimed>true</claimed>
+            <verified-email>true</verified-email>
+            <verified-primary-email>true</verified-primary-email>
+        </orcid-history>
+        <orcid-bio>
+            <personal-details>
+                <given-names>paulo</given-names>
+                <family-name>vieira</family-name>
+                <other-names visibility="public"/>
+            </personal-details>
+            <biography visibility="public">xxx</biography>
+            <researcher-urls visibility="public">
+                <researcher-url>
+                    <url>http://web.archive.org/web/20150427063224/http://cmaf.ptmat.fc.ul.pt/~pvieira/</url>
+                </researcher-url>
+            </researcher-urls>
+            <contact-details>
+                <email primary="true" current="true" verified="true" visibility="public" source="0000-0001-6897-2074">pnvieira@fc.ul.pt</email>
+                <address>
+                    <country visibility="public">PT</country>
+                </address>
+            </contact-details>
+            <external-identifiers visibility="public"/>
+        </orcid-bio>
+        <orcid-activities>
+            <affiliations>
+                <affiliation visibility="public" put-code="1743391">
+                    <type>employment</type>
+                    <start-date>
+                        <year>2014</year>
+                        <month>09</month>
+                        <day>01</day>
+                    </start-date>
+                    <end-date>
+                        <year>2016</year>
+                        <month>08</month>
+                        <day>31</day>
+                    </end-date>
+                    <organization>
+                        <name>CCIAM</name>
+                        <address>
+                            <city>Lisbon</city>
+                            <country>PT</country>
+                        </address>
+                    </organization>
+                    <source>
+                        <source-orcid>
+                            <uri>http://orcid.org/0000-0001-6897-2074</uri>
+                            <path>0000-0001-6897-2074</path>
+                            <host>orcid.org</host>
+                        </source-orcid>
+                        <source-name>paulo vieira</source-name>
+                        <source-date>2016-04-12T22:33:08.204Z</source-date>
+                    </source>
+                    <created-date>2016-04-12T22:33:08.204Z</created-date>
+                    <last-modified-date>2016-04-12T22:33:08.204Z</last-modified-date>
+                </affiliation>
+                <affiliation visibility="public" put-code="1743389">
+                    <type>employment</type>
+                    <start-date>
+                        <year>2013</year>
+                        <month>08</month>
+                        <day>01</day>
+                    </start-date>
+                    <end-date>
+                        <year>2014</year>
+                        <month>08</month>
+                        <day>31</day>
+                    </end-date>
+                    <organization>
+                        <name>Host Hotel Systems</name>
+                        <address>
+                            <city>Torres Vedras</city>
+                            <country>PT</country>
+                        </address>
+                    </organization>
+                    <source>
+                        <source-orcid>
+                            <uri>http://orcid.org/0000-0001-6897-2074</uri>
+                            <path>0000-0001-6897-2074</path>
+                            <host>orcid.org</host>
+                        </source-orcid>
+                        <source-name>paulo vieira</source-name>
+                        <source-date>2016-04-12T22:32:28.895Z</source-date>
+                    </source>
+                    <created-date>2016-04-12T22:32:28.895Z</created-date>
+                    <last-modified-date>2016-04-12T22:32:28.895Z</last-modified-date>
+                </affiliation>
+                <affiliation visibility="public" put-code="1742331">
+                    <type>education</type>
+                    <department-name>Mathematics</department-name>
+                    <role-title>M.Sc.</role-title>
+                    <start-date>
+                        <year>2008</year>
+                        <month>09</month>
+                        <day>01</day>
+                    </start-date>
+                    <end-date>
+                        <year>2010</year>
+                        <month>12</month>
+                        <day>01</day>
+                    </end-date>
+                    <organization>
+                        <name>Universidade de Lisboa Faculdade de Ciências</name>
+                        <address>
+                            <city>Lisboa</city>
+                            <region>Lisboa</region>
+                            <country>PT</country>
+                        </address>
+                        <disambiguated-organization>
+                            <disambiguated-organization-identifier>37809</disambiguated-organization-identifier>
+                            <disambiguation-source>RINGGOLD</disambiguation-source>
+                        </disambiguated-organization>
+                    </organization>
+                    <source>
+                        <source-orcid>
+                            <uri>http://orcid.org/0000-0001-6897-2074</uri>
+                            <path>0000-0001-6897-2074</path>
+                            <host>orcid.org</host>
+                        </source-orcid>
+                        <source-name>paulo vieira</source-name>
+                        <source-date>2016-04-12T16:03:58.731Z</source-date>
+                    </source>
+                    <created-date>2016-04-12T16:03:58.731Z</created-date>
+                    <last-modified-date>2016-04-12T22:21:54.842Z</last-modified-date>
+                </affiliation>
+                <affiliation visibility="public" put-code="1743378">
+                    <type>education</type>
+                    <department-name>Mathematics</department-name>
+                    <role-title>B.Sc.</role-title>
+                    <start-date>
+                        <year>2003</year>
+                        <month>09</month>
+                        <day>01</day>
+                    </start-date>
+                    <end-date>
+                        <year>2007</year>
+                        <month>09</month>
+                        <day>01</day>
+                    </end-date>
+                    <organization>
+                        <name>Universidade de Lisboa Faculdade de Ciências</name>
+                        <address>
+                            <city>Lisboa</city>
+                            <region>Lisboa</region>
+                            <country>PT</country>
+                        </address>
+                        <disambiguated-organization>
+                            <disambiguated-organization-identifier>37809</disambiguated-organization-identifier>
+                            <disambiguation-source>RINGGOLD</disambiguation-source>
+                        </disambiguated-organization>
+                    </organization>
+                    <source>
+                        <source-orcid>
+                            <uri>http://orcid.org/0000-0001-6897-2074</uri>
+                            <path>0000-0001-6897-2074</path>
+                            <host>orcid.org</host>
+                        </source-orcid>
+                        <source-name>paulo vieira</source-name>
+                        <source-date>2016-04-12T22:19:48.595Z</source-date>
+                    </source>
+                    <created-date>2016-04-12T22:19:48.595Z</created-date>
+                    <last-modified-date>2016-04-12T22:19:48.595Z</last-modified-date>
+                </affiliation>
+            </affiliations>
+            <orcid-works>
+                <orcid-work put-code="23528723" visibility="public">
+                    <work-title>
+                        <title>Introdução à programação de Elementos Finitos com a biblioteca libMesh</title>
+                    </work-title>
+                    <work-type>lecture-speech</work-type>
+                    <publication-date>
+                        <year>2012</year>
+                    </publication-date>
+                    <url>http://web.archive.org/web/20150427063224/http://cmaf.ptmat.fc.ul.pt/~pvieira/doutoramento/projecto/</url>
+                    <source>
+                        <source-orcid>
+                            <uri>http://orcid.org/0000-0001-6897-2074</uri>
+                            <path>0000-0001-6897-2074</path>
+                            <host>orcid.org</host>
+                        </source-orcid>
+                        <source-name>paulo vieira</source-name>
+                        <source-date>2016-04-12T22:58:56.845Z</source-date>
+                    </source>
+                    <created-date>2016-04-12T22:58:56.845Z</created-date>
+                    <last-modified-date>2016-04-12T22:58:56.845Z</last-modified-date>
+                </orcid-work>
+                <orcid-work put-code="23528716" visibility="public">
+                    <work-title>
+                        <title>Identification of material parameters using an eigenvalue problem and the adjoint method</title>
+                    </work-title>
+                    <work-type>conference-poster</work-type>
+                    <publication-date>
+                        <year>2012</year>
+                        <month>04</month>
+                        <day>02</day>
+                    </publication-date>
+                    <url>http://www.cmap.polytechnique.fr/picof/Posters/2048771c.pdf</url>
+                    <source>
+                        <source-orcid>
+                            <uri>http://orcid.org/0000-0001-6897-2074</uri>
+                            <path>0000-0001-6897-2074</path>
+                            <host>orcid.org</host>
+                        </source-orcid>
+                        <source-name>paulo vieira</source-name>
+                        <source-date>2016-04-12T22:56:01.628Z</source-date>
+                    </source>
+                    <created-date>2016-04-12T22:56:01.628Z</created-date>
+                    <last-modified-date>2016-04-12T22:56:01.628Z</last-modified-date>
+                    <language-code>en</language-code>
+                </orcid-work>
+                <orcid-work put-code="23528596" visibility="public">
+                    <work-title>
+                        <title>Damage identification in a concrete dam by fitting measured modal parameters </title>
+                    </work-title>
+                    <journal-title>Nonlinear Analysis: Real World Applications </journal-title>
+                    <work-citation>
+                        <work-citation-type>bibtex</work-citation-type>
+                        <citation>@article{Oliveira20122888, title= {Damage identification in a concrete dam by fitting measured modal parameters }, journal= {Nonlinear Analysis: Real World Applications }, volume= {13}, number= {6}, pages= {2888 - 2899}, year= {2012}, note= {}, issn= {1468-1218}, doi= {http://dx.doi.org/10.1016/j.nonrwa.2012.05.003}, url= {http://www.sciencedirect.com/science/article/pii/S1468121812000995}, author= {Sérgio Oliveira and Anca-Maria Toader and Paulo Vieira}, keywords= {Adjoint problem }, abstract= {We propose a method, based on an inverse problem, to obtain numerically the material parameters that characterize the elasticity tensor of a body with linear elastic behavior, using accurate measurements of the first modal parameters, namely the natural frequencies and the modes of vibration (the eigenfrequencies and the eigenvectors). Appropriate functionals are defined, whose minimum points correspond to the unknown material parameters. To obtain these minimum points a highly nonlinear parametric optimization problem is solved. Its resolution involves specific mathematical tools like the derivative of the eigenvalues and eigenvectors with respect to the material parameters, the adjoint method, and gradient methods for the minimization of the functional. An application is presented, which considers a cracked dam in which is assumed the presence of transversely isotropic material in the cracked zone. The material parameters of the transversely isotropic material are obtained by minimizing the distance between the modal parameters (eigenfrequencies and eigenvectors) of a numerical model of the dam and the observed modal parameters physically measured in the dam. The algorithm is implemented in a C++ home made code with the aid of open-source libraries for scientific computation. }}
+
+</citation>
+                    </work-citation>
+                    <work-type>journal-article</work-type>
+                    <publication-date>
+                        <year>2012</year>
+                        <month>12</month>
+                    </publication-date>
+                    <work-external-identifiers>
+                        <work-external-identifier>
+                            <work-external-identifier-type>doi</work-external-identifier-type>
+                            <work-external-identifier-id>http://dx.doi.org/10.1016/j.nonrwa.2012.05.003</work-external-identifier-id>
+                        </work-external-identifier>
+                    </work-external-identifiers>
+                    <url>http://www.sciencedirect.com/science/article/pii/S1468121812000995</url>
+                    <source>
+                        <source-orcid>
+                            <uri>http://orcid.org/0000-0001-6897-2074</uri>
+                            <path>0000-0001-6897-2074</path>
+                            <host>orcid.org</host>
+                        </source-orcid>
+                        <source-name>paulo vieira</source-name>
+                        <source-date>2016-04-12T22:57:33.606Z</source-date>
+                    </source>
+                    <created-date>2016-04-12T22:57:33.606Z</created-date>
+                    <last-modified-date>2016-04-12T22:57:33.646Z</last-modified-date>
+                </orcid-work>
+            </orcid-works>
+            <funding-list>
+                <funding put-code="171274" visibility="public">
+                    <funding-type>grant</funding-type>
+                    <organization-defined-type>Phd</organization-defined-type>
+                    <funding-title>
+                        <title>Bolseiro de Doutoramento</title>
+                    </funding-title>
+                    <url></url>
+                    <start-date>
+                        <year>2011</year>
+                        <month>07</month>
+                    </start-date>
+                    <end-date>
+                        <year>2013</year>
+                        <month>04</month>
+                    </end-date>
+                    <organization>
+                        <name>FCT</name>
+                        <address>
+                            <city>Lisbon</city>
+                            <region>Lisbon</region>
+                            <country>PT</country>
+                        </address>
+                    </organization>
+                    <source>
+                        <source-orcid>
+                            <uri>http://orcid.org/0000-0001-6897-2074</uri>
+                            <path>0000-0001-6897-2074</path>
+                            <host>orcid.org</host>
+                        </source-orcid>
+                        <source-name>paulo vieira</source-name>
+                        <source-date>2016-04-12T22:30:32.488Z</source-date>
+                    </source>
+                    <created-date>2016-04-12T22:30:32.488Z</created-date>
+                    <last-modified-date>2016-04-12T22:30:32.488Z</last-modified-date>
+                </funding>
+                <funding put-code="171273" visibility="public">
+                    <funding-type>grant</funding-type>
+                    <organization-defined-type>Research grant</organization-defined-type>
+                    <funding-title>
+                        <title>Análise Numérica e Matemática Computacional</title>
+                    </funding-title>
+                    <url></url>
+                    <start-date>
+                        <year>2008</year>
+                        <month>09</month>
+                    </start-date>
+                    <end-date>
+                        <year>2010</year>
+                        <month>06</month>
+                    </end-date>
+                    <organization>
+                        <name>FFCUL</name>
+                        <address>
+                            <city>Lisbon</city>
+                            <region>Lisbon</region>
+                            <country>PT</country>
+                        </address>
+                    </organization>
+                    <source>
+                        <source-orcid>
+                            <uri>http://orcid.org/0000-0001-6897-2074</uri>
+                            <path>0000-0001-6897-2074</path>
+                            <host>orcid.org</host>
+                        </source-orcid>
+                        <source-name>paulo vieira</source-name>
+                        <source-date>2016-04-12T22:25:13.195Z</source-date>
+                    </source>
+                    <created-date>2016-04-12T22:25:13.195Z</created-date>
+                    <last-modified-date>2016-04-12T22:30:53.837Z</last-modified-date>
+                </funding>
+            </funding-list>
+        </orcid-activities>
+    </orcid-profile>
+</orcid-message>

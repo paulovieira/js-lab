@@ -1,0 +1,47 @@
+{#  NOTE: lang is a global variable #}
+{% extends "layouts/default.html"          %}
+{% from "macros/navigation.html" import navigation %}
+{# #} 
+{% from "macros/sectores/sector-heading.html" import sectorHeading %} 
+
+
+
+{% block title %}{{ ctx.texts[15][lang] }} - agricultura e florestas{% endblock %} 
+
+{#
+{% block navigation %}
+
+{{ navigation(ctx) }}
+
+{% endblock %}
+#}
+
+{% block content %}
+
+
+
+
+<div class="row">
+    <div class="hidden-xs col-sm-2 col-md-2 " id="left-column" style=""></div>
+    <div class="col-xs-12 col-sm-8 col-md-8 " id="main-content" style="margin-top: 20px;">
+
+		{{ navigation(ctx) }}
+
+		{{ sectorHeading(ctx, ctx.urlParam2) }}
+
+    </div>
+    <div class="hidden-xs col-sm-2 col-md-2" id="right-column" style=""></div>
+</div>
+
+{#
+<div class="row">
+    <div class="col-sm-12 text-center">
+		<h1>Agricultura e Florestas</h1>
+    </div>
+</div>
+#}
+
+
+{% endblock %}
+
+

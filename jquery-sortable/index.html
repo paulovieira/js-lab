@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="lib/bootstrap/3.3.5-original/css/bootstrap.css" rel="stylesheet">
+    <style>
+    body.dragging,
+    body.dragging * {
+        cursor: move !important;
+    }
+    
+    .dragged {
+        position: absolute;
+        opacity: 0.6;
+        z-index: 9000;
+    }
+
+    .inner {
+        padding-left: 30px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-md-4">
+
+            <div class="panel panel-default map-group">
+                <div class="panel-heading">Energia</div>
+                <ul class="list-group map-menu" id="energia">
+                    <li class="list-group-item" data-id="a">mapa a</li>
+                    <li class="list-group-item" data-id="b">mapa b</li>
+                    <li class="list-group-item" data-id="c">mapa c</li>
+                </ul>
+            </div>
+
+
+            <div class="panel panel-default map-group">
+                <div class="panel-heading">Biodiversidade</div>
+                <ul class="list-group map-menu" id="biodiversidade">
+                    <li class="list-group-item" data-id="d">mapa d</li>
+                    <li class="list-group-item" data-id="e">mapa e</li>
+                    <li class="list-group-item" data-id="f">mapa f</li>
+                </ul>
+            </div>
+
+            <div class="panel panel-default map-group">
+                <div class="panel-heading">Mapas não publicados</div>
+                <ul class="list-group map-menu">
+                    <li class="list-group-item" data-id="x">mapa x</li>
+                    <li class="list-group-item" data-id="y">mapa y</li>
+                    <li class="list-group-item" data-id="z">mapa z</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <div class="row">
+        <div class="col-md-4">
+
+            <ul class="list-group map-groups" id="main">
+
+                <li class="list-group-item xmap-group" data-id="x">
+                    group x
+                    <ul class="list-group map-elems" id="x-list">
+                        <li class="list-group-item inner xmap-elem" data-id="a">a</li>
+                        <li class="list-group-item inner xmap-elem" data-id="b">b</li>
+                        <li class="list-group-item inner xmap-elem" data-id="c">c</li>
+                    </ul>
+                </li>
+                <li class="list-group-item xmap-group" data-id="y">
+                    group y
+                    <ul class="list-group map-elems" id="y-list">
+                        <li class="list-group-item inner xmap-elem" data-id="d">d</li>
+                        <li class="list-group-item inner xmap-elem" data-id="e">e</li>
+                    </ul>
+
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+
+
+
+
+    <script src="lib/jquery-1.11.2.js"></script>
+
+
+    <script src="lib/jquery-sortable.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

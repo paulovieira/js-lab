@@ -1,0 +1,97 @@
+feito:
+
+normal observado
+    xtmin
+    xtmed
+    xtmax
+    xrain
+    xrhmax
+    xrhmin
+
+rcp 8.5 - 2070 - 2099
+    xtmin
+    xtmed
+    xtmax
+    xrain
+    xrhmax
+    xrhmin
+
+rcp 8.5 - 2040 - 2069
+    xtmin
+    xtmed
+    xtmax
+    xrain
+    xrhmax
+    xrhmin
+
+rcp 8.5 - 2010 - 2039
+    xtmin
+    xtmed
+    xtmax
+    xrain
+    xrhmax
+    xrhmin
+
+rcp 4.5 - 2070 - 2099
+    xtmin
+    xtmed
+    xtmax
+    xrain
+    xrhmax
+    xrhmin
+
+rcp 4.5 - 2040 - 2069
+    tmin
+    tmed
+    tmax
+    rain
+    rhmax
+    rhmin
+
+rcp 4.5 - 2010 - 2039
+    xtmin
+    xtmed
+    xtmax
+    xrain
+    xrhmax
+    xrhmin
+
+alta resolucao
+    tmin
+    xtmed
+    xtmax
+    xrain
+    xrhmax
+    xrhmin
+
+
+anomalias - rcp 4.5 - 2010 - 2039
+        tmin
+        xtmed
+        tmax
+        xrain
+        rhmax
+        rhmin
+
+anomalias - rcp 4.5 - 2040 - 2069
+        tmin
+        xtmed
+        tmax
+        xrain
+        rhmax
+        rhmin
+
+anomalias - rcp 4.5 - 2070 - 2099
+        tmin
+        xtmed
+        tmax
+        xrain
+        rhmax
+        rhmin
+
+
+
+
+4.5 - 2010-2039 - tmin anomalia
+4.5 - 2040-2069 - tmin anomalia
+4.5 - 2070-2099 - tmin anomalia

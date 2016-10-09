@@ -1,0 +1,13 @@
+<div style="height: 95%; xborder: solid 2px; " class="menu-container leaflet-control ">
+    <div id="menu-header" style="xborder: solid red 1px; ">
+        <span id="menu-header-2" class="glyphicon glyphicon-menu-hamburger" title="click to toggle"></span>
+    </div>
+
+    {# note that height of the div below will be dinamically adjusted onAttach #}
+    <div id="menu-contents" style="xborder: solid blue 1px; padding-left: 5px;" class="{{ "map-menu-open" if menuOpen }}" >
+        <div style="xpadding: 0px 0px; " id="mn-filters">
+        </div>
+        <div style="xpadding: 0px 0px; " id="mn-projects-list">
+        </div>
+    </div>
+</div>

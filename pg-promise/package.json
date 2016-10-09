@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "bluebird": "^3.4.0",
+    "pg-monitor": "^0.5.8",
+    "pg-promise": "^4.5.0"
+  }
+}

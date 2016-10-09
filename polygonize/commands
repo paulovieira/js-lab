@@ -1,0 +1,108 @@
+
+export INPUT=Tref_Anual
+
+
+1)
+gdalinfo -stats $INPUT.tif
+
+2)
+
+export OUTPUT=Tref_Anual_out
+gdal_calc.py --overwrite --creation-option="COMPRESS=LZW" \
+-A $INPUT.tif \
+--outfile=$OUTPUT-1.tif \
+--calc="floor(A)"
+
+
+export OUTPUT=Tref_Anual_out
+gdal_calc.py --overwrite --creation-option="COMPRESS=LZW" \
+-A $INPUT.tif \
+--outfile=$OUTPUT-2.tif \
+--calc="(1./2)*floor(2*A)"
+
+
+export OUTPUT=Tref_Anual_out
+gdal_calc.py --overwrite --creation-option="COMPRESS=LZW" \
+-A $INPUT.tif \
+--outfile=$OUTPUT-3.tif \
+--calc="(1./3)*floor(3*A)"
+
+
+export OUTPUT=Tref_Anual_out
+gdal_calc.py --overwrite --creation-option="COMPRESS=LZW" \
+-A $INPUT.tif \
+--outfile=$OUTPUT-4.tif \
+--calc="(1./4)*floor(4*A)"
+
+3)
+
+gdal_polygonize.py -mask $OUTPUT-1.tif  $OUTPUT-1.tif -b 1 -f "ESRI Shapefile" shapes/$OUTPUT-1.shp $OUTPUT-1 value
+
+gdal_polygonize.py -mask $OUTPUT-2.tif  $OUTPUT-2.tif -b 1 -f "ESRI Shapefile" shapes/$OUTPUT-2.shp $OUTPUT-2 value
+
+gdal_polygonize.py -mask $OUTPUT-3.tif  $OUTPUT-3.tif -b 1 -f "ESRI Shapefile" shapes/$OUTPUT-3.shp $OUTPUT-3 value
+
+gdal_polygonize.py -mask $OUTPUT-4.tif  $OUTPUT-4.tif -b 1 -f "ESRI Shapefile" shapes/$OUTPUT-4.shp $OUTPUT-4 value
+
+
+grinfo $myfile -dialect SQLite -sql "UPDATE $name SET code_num = CAST(code_06 AS integer(3))"
+
+ogr2ogr -update -append %destination% %n2% -sql 'SELECT * FROM ' -dialect SQLite
+
+-f "ESRI Shapefile"
+
+
+ogrinfo meteo_wgs84.shp -sql "UPDATE meteo_wgs84 SET ALTITUDE=ALTITUDE/1000" -dialect SQLite
+
+1) chamar o gdal_calc como antes, mas no calc multiplicar por 1000000
+
+
+# NOTE: if type in the raster is int: it doesn't make sense to round to values between 0 and 1 (ROUND_PARAM should be >=1); if we use ROUND_PARAM=1, it means we are not rounding;
+
+# if type is float: ROUND_PARAM can be a) 0 (do not round), b) between 0 and 1, or c) >=1; if it is >=1, the values will be rounded to integers;
+
+ #NOTE: if type is float and ROUND_PARAM=0, the value will be equal only for the number of decimal places of the precision
+
+# TODO: is the user doesn't give a ROUND_PARAM, use a default of 1 (round to the nearest integer)
+
+export INPUT=rain
+export ROUND_PARAM=0.25
+export DECIMAL_PLACES_TO_KEEP=1000000
+
+
+# if ROUND_PARAM=0 (no rounding at all)
+gdal_calc.py --overwrite --creation-option="COMPRESS=LZW" \
+-A $INPUT.tif \
+--outfile=$INPUT-temp.tif \
+--calc="A*$DECIMAL_PLACES_TO_KEEP"
+
+# if 0 < ROUND_PARAM < 1 
+gdal_calc.py --overwrite --creation-option="COMPRESS=LZW" \
+-A $INPUT.tif \
+--outfile=$INPUT-temp.tif \
+--calc="1.0*$ROUND_PARAM*floor((1./$ROUND_PARAM)*A)*$DECIMAL_PLACES_TO_KEEP"
+
+# if ROUND_PARAM >= 1 (no need to worry about precision because the value will always interegers)
+gdal_calc.py --overwrite --creation-option="COMPRESS=LZW" \
+-A $INPUT.tif \
+--outfile=$INPUT-temp.tif \
+--calc="$ROUND_PARAM*floor((1./$ROUND_PARAM)*A)"
+
+
+2) chamar o gdal_polygonize (vai fazer o cast para int)
+
+gdal_polygonize.py -mask $INPUT.tif  $INPUT-temp.tif -b 1 -f "ESRI Shapefile" shapes/$INPUT.shp $INPUT value_temp
+
+
+3) chamar o ogrinfo e dividir o valor por 10**DECIMAL_PLACES_TO_KEEP (vai voltar a ficar em float)
+
+# if 0 <= ROUND_PARAM < 1
+ogrinfo $INPUT.shp -sql "ALTER TABLE $INPUT ADD COLUMN value float"
+ogrinfo $INPUT.shp -sql "UPDATE $INPUT SET value=value_temp*1.0/$DECIMAL_PLACES_TO_KEEP*1.0" -dialect SQLite
+ogrinfo $INPUT.shp -sql "ALTER TABLE $INPUT DROP COLUMN value_temp"
+
+# if ROUND_PARAM >= 1
+(nothing to do)
+
+4) (?regenerar o indice - ficheiro .shx)
+

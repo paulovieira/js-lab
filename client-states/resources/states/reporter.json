@@ -1,0 +1,21 @@
+{
+    "description": "reporter description",
+    "tree": {
+        "template": "document-bootstrap",
+        "children": [
+            {
+                "template": "resources/templates/reporter/heading.html",
+                "insertIn": "body",
+                "children": [
+                    {
+                        "template": "resources/templates/reporter/state-item.html",
+                        "insertIn": "#states-list",
+                        "children": [
+                        ]
+                    },
+                ]
+            }
+
+        ]
+    }
+}

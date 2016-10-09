@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "postgrator": "^2.8.2"
+  }
+}
