@@ -1,2 +1,3 @@
 */node_modules/*
 browserify_vs_webpack/_bundles
+!webpack-custom-loader/node_modules/my-loader/
