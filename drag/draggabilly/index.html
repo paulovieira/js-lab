@@ -1,0 +1,64 @@
+<html>
+    <head>
+        
+        <style>
+            .container {
+                border: 1px solid red;
+                display: inline-block;
+            }
+
+            .container.is-pointer-down { 
+                background: #09F;
+            }
+
+            .container.is-dragging { 
+                opacity: 0.5; 
+            }
+
+            .child {
+                width: 100px;
+                height: 100px;
+                display: inline-block;
+                border: 1px solid green;
+            }
+
+            .grid-container {
+                width: 90%;
+                height: 70%;
+                border: 1px solid blue;
+            }
+
+
+/*
+.draggable.is-pointer-down {
+  background: #09F;
+}
+
+.draggable.is-dragging { opacity: 0.7; }
+*/
+        </style>
+    </head>
+    <body>
+        
+        <div class="grid-container">
+
+            <span class="container" data-resid="res1">
+                <div class="child"></div>
+                <div class="child"></div>
+                <div class="child"></div>
+            </span>
+
+            <div style="margin-top: 50px;"></div>
+
+            <span class="container" data-resid="res2">
+                <div class="child"></div>
+                <div class="child"></div>
+            </span>
+
+        </div>
+
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="draggabilly.pkgd.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
